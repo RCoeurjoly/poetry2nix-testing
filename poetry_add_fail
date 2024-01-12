@@ -1,0 +1,15 @@
+apache-airflow
+tensorflow
+psycopg2
+backports-zoneinfo
+dataclasses
+tensorflow-io-gcs-filesystem
+futures
+tensorflow-serving-api
+typing
+sklearn
+mysqlclient
+kfp
+pywin32
+tensorflow-io
+tensorflow-text
