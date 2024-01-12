@@ -112,6 +112,58 @@ test_packages_locally () {
     done
 }
 
+test_packages_locally_paralell () {
+    OPTIND=1         # Reset in case getopts has been used previously in the shell.
+
+    # If no argument, parse big json
+    if [ "$#" -eq 0 ]; then
+        packages=$(cat top-pypi-packages-30-days.min.json | jq .rows[].project)
+    fi
+
+    while getopts ":f:p:h" o; do
+        case "${o}" in
+            f)
+                packages=$(cat "$OPTARG" | jq .rows[].project)
+                ;;
+            p)
+                packages="$OPTARG"
+                ;;
+            h)
+                echo usage
+                ;;
+            *)
+                echo fail
+                ;;
+        esac
+    done
+
+    shift $((OPTIND-1))
+
+    for quoted_package in $packages
+    do
+        test_package $quoted_package &
+    done
+}
+
+test_package() {
+    quoted_package=$1
+    unquoted_package=${quoted_package//\"}
+    git clone git@github.com:RCoeurjoly/poetry2nix-testing.git ~/poetry2nix-testing_$unquoted_package
+    cd ~/poetry2nix-testing_$unquoted_package
+    poetry add $unquoted_package
+    rc=$?
+    if [[ $rc != 0 ]]; then
+        echo Package $unquoted_package failed to install with poetry
+        echo $unquoted_package >> ~/poetry_add_fail
+    else
+        nix develop --command echo "Nix develop environment ready"
+        rc=$?
+        if [[ $rc != 0 ]]; then
+            echo Package $unquoted_package failed to install with nix develop
+            echo $unquoted_package >> ~/nix_develop_fail
+        fi
+    fi
+}
 
 test_packages_simple () {
     OPTIND=1         # Reset in case getopts has been used previously in the shell.
@@ -153,8 +205,6 @@ test_packages_simple () {
         fi
     done
 }
-
-
 
 add_package_to_uninstallable_list() {
     uninstallable_package=$1
