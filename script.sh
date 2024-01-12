@@ -69,7 +69,7 @@ test_packages_locally () {
 
     # If no argument, parse big json
     if [ "$#" -eq 0 ]; then
-        packages=$(cat small.top-pypi-packages-30-days.min.json | jq .rows[].project)
+        packages=$(cat minimal.top-pypi-packages-30-days.min.json | jq .rows[].project)
     fi
 
     while getopts ":f:p:h" o; do
@@ -100,7 +100,7 @@ test_packages_locally () {
             echo Package $unquoted_package failed to install with poetry
             echo $unquoted_package >> poetry_add_fail
         else
-            bash --rcfile <(echo '. ~/.bashrc; nix develop; rc=$?; return $?')
+            nix develop
             rc=$?
             if [[ $rc != 0 ]]; then
                 echo Package $unquoted_package failed to install with nix develop
