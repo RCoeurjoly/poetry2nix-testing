@@ -100,7 +100,7 @@ test_packages_locally () {
             echo Package $unquoted_package failed to install with poetry
             echo $unquoted_package >> poetry_add_fail
         else
-            bash --rcfile <('nix develop; rc=$?; return $?')
+            bash --rcfile <('. ~/bashrc; nix develop; rc=$?; return $?')
             rc=$?
             if [[ $rc != 0 ]]; then
                 echo Package $unquoted_package failed to install with nix develop
