@@ -69,7 +69,7 @@ test_packages_locally () {
 
     # If no argument, parse big json
     if [ "$#" -eq 0 ]; then
-        packages=$(cat minimal.top-pypi-packages-30-days.min.json | jq .rows[].project)
+        packages=$(cat top-pypi-packages-30-days.min.json | jq .rows[].project)
     fi
 
     while getopts ":f:p:h" o; do
