@@ -106,6 +106,7 @@ test_packages_locally () {
                 echo Package $unquoted_package failed to install with nix develop
                 echo $unquoted_package >> nix_develop_fail
             fi
+            poetry remove $unquoted_package
         fi
         git checkout -- .
     done
