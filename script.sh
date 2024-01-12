@@ -100,7 +100,6 @@ test_packages_locally () {
             echo Package $unquoted_package failed to install with poetry
             echo $unquoted_package >> poetry_add_fail
         else
-            poetry env use
             nix develop
             rc=$?
             if [[ $rc != 0 ]]; then
