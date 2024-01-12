@@ -25,7 +25,7 @@
 
         devShells.default = pkgs.mkShell {
           inputsFrom = [ self.packages.${system}.myapp ];
-          packages = [ pkgs.poetry ];
+          packages = [ pkgs.poetry pkgs.jq ];
         };
       });
 }
