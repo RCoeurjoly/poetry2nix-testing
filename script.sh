@@ -100,7 +100,7 @@ test_packages_locally () {
             echo Package $unquoted_package failed to install with poetry
             echo $unquoted_package >> poetry_add_fail
         else
-            nix develop
+            bash --rcfile <('nix develop; rc=$?; return $?')
             rc=$?
             if [[ $rc != 0 ]]; then
                 echo Package $unquoted_package failed to install with nix develop
@@ -108,7 +108,7 @@ test_packages_locally () {
             fi
             poetry remove $unquoted_package
         fi
-        git checkout -- .
+        git checkout -- poetry.lock pyproject.toml
     done
 }
 
