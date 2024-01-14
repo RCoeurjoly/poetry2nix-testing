@@ -141,15 +141,25 @@ test_packages_locally_parallel () {
 
     shift $((OPTIND-1))
     rm ~/my_commands
-    rm ~/nix_develop_fail
-    rm ~/poetry_add_fail
+    # rm ~/nix_develop_fail
+    # rm ~/poetry_add_fail
     rm -rf ~/poetry2nix-testing_*
+    latest_reached=false
+    latest=$(cat ~/poetry2nix-testing/latest)
     for quoted_package in $packages
     do
-        unquoted_package=${quoted_package//\"}
-        echo "source ~/poetry2nix-testing/script.sh; test_package $unquoted_package" >> ~/my_commands
+        if [ "$latest" = $quoted_package ]; then
+            latest_reached=false
+        fi
+        if [ "$latest_reached" = true]; then
+            unquoted_package=${quoted_package//\"}
+            echo "going to check $unquoted_package "
+            # echo "source ~/poetry2nix-testing/script.sh; test_package $unquoted_package" >> ~/my_commands
+        else
+            echo "$unquoted_package already analyzed"
+        fi
     done
-    cat ~/my_commands | parallel
+    # cat ~/my_commands | parallel
 }
 
 test_package() {
@@ -170,6 +180,7 @@ test_package() {
             echo $unquoted_package >> ~/nix_develop_fail
         fi
         poetry remove $unquoted_package
+        echo $unquoted_package > ~/poetry2nix-testing/latest
         # nix-collect-garbage
     fi
 }
