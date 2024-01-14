@@ -148,11 +148,11 @@ test_packages_locally_parallel () {
     latest=$(cat ~/poetry2nix-testing/latest)
     for quoted_package in $packages
     do
-        if [ "$latest" = $quoted_package ]; then
+        unquoted_package=${quoted_package//\"}
+        if [ "$latest" = $unquoted_package ]; then
             latest_reached=true
         fi
         if [ "$latest_reached" = true ]; then
-            unquoted_package=${quoted_package//\"}
             echo "going to check $unquoted_package "
             # echo "source ~/poetry2nix-testing/script.sh; test_package $unquoted_package" >> ~/my_commands
         else
