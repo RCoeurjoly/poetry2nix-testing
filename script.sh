@@ -112,7 +112,7 @@ test_packages_locally () {
     done
 }
 
-test_packages_locally_paralell () {
+test_packages_locally_parallel () {
     OPTIND=1         # Reset in case getopts has been used previously in the shell.
 
     # If no argument, parse big json
@@ -165,7 +165,7 @@ test_package() {
             echo $unquoted_package >> ~/nix_develop_fail
         fi
         poetry remove $unquoted_package
-        nix-collect-garbage
+        # nix-collect-garbage
     fi
 }
 
