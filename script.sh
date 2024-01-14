@@ -144,7 +144,7 @@ test_packages_locally_parallel () {
     for quoted_package in $packages
     do
         unquoted_package=${quoted_package//\"}
-        cat "test_package $unquoted_package" >> ~/my_commands
+        echo "test_package $unquoted_package" >> ~/my_commands
     done
 }
 
