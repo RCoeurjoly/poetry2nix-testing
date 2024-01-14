@@ -150,7 +150,7 @@ test_packages_locally_paralell () {
 test_package() {
     quoted_package=$1
     unquoted_package=${quoted_package//\"}
-    git clone git@github.com:RCoeurjoly/poetry2nix-testing.git ~/poetry2nix-testing_$unquoted_package
+    git clone -b without_json git@github.com:RCoeurjoly/poetry2nix-testing.git ~/poetry2nix-testing_$unquoted_package
     cd ~/poetry2nix-testing_$unquoted_package
     poetry add $unquoted_package
     rc=$?
