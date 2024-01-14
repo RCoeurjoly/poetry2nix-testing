@@ -143,7 +143,7 @@ test_packages_locally_parallel () {
 
     for quoted_package in $packages
     do
-        test_package $quoted_package &
+        cat "test_package $quoted_package" >> ~/my_commands
     done
 }
 
