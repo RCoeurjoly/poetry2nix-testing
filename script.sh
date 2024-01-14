@@ -151,7 +151,7 @@ test_packages_locally_parallel () {
         if [ "$latest" = $quoted_package ]; then
             latest_reached=false
         fi
-        if [ "$latest_reached" = true]; then
+        if [ "$latest_reached" = true ]; then
             unquoted_package=${quoted_package//\"}
             echo "going to check $unquoted_package "
             # echo "source ~/poetry2nix-testing/script.sh; test_package $unquoted_package" >> ~/my_commands
