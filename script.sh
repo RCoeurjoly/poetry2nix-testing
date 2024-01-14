@@ -118,6 +118,8 @@ test_packages_locally_paralell () {
     # If no argument, parse big json
     if [ "$#" -eq 0 ]; then
         packages=$(cat top-pypi-packages-30-days.min.json | jq .rows[].project)
+    else
+        packages=$(cat $1 | jq .rows[].project)
     fi
 
     while getopts ":f:p:h" o; do
@@ -162,6 +164,7 @@ test_package() {
             echo Package $unquoted_package failed to install with nix develop
             echo $unquoted_package >> ~/nix_develop_fail
         fi
+        poetry remove $unquoted_package
     fi
 }
 
