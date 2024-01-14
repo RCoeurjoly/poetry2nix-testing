@@ -154,7 +154,7 @@ test_packages_locally_parallel () {
         fi
         if [ "$latest_reached" = true ]; then
             echo "going to check $unquoted_package "
-            # echo "source ~/poetry2nix-testing/script.sh; test_package $unquoted_package" >> ~/my_commands
+            echo "source ~/poetry2nix-testing/script.sh; test_package $unquoted_package" >> ~/my_commands
         else
             echo "$unquoted_package already analyzed"
         fi
