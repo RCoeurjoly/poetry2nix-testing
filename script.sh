@@ -146,6 +146,7 @@ test_packages_locally_parallel () {
         unquoted_package=${quoted_package//\"}
         echo "test_package $unquoted_package" >> ~/my_commands
     done
+    cat ~/my_commands | parallel
 }
 
 test_package() {
