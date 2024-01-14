@@ -141,6 +141,8 @@ test_packages_locally_parallel () {
 
     shift $((OPTIND-1))
     rm ~/my_commands
+    rm ~/nix_develop_fail
+    rm ~/poetry_add_fail
     rm -rf ~/poetry2nix-testing_*
     for quoted_package in $packages
     do
