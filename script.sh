@@ -140,7 +140,7 @@ test_packages_locally_parallel () {
     done
 
     shift $((OPTIND-1))
-
+    rm ~/my_commands
     for quoted_package in $packages
     do
         unquoted_package=${quoted_package//\"}
