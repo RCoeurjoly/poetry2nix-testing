@@ -141,6 +141,7 @@ test_packages_locally_parallel () {
 
     shift $((OPTIND-1))
     rm ~/my_commands
+    rm -rf ~/poetry2nix-testing_*
     for quoted_package in $packages
     do
         unquoted_package=${quoted_package//\"}
