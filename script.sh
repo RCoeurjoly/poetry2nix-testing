@@ -159,7 +159,7 @@ test_packages_locally_parallel () {
             echo "$unquoted_package already analyzed"
         fi
     done
-    # cat ~/my_commands | parallel
+    cat ~/my_commands | parallel
 }
 
 test_package() {
