@@ -149,7 +149,7 @@ test_packages_locally_parallel () {
     for quoted_package in $packages
     do
         if [ "$latest" = $quoted_package ]; then
-            latest_reached=false
+            latest_reached=true
         fi
         if [ "$latest_reached" = true ]; then
             unquoted_package=${quoted_package//\"}
