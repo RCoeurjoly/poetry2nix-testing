@@ -146,6 +146,7 @@ test_packages_locally_parallel () {
         unquoted_package=${quoted_package//\"}
         echo "test_package $unquoted_package" >> ~/my_commands
     done
+    source ~/poetry2nix-testing/script.sh
     cat ~/my_commands | parallel
 }
 
