@@ -165,6 +165,7 @@ test_package() {
             echo $unquoted_package >> ~/nix_develop_fail
         fi
         poetry remove $unquoted_package
+        nix-collect-garbage
     fi
 }
 
