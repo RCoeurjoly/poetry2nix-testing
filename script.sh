@@ -144,9 +144,8 @@ test_packages_locally_parallel () {
     for quoted_package in $packages
     do
         unquoted_package=${quoted_package//\"}
-        echo "test_package $unquoted_package" >> ~/my_commands
+        echo "source ~/poetry2nix-testing/script.sh; test_package $unquoted_package" >> ~/my_commands
     done
-    source ~/poetry2nix-testing/script.sh
     cat ~/my_commands | parallel
 }
 
