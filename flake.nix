@@ -25,7 +25,7 @@
 
         devShells.default = pkgs.mkShell {
           inputsFrom = [ self.packages.${system}.myapp ];
-          packages = [ pkgs.poetry pkgs.jq pkgs.parallel ];
+          packages = [ pkgs.poetry pkgs.jq pkgs.parallel pkgs.gnuplot ];
         };
       });
 }
