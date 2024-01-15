@@ -519,3 +519,17 @@ allianceauth-app-utils
 pillow-simd
 cyhunspell
 vowpalwabbit
+kivy-deps-glew
+deepctr
+turtle
+llama-hub
+langflow
+h2o-pysparkling-3-2
+ciphey
+allianceauth-discordbot
+splitio-client
+allianceauth-app-utils
+gpflow
+pillow-simd
+cyhunspell
+vowpalwabbit
