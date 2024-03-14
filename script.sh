@@ -259,6 +259,48 @@ create-error-file() {
     cd ../..
 }
 
+install_with_fixes() {
+    package=$1
+    max_attempts=5  # Set the maximum number of attempts here
+    attempt=1
+
+    while [ $attempt -le $max_attempts ]; do
+        create-error-file "$package"
+        result_file="fail_logs/$package/${package}.log"
+
+        if [ ! -f "$result_file" ]; then
+            echo "Package $package installed successfully."
+            return 0
+        else
+            error_content=$(cat "$result_file")
+            if [ -z "$error_content" ]; then
+                echo "No error detected, package $package installed successfully."
+                return 0
+            else
+                # Apply heuristic fix using the Python script
+                python fix_heuristic.py "$result_file"
+                fix_status=$?
+                new_error_content=$(cat "$result_file")
+
+                if [ $fix_status -ne 0 ]; then
+                    echo "Could not apply fix heuristic to package $package, exiting."
+                    return 1
+                elif [ "$error_content" = "$new_error_content" ]; then
+                    echo "The same error persists after applying fix heuristic to package $package, cannot fix."
+                    return 1
+                else
+                    echo "A different error was encountered after applying fix heuristic, attempting again."
+                fi
+            fi
+        fi
+
+        attempt=$((attempt + 1))
+    done
+
+    echo "Maximum attempts reached, package $package could not be installed."
+    return 1
+}
+
 add_package_to_uninstallable_list() {
     uninstallable_package=$1
     echo $uninstallable_package >> uninstallable_packages
