@@ -1,0 +1,11 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+trace: warning: Unknown cryptography version: '42.0.4'. Please update getCargoHash.
+building '/nix/store/pasqh1b7prhy1g0gfixvhrd6r670afhy-Office365-REST-Python-Client-2.5.5.tar.gz.drv'...
+building '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv'...
+error: hash mismatch in fixed-output derivation '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv':
+         specified: sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+            got:    sha256-qaXQiF1xZvv4sNIiR2cb5TfD7oNiYdvUwcm37nh2P2M=
+error: 1 dependencies of derivation '/nix/store/zajm4fzaz3y8ivx0bwywsw6n32x7m33x-python3.11-cryptography-42.0.4.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/zj4cgxb6yll74svx0kfb5fwwky1684mk-python3.11-msal-1.26.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/w2my15a4c06403g15lbmlq1yrz79g47l-python3.11-office365-rest-python-client-2.5.5.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/givvqh7c1hmfxy1xxqwpykbv8h08zvg7-nix-shell-env.drv' failed to build

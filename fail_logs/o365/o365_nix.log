@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/0ykqc28bnpg1y989izr52xkfi28l3pfi-O365-2.0.33.tar.gz.drv'...
+building '/nix/store/3ny8jxjpqnbyhg0r12dbhxjv0i7lghs0-python3.11-o365-2.0.33.drv'...
+error: builder for '/nix/store/3ny8jxjpqnbyhg0r12dbhxjv0i7lghs0-python3.11-o365-2.0.33.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/3ny8jxjpqnbyhg0r12dbhxjv0i7lghs0-python3.11-o365-2.0.33.drv'.
+error: 1 dependencies of derivation '/nix/store/s6cm2n67k9pmn9lzaijhi3l480vnmddv-nix-shell-env.drv' failed to build

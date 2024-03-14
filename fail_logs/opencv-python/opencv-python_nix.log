@@ -1,0 +1,16 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/lqfdyhq72j7b44jaq1clg33rzmvg8yr2-python3.11-opencv-python-4.9.0.80.drv'...
+error: builder for '/nix/store/lqfdyhq72j7b44jaq1clg33rzmvg8yr2-python3.11-opencv-python-4.9.0.80.drv' failed with exit code 1;
+       last 10 log lines:
+       >   ╰─> See above for output.
+       >
+       >   note: This error originates from a subprocess, and is likely not a problem with pip.
+       >   full command: /nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/bin/python3.11 /nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py build_wheel /build/tmp1nhisrjj
+       >   cwd: /build/opencv-python-4.9.0.80
+       >   Building wheel for opencv-python (pyproject.toml) ... error
+       >   ERROR: Failed building wheel for opencv-python
+       > Failed to build opencv-python
+       > ERROR: Failed to build one or more wheels
+       > 
+       For full logs, run 'nix log /nix/store/lqfdyhq72j7b44jaq1clg33rzmvg8yr2-python3.11-opencv-python-4.9.0.80.drv'.
+error: 1 dependencies of derivation '/nix/store/1vdsp8588d9nbydb2yyvmdl2w05yn6lg-nix-shell-env.drv' failed to build

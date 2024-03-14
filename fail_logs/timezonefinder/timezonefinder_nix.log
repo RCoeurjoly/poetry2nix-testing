@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/2fn62g2yz1pmfk977hzww6d5nkkaa8ka-python3.11-h3-3.7.6.drv'...
+error: builder for '/nix/store/2fn62g2yz1pmfk977hzww6d5nkkaa8ka-python3.11-h3-3.7.6.drv' failed with exit code 1;
+       last 10 log lines:
+       > Finished removing git dependencies
+       > Removing wheel-url dependencies
+       > Finished removing wheel-url dependencies
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > no configure script, doing nothing
+       > Running phase: buildPhase
+       > Executing pipBuildPhase
+       > substitute(): ERROR: file 'h3/h3.py' does not exist
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 131: pop_var_context: head of shell_variables not a function context
+       For full logs, run 'nix log /nix/store/2fn62g2yz1pmfk977hzww6d5nkkaa8ka-python3.11-h3-3.7.6.drv'.
+error: 1 dependencies of derivation '/nix/store/zzjf60m4646xw1kjqdlpl2qv87sm7lij-python3.11-timezonefinder-6.4.1.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/ci25nkb55fzrmrvx6ax9vr3fh0868l73-nix-shell-env.drv' failed to build

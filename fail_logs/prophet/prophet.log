@@ -1,0 +1,134 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing pypa-install-hook
+Using pypaInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing pip-build-hook
+Using pipBuildPhase
+Using pipShellHook
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+Running phase: unpackPhase
+unpacking source archive /nix/store/z6kcw10jha7qvmdlq63pv3mr64c678gg-pandas-2.2.0.tar.gz
+source root is pandas-2.2.0
+setting SOURCE_DATE_EPOCH to timestamp 1705699087 of file pandas-2.2.0/_version_meson.py
+@nix { "action": "setPhase", "phase": "patchPhase" }
+Running phase: patchPhase
+Removing path dependencies
+Finished removing path dependencies
+Removing git dependencies
+Finished removing git dependencies
+Removing wheel-url dependencies
+Finished removing wheel-url dependencies
+@nix { "action": "setPhase", "phase": "updateAutotoolsGnuConfigScriptsPhase" }
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+@nix { "action": "setPhase", "phase": "configurePhase" }
+Running phase: configurePhase
+no configure script, doing nothing
+@nix { "action": "setPhase", "phase": "buildPhase" }
+Running phase: buildPhase
+Executing pipBuildPhase
+Creating a wheel...
+[33mWARNING: The directory '/homeless-shelter/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.[0m[33m
+[0mProcessing /build/pandas-2.2.0
+  Running command Preparing metadata (pyproject.toml)
+  + meson setup /build/pandas-2.2.0 /build/pandas-2.2.0/.mesonpy-0vr6w8kw -Dbuildtype=release -Db_ndebug=if-release -Db_vscrt=md --vsenv --native-file=/build/pandas-2.2.0/.mesonpy-0vr6w8kw/meson-python-native-file.ini
+  The Meson build system
+  Version: 1.2.3
+  Source dir: /build/pandas-2.2.0
+  Build dir: /build/pandas-2.2.0/.mesonpy-0vr6w8kw
+  Build type: native build
+  Project name: pandas
+  Project version: 2.2.0
+  C compiler for the host machine: gcc (gcc 12.3.0 "gcc (GCC) 12.3.0")
+  C linker for the host machine: gcc ld.bfd 2.40
+  C++ compiler for the host machine: g++ (gcc 12.3.0 "g++ (GCC) 12.3.0")
+  C++ linker for the host machine: g++ ld.bfd 2.40
+  Cython compiler for the host machine: cython (cython 0.29.36)
+  Host machine cpu family: x86_64
+  Host machine cpu: x86_64
+  Program python found: YES (/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/bin/python3.11)
+  Found pkg-config: /nix/store/1nvm1a9a9mlwyy7d0hapkzchxgjgpw19-pkg-config-wrapper-0.29.2/bin/pkg-config (0.29.2)
+  Run-time dependency python found: YES 3.11
+  Build targets in project: 53
+
+  pandas 2.2.0
+
+    User defined options
+      Native files: /build/pandas-2.2.0/.mesonpy-0vr6w8kw/meson-python-native-file.ini
+      buildtype   : release
+      vsenv       : True
+      b_ndebug    : if-release
+      b_vscrt     : md
+
+  Found ninja-1.11.1 at /nix/store/7p8kahc23klw4lfx1d7i5gs2547mbcj5-ninja-1.11.1/bin/ninja
+
+  Visual Studio environment is needed to run Ninja. It is recommended to use Meson wrapper:
+  /nix/store/fgqh3lysicaayyp8ang26x7j90qxbg26-meson-1.2.3/bin/meson compile -C .
+  + /nix/store/7p8kahc23klw4lfx1d7i5gs2547mbcj5-ninja-1.11.1/bin/ninja
+  [1/151] Generating pandas/_libs/khash_primitive_helper_pxi with a custom command
+  [2/151] Generating pandas/__init__.py with a custom command
+  [3/151] Generating pandas/_libs/algos_common_helper_pxi with a custom command
+  [4/151] Generating pandas/_libs/index_class_helper_pxi with a custom command
+  [5/151] Generating pandas/_libs/hashtable_func_helper_pxi with a custom command
+  [6/151] Generating pandas/_libs/hashtable_class_helper_pxi with a custom command
+  [7/151] Generating pandas/_libs/algos_take_helper_pxi with a custom command
+  [8/151] Generating pandas/_libs/intervaltree_helper_pxi with a custom command
+  [9/151] Generating pandas/_libs/sparse_op_helper_pxi with a custom command
+  [10/151] Compiling Cython source /build/pandas-2.2.0/pandas/_libs/tslibs/base.pyx
+  [11/151] Compiling Cython source /build/pandas-2.2.0/pandas/_libs/tslibs/ccalendar.pyx
+  [12/151] Compiling Cython source /build/pandas-2.2.0/pandas/_libs/tslibs/dtypes.pyx
+  [13/151] Compiling Cython source /build/pandas-2.2.0/pandas/_libs/algos.pyx
+  FAILED: pandas/_libs/algos.cpython-311-x86_64-linux-gnu.so.p/pandas/_libs/algos.pyx.c
+  cython -M --fast-fail -3 --include-dir /build/pandas-2.2.0/.mesonpy-0vr6w8kw/pandas/_libs '-X always_allow_keywords=true' /build/pandas-2.2.0/pandas/_libs/algos.pyx -o pandas/_libs/algos.cpython-311-x86_64-linux-gnu.so.p/pandas/_libs/algos.pyx.c
+
+  Error compiling Cython file:
+  ------------------------------------------------------------
+  ...
+      # each incremental i value can be looked up in the lexsort_indexer
+      # array that we sorted previously, which gives us the location of
+      # that sorted value for retrieval back from the original
+      # values / masked_vals arrays
+      # TODO(cython3): de-duplicate once cython supports conditional nogil
+      with gil(numeric_object_t is object):
+             ^
+  ------------------------------------------------------------
+
+  /build/pandas-2.2.0/pandas/_libs/algos.pyx:1147:12: Expected ':', found '('
+  [14/151] Compiling C object pandas/_libs/tslibs/parsing.cpython-311-x86_64-linux-gnu.so.p/.._src_parser_tokenizer.c.o
+  [15/151] Compiling Cython source /build/pandas-2.2.0/pandas/_libs/tslibs/np_datetime.pyx
+  [16/151] Compiling C object pandas/_libs/tslibs/base.cpython-311-x86_64-linux-gnu.so.p/meson-generated_pandas__libs_tslibs_base.pyx.c.o
+  [17/151] Compiling Cython source /build/pandas-2.2.0/pandas/_libs/tslibs/nattype.pyx
+  [18/151] Compiling Cython source /build/pandas-2.2.0/pandas/_libs/tslibs/timedeltas.pyx
+  [19/151] Compiling Cython source /build/pandas-2.2.0/pandas/_libs/tslibs/tzconversion.pyx
+  [20/151] Compiling Cython source /build/pandas-2.2.0/pandas/_libs/tslibs/timezones.pyx
+  [21/151] Compiling Cython source /build/pandas-2.2.0/pandas/_libs/tslibs/vectorized.pyx
+  [22/151] Compiling C object pandas/_libs/tslibs/ccalendar.cpython-311-x86_64-linux-gnu.so.p/meson-generated_pandas__libs_tslibs_ccalendar.pyx.c.o
+  [23/151] Compiling Cython source /build/pandas-2.2.0/pandas/_libs/tslibs/parsing.pyx
+  [24/151] Compiling Cython source /build/pandas-2.2.0/pandas/_libs/tslibs/fields.pyx
+  [25/151] Compiling Cython source /build/pandas-2.2.0/pandas/_libs/tslibs/timestamps.pyx
+  [26/151] Compiling Cython source /build/pandas-2.2.0/pandas/_libs/tslibs/offsets.pyx
+  [27/151] Compiling Cython source /build/pandas-2.2.0/pandas/_libs/tslibs/strptime.pyx
+  [28/151] Compiling Cython source /build/pandas-2.2.0/pandas/_libs/tslibs/conversion.pyx
+  [29/151] Compiling Cython source /build/pandas-2.2.0/pandas/_libs/tslibs/period.pyx
+  [30/151] Compiling C object pandas/_libs/tslibs/dtypes.cpython-311-x86_64-linux-gnu.so.p/meson-generated_pandas__libs_tslibs_dtypes.pyx.c.o
+  ninja: build stopped: subcommand failed.
+  [1;31merror[0m: [1msubprocess-exited-with-error[0m
+  
+  [31m×[0m [32mPreparing metadata [0m[1;32m([0m[32mpyproject.toml[0m[1;32m)[0m did not run successfully.
+  [31m│[0m exit code: [1;36m1[0m
+  [31m╰─>[0m See above for output.
+  
+  [1;35mnote[0m: This error originates from a subprocess, and is likely not a problem with pip.
+  [1;35mfull command[0m: [34m/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/bin/python3.11 /nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py prepare_metadata_for_build_wheel /build/tmpt06jb8x2[0m
+  [1;35mcwd[0m: /build/pandas-2.2.0
+  Preparing metadata (pyproject.toml) ... [?25l[?25herror
+[1;31merror[0m: [1mmetadata-generation-failed[0m
+
+[31m×[0m Encountered error while generating package metadata.
+[31m╰─>[0m See above for output.
+
+[1;35mnote[0m: This is an issue with the package mentioned above, not pip.
+[1;36mhint[0m: See above for details.

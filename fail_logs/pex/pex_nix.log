@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/sim884f6mc7iif824kgmksn49akj0rlh-pex-2.2.1.tar.gz.drv'...
+building '/nix/store/74j26qxvldn95kgdqdjczwk91giz2038-python3.11-pex-2.2.1.drv'...
+error: builder for '/nix/store/74j26qxvldn95kgdqdjczwk91giz2038-python3.11-pex-2.2.1.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+       >   File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "/build/pex-2.2.1/build-backend/pex_build/hatchling/build.py", line 6, in <module>
+       >     import hatchling.build
+       > ModuleNotFoundError: No module named 'hatchling'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/74j26qxvldn95kgdqdjczwk91giz2038-python3.11-pex-2.2.1.drv'.
+error: 1 dependencies of derivation '/nix/store/pbpa11cca51gn3w603ky82jm82k8w3zp-nix-shell-env.drv' failed to build

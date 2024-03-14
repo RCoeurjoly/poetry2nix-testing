@@ -1,0 +1,19 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/crkrfz0hag8bcc06jhch7ca8vyc5gajp-google-api-python-client-2.118.0.tar.gz.drv'...
+building '/nix/store/wadyv10jw1v3qalmkcg4ppykz4pcw2mz-python3.11-google-auth-httplib2-0.2.0.drv'...
+building '/nix/store/rwqnj16vhfzs64xavx8hqapgck1ay5j3-python3.11-google-api-python-client-2.118.0.drv'...
+building '/nix/store/ys4gar77gj4y7v9s0ax3bamca2b84jwj-python3.11-pygsheets-2.0.6.drv'...
+error: builder for '/nix/store/ys4gar77gj4y7v9s0ax3bamca2b84jwj-python3.11-pygsheets-2.0.6.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/ys4gar77gj4y7v9s0ax3bamca2b84jwj-python3.11-pygsheets-2.0.6.drv'.
+error: 1 dependencies of derivation '/nix/store/xl7zcxz2gvkqf7wfy0jlx31li69avz4l-nix-shell-env.drv' failed to build

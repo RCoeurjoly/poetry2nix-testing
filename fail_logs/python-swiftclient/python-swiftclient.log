@@ -1,0 +1,242 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing pypa-install-hook
+Using pypaInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing pip-build-hook
+Using pipBuildPhase
+Using pipShellHook
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+Running phase: unpackPhase
+unpacking source archive /nix/store/653z8mzx0sw03wvysvkbf2qq3smxjllg-python-swiftclient-4.4.0.tar.gz
+source root is python-swiftclient-4.4.0
+setting SOURCE_DATE_EPOCH to timestamp 1693575555 of file python-swiftclient-4.4.0/setup.cfg
+@nix { "action": "setPhase", "phase": "patchPhase" }
+Running phase: patchPhase
+@nix { "action": "setPhase", "phase": "updateAutotoolsGnuConfigScriptsPhase" }
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+@nix { "action": "setPhase", "phase": "configurePhase" }
+Running phase: configurePhase
+no configure script, doing nothing
+@nix { "action": "setPhase", "phase": "buildPhase" }
+Running phase: buildPhase
+Executing pipBuildPhase
+Creating a wheel...
+[33mWARNING: The directory '/homeless-shelter/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.[0m[33m
+[0mProcessing /build/python-swiftclient-4.4.0
+  Running command python setup.py egg_info
+  /nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/__init__.py:80: _DeprecatedInstaller: setuptools.installer and fetch_build_eggs are deprecated.
+  !!
+
+          ********************************************************************************
+          Requirements should be satisfied by a PEP 517 installer.
+          If you are using pip, you can try `pip install --use-pep517`.
+          ********************************************************************************
+
+  !!
+    dist.fetch_build_eggs(dist.setup_requires)
+  /nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+  !!
+
+          ********************************************************************************
+          Please avoid running ``setup.py`` and ``easy_install``.
+          Instead, use pypa/build, pypa/installer or other
+          standards-based tools.
+
+          See https://github.com/pypa/setuptools/issues/917 for details.
+          ********************************************************************************
+
+  !!
+    easy_install.initialize_options(self)
+  /nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+  !!
+
+          ********************************************************************************
+          Please avoid running ``setup.py`` directly.
+          Instead, use pypa/build, pypa/installer or other
+          standards-based tools.
+
+          See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+          ********************************************************************************
+
+  !!
+    self.initialize_options()
+  running egg_info
+  creating /build/pip-pip-egg-info-2_zl6t2k/python_swiftclient.egg-info
+  writing /build/pip-pip-egg-info-2_zl6t2k/python_swiftclient.egg-info/PKG-INFO
+  writing dependency_links to /build/pip-pip-egg-info-2_zl6t2k/python_swiftclient.egg-info/dependency_links.txt
+  writing entry points to /build/pip-pip-egg-info-2_zl6t2k/python_swiftclient.egg-info/entry_points.txt
+  writing requirements to /build/pip-pip-egg-info-2_zl6t2k/python_swiftclient.egg-info/requires.txt
+  writing top-level names to /build/pip-pip-egg-info-2_zl6t2k/python_swiftclient.egg-info/top_level.txt
+  [pbr] Processing SOURCES.txt
+  writing manifest file '/build/pip-pip-egg-info-2_zl6t2k/python_swiftclient.egg-info/SOURCES.txt'
+  warning: no previously-included files found matching '.gitignore'
+  warning: no previously-included files found matching '.gitreview'
+  warning: no previously-included files matching '*.pyc' found anywhere in distribution
+  reading manifest template 'MANIFEST.in'
+  warning: no files found matching '*' under directory 'tests'
+  adding license file 'LICENSE'
+  adding license file 'AUTHORS'
+  writing manifest file '/build/pip-pip-egg-info-2_zl6t2k/python_swiftclient.egg-info/SOURCES.txt'
+  Preparing metadata (setup.py) ... [?25l[?25hdone
+Building wheels for collected packages: python-swiftclient
+  Running command python setup.py bdist_wheel
+  /nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/__init__.py:80: _DeprecatedInstaller: setuptools.installer and fetch_build_eggs are deprecated.
+  !!
+
+          ********************************************************************************
+          Requirements should be satisfied by a PEP 517 installer.
+          If you are using pip, you can try `pip install --use-pep517`.
+          ********************************************************************************
+
+  !!
+    dist.fetch_build_eggs(dist.setup_requires)
+  /nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+  !!
+
+          ********************************************************************************
+          Please avoid running ``setup.py`` and ``easy_install``.
+          Instead, use pypa/build, pypa/installer or other
+          standards-based tools.
+
+          See https://github.com/pypa/setuptools/issues/917 for details.
+          ********************************************************************************
+
+  !!
+    easy_install.initialize_options(self)
+  /nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+  !!
+
+          ********************************************************************************
+          Please avoid running ``setup.py`` directly.
+          Instead, use pypa/build, pypa/installer or other
+          standards-based tools.
+
+          See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+          ********************************************************************************
+
+  !!
+    self.initialize_options()
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib
+  creating build/lib/swiftclient
+  copying swiftclient/utils.py -> build/lib/swiftclient
+  copying swiftclient/requests_compat.py -> build/lib/swiftclient
+  copying swiftclient/__init__.py -> build/lib/swiftclient
+  copying swiftclient/multithreading.py -> build/lib/swiftclient
+  copying swiftclient/service.py -> build/lib/swiftclient
+  copying swiftclient/shell.py -> build/lib/swiftclient
+  copying swiftclient/authv1.py -> build/lib/swiftclient
+  copying swiftclient/client.py -> build/lib/swiftclient
+  copying swiftclient/version.py -> build/lib/swiftclient
+  copying swiftclient/command_helpers.py -> build/lib/swiftclient
+  copying swiftclient/exceptions.py -> build/lib/swiftclient
+  running egg_info
+  writing python_swiftclient.egg-info/PKG-INFO
+  writing dependency_links to python_swiftclient.egg-info/dependency_links.txt
+  writing entry points to python_swiftclient.egg-info/entry_points.txt
+  writing requirements to python_swiftclient.egg-info/requires.txt
+  writing top-level names to python_swiftclient.egg-info/top_level.txt
+  [pbr] Reusing existing SOURCES.txt
+  running build_scripts
+  creating build/scripts-3.11
+  copying and adjusting bin/swift -> build/scripts-3.11
+  changing mode of build/scripts-3.11/swift from 644 to 755
+  /nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+  !!
+
+          ********************************************************************************
+          Please avoid running ``setup.py`` directly.
+          Instead, use pypa/build, pypa/installer or other
+          standards-based tools.
+
+          See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+          ********************************************************************************
+
+  !!
+    self.initialize_options()
+  installing to build/bdist.linux-x86_64/wheel
+  running install
+  running install_lib
+  creating build/bdist.linux-x86_64
+  creating build/bdist.linux-x86_64/wheel
+  creating build/bdist.linux-x86_64/wheel/swiftclient
+  copying build/lib/swiftclient/utils.py -> build/bdist.linux-x86_64/wheel/swiftclient
+  copying build/lib/swiftclient/requests_compat.py -> build/bdist.linux-x86_64/wheel/swiftclient
+  copying build/lib/swiftclient/__init__.py -> build/bdist.linux-x86_64/wheel/swiftclient
+  copying build/lib/swiftclient/multithreading.py -> build/bdist.linux-x86_64/wheel/swiftclient
+  copying build/lib/swiftclient/service.py -> build/bdist.linux-x86_64/wheel/swiftclient
+  copying build/lib/swiftclient/shell.py -> build/bdist.linux-x86_64/wheel/swiftclient
+  copying build/lib/swiftclient/authv1.py -> build/bdist.linux-x86_64/wheel/swiftclient
+  copying build/lib/swiftclient/client.py -> build/bdist.linux-x86_64/wheel/swiftclient
+  copying build/lib/swiftclient/version.py -> build/bdist.linux-x86_64/wheel/swiftclient
+  copying build/lib/swiftclient/command_helpers.py -> build/bdist.linux-x86_64/wheel/swiftclient
+  copying build/lib/swiftclient/exceptions.py -> build/bdist.linux-x86_64/wheel/swiftclient
+  running install_data
+  creating build/bdist.linux-x86_64/wheel/python_swiftclient-4.4.0.data
+  creating build/bdist.linux-x86_64/wheel/python_swiftclient-4.4.0.data/data
+  creating build/bdist.linux-x86_64/wheel/python_swiftclient-4.4.0.data/data/share
+  creating build/bdist.linux-x86_64/wheel/python_swiftclient-4.4.0.data/data/share/man
+  creating build/bdist.linux-x86_64/wheel/python_swiftclient-4.4.0.data/data/share/man/man1
+  copying doc/manpages/swift.1 -> build/bdist.linux-x86_64/wheel/python_swiftclient-4.4.0.data/data/share/man/man1
+  running install_egg_info
+  Copying python_swiftclient.egg-info to build/bdist.linux-x86_64/wheel/python_swiftclient-4.4.0-py3.11.egg-info
+  running install_scripts
+  creating build/bdist.linux-x86_64/wheel/python_swiftclient-4.4.0.data/scripts
+  copying build/scripts-3.11/swift -> build/bdist.linux-x86_64/wheel/python_swiftclient-4.4.0.data/scripts
+  changing mode of build/bdist.linux-x86_64/wheel/python_swiftclient-4.4.0.data/scripts/swift to 755
+  creating build/bdist.linux-x86_64/wheel/python_swiftclient-4.4.0.dist-info/WHEEL
+  creating '/build/pip-wheel-uesqlu99/python_swiftclient-4.4.0-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+  adding 'python_swiftclient-4.4.0.data/data/share/man/man1/swift.1'
+  adding 'python_swiftclient-4.4.0.data/scripts/swift'
+  adding 'swiftclient/__init__.py'
+  adding 'swiftclient/authv1.py'
+  adding 'swiftclient/client.py'
+  adding 'swiftclient/command_helpers.py'
+  adding 'swiftclient/exceptions.py'
+  adding 'swiftclient/multithreading.py'
+  adding 'swiftclient/requests_compat.py'
+  adding 'swiftclient/service.py'
+  adding 'swiftclient/shell.py'
+  adding 'swiftclient/utils.py'
+  adding 'swiftclient/version.py'
+  adding 'python_swiftclient-4.4.0.dist-info/AUTHORS'
+  adding 'python_swiftclient-4.4.0.dist-info/LICENSE'
+  adding 'python_swiftclient-4.4.0.dist-info/METADATA'
+  adding 'python_swiftclient-4.4.0.dist-info/WHEEL'
+  adding 'python_swiftclient-4.4.0.dist-info/entry_points.txt'
+  adding 'python_swiftclient-4.4.0.dist-info/pbr.json'
+  adding 'python_swiftclient-4.4.0.dist-info/top_level.txt'
+  adding 'python_swiftclient-4.4.0.dist-info/RECORD'
+  removing build/bdist.linux-x86_64/wheel
+  Building wheel for python-swiftclient (setup.py) ... [?25l[?25hdone
+  Created wheel for python-swiftclient: filename=python_swiftclient-4.4.0-py3-none-any.whl size=88859 sha256=ffc3d298fc82c813e6e1522a292dd498cc5963c5211d1963ac69a1ee2ca77af5
+  Stored in directory: /build/pip-ephem-wheel-cache-cjh77i3g/wheels/18/f9/b2/2ee1dcd193d43cc95d901fd6746004a88eadc1dc0f119f83c2
+Successfully built python-swiftclient
+Finished creating a wheel...
+Finished executing pipBuildPhase
+@nix { "action": "setPhase", "phase": "installPhase" }
+Running phase: installPhase
+Executing pypaInstallPhase
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/nix/store/nsj26zvsn035psf7jqks9bcgnpk4x1q8-python3.11-installer-0.7.0/lib/python3.11/site-packages/installer/__main__.py", line 98, in <module>
+    _main(sys.argv[1:], "python -m installer")
+  File "/nix/store/nsj26zvsn035psf7jqks9bcgnpk4x1q8-python3.11-installer-0.7.0/lib/python3.11/site-packages/installer/__main__.py", line 94, in _main
+    installer.install(source, destination, {})
+  File "/nix/store/nsj26zvsn035psf7jqks9bcgnpk4x1q8-python3.11-installer-0.7.0/lib/python3.11/site-packages/installer/_core.py", line 109, in install
+    record = destination.write_file(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/nsj26zvsn035psf7jqks9bcgnpk4x1q8-python3.11-installer-0.7.0/lib/python3.11/site-packages/installer/destinations.py", line 203, in write_file
+    return self.write_to_fs(
+           ^^^^^^^^^^^^^^^^^
+  File "/nix/store/nsj26zvsn035psf7jqks9bcgnpk4x1q8-python3.11-installer-0.7.0/lib/python3.11/site-packages/installer/destinations.py", line 167, in write_to_fs
+    raise FileExistsError(message)
+FileExistsError: File already exists: /nix/store/vi4cayv1355kcrly2gqhhdxqvcr3g7q0-python3.11-python-swiftclient-4.4.0/bin/swift

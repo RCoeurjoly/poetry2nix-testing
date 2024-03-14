@@ -1,0 +1,19 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/8iif8p9j9xn928x21rn7n0nqlx1x81jd-sphinx_autodoc_typehints-2.0.0.tar.gz.drv'...
+building '/nix/store/j27iy8drkmj07j9shngh5s6x5kbzjkny-python3.11-alabaster-0.7.16.drv'...
+error: builder for '/nix/store/j27iy8drkmj07j9shngh5s6x5kbzjkny-python3.11-alabaster-0.7.16.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'flit_core'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/j27iy8drkmj07j9shngh5s6x5kbzjkny-python3.11-alabaster-0.7.16.drv'.
+error: 1 dependencies of derivation '/nix/store/ck6vj4ihiwm85iaizbgppi7bj5afn56n-python3.11-sphinx-7.2.6.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/2bw04d7j7lwn88rrcdksi0gdald95f6g-python3.11-sphinx-autodoc-typehints-2.0.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/srn8p2gc59bink2cdy6q9b41ggkn1rrd-nix-shell-env.drv' failed to build

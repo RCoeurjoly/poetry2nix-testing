@@ -1,0 +1,16 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/zx1ir6d8bfapdfxxmsxs6idliqaxdiah-python3.11-dotnetcore2-3.1.23.drv'...
+error: builder for '/nix/store/zx1ir6d8bfapdfxxmsxs6idliqaxdiah-python3.11-dotnetcore2-3.1.23.drv' failed with exit code 1;
+       last 10 log lines:
+       > setting RPATH to: /nix/store/dghjv6hfz0s0z4kffa5ahyw2mhp79215-gcc-12.3.0-lib/lib:/nix/store/l3lhzwrfgzncjj1z4wyq6kkrp6czx5qp-gcc-12.3.0-libgcc/lib
+       > auto-patchelf: 3 dependencies could not be satisfied
+       > error: auto-patchelf could not satisfy dependency libgssapi_krb5.so.2 wanted by /nix/store/s8cchph2qg0a3b4wcykqxkimswfs0y5n-python3.11-dotnetcore2-3.1.23/lib/python3.11/site-packages/dotnetcore2/bin/shared/Microsoft.NETCore.App/3.1.23/System.Net.Security.Native.so
+       > error: auto-patchelf could not satisfy dependency libcurl.so.4 wanted by /nix/store/s8cchph2qg0a3b4wcykqxkimswfs0y5n-python3.11-dotnetcore2-3.1.23/lib/python3.11/site-packages/dotnetcore2/bin/shared/Microsoft.NETCore.App/3.1.23/System.Net.Http.Native.so
+       > error: auto-patchelf could not satisfy dependency liblttng-ust.so.0 wanted by /nix/store/s8cchph2qg0a3b4wcykqxkimswfs0y5n-python3.11-dotnetcore2-3.1.23/lib/python3.11/site-packages/dotnetcore2/bin/shared/Microsoft.NETCore.App/3.1.23/libcoreclrtraceptprovider.so
+       > auto-patchelf failed to find all the required dependencies.
+       > Add the missing dependencies to --libs or use `--ignore-missing="foo.so.1 bar.so etc.so"`.
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 74: pop_var_context: head of shell_variables not a function context
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 1450: pop_var_context: head of shell_variables not a function context
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 1553: pop_var_context: head of shell_variables not a function context
+       For full logs, run 'nix log /nix/store/zx1ir6d8bfapdfxxmsxs6idliqaxdiah-python3.11-dotnetcore2-3.1.23.drv'.
+error: 1 dependencies of derivation '/nix/store/jkkzgbz9pv2l207vpgyzc51b4vjwdk3m-nix-shell-env.drv' failed to build

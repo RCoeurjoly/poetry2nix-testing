@@ -1,0 +1,265 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing pypa-install-hook
+Using pypaInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing pip-build-hook
+Using pipBuildPhase
+Using pipShellHook
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+Running phase: unpackPhase
+unpacking source archive /nix/store/m64iiw2q1gs9vm2hks2jy4hjrchrjxlw-aiokafka-0.10.0.tar.gz
+source root is aiokafka-0.10.0
+setting SOURCE_DATE_EPOCH to timestamp 1702622534 of file aiokafka-0.10.0/setup.cfg
+@nix { "action": "setPhase", "phase": "patchPhase" }
+Running phase: patchPhase
+Removing path dependencies
+Finished removing path dependencies
+Removing git dependencies
+Finished removing git dependencies
+Removing wheel-url dependencies
+Finished removing wheel-url dependencies
+@nix { "action": "setPhase", "phase": "updateAutotoolsGnuConfigScriptsPhase" }
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+@nix { "action": "setPhase", "phase": "configurePhase" }
+Running phase: configurePhase
+no configure script, doing nothing
+@nix { "action": "setPhase", "phase": "buildPhase" }
+Running phase: buildPhase
+Executing pipBuildPhase
+Creating a wheel...
+[33mWARNING: The directory '/homeless-shelter/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.[0m[33m
+[0mProcessing /build/aiokafka-0.10.0
+  Running command Preparing metadata (pyproject.toml)
+  running dist_info
+  creating /build/pip-modern-metadata-lz7b7vmb/aiokafka.egg-info
+  writing /build/pip-modern-metadata-lz7b7vmb/aiokafka.egg-info/PKG-INFO
+  writing dependency_links to /build/pip-modern-metadata-lz7b7vmb/aiokafka.egg-info/dependency_links.txt
+  writing requirements to /build/pip-modern-metadata-lz7b7vmb/aiokafka.egg-info/requires.txt
+  writing top-level names to /build/pip-modern-metadata-lz7b7vmb/aiokafka.egg-info/top_level.txt
+  writing manifest file '/build/pip-modern-metadata-lz7b7vmb/aiokafka.egg-info/SOURCES.txt'
+  reading manifest file '/build/pip-modern-metadata-lz7b7vmb/aiokafka.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  warning: no previously-included files matching '*.pyc' found anywhere in distribution
+  warning: no previously-included files matching '*.so' found anywhere in distribution
+  warning: no previously-included files found matching 'tests/**'
+  adding license file 'LICENSE'
+  writing manifest file '/build/pip-modern-metadata-lz7b7vmb/aiokafka.egg-info/SOURCES.txt'
+  creating '/build/pip-modern-metadata-lz7b7vmb/aiokafka-0.10.0.dist-info'
+  Preparing metadata (pyproject.toml) ... [?25l[?25hdone
+Building wheels for collected packages: aiokafka
+  Running command Building wheel for aiokafka (pyproject.toml)
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux-x86_64-cpython-311
+  creating build/lib.linux-x86_64-cpython-311/aiokafka
+  copying aiokafka/partitioner.py -> build/lib.linux-x86_64-cpython-311/aiokafka
+  copying aiokafka/__init__.py -> build/lib.linux-x86_64-cpython-311/aiokafka
+  copying aiokafka/abc.py -> build/lib.linux-x86_64-cpython-311/aiokafka
+  copying aiokafka/codec.py -> build/lib.linux-x86_64-cpython-311/aiokafka
+  copying aiokafka/helpers.py -> build/lib.linux-x86_64-cpython-311/aiokafka
+  copying aiokafka/structs.py -> build/lib.linux-x86_64-cpython-311/aiokafka
+  copying aiokafka/util.py -> build/lib.linux-x86_64-cpython-311/aiokafka
+  copying aiokafka/cluster.py -> build/lib.linux-x86_64-cpython-311/aiokafka
+  copying aiokafka/client.py -> build/lib.linux-x86_64-cpython-311/aiokafka
+  copying aiokafka/conn.py -> build/lib.linux-x86_64-cpython-311/aiokafka
+  copying aiokafka/errors.py -> build/lib.linux-x86_64-cpython-311/aiokafka
+  creating build/lib.linux-x86_64-cpython-311/aiokafka/record
+  copying aiokafka/record/__init__.py -> build/lib.linux-x86_64-cpython-311/aiokafka/record
+  copying aiokafka/record/control_record.py -> build/lib.linux-x86_64-cpython-311/aiokafka/record
+  copying aiokafka/record/memory_records.py -> build/lib.linux-x86_64-cpython-311/aiokafka/record
+  copying aiokafka/record/legacy_records.py -> build/lib.linux-x86_64-cpython-311/aiokafka/record
+  copying aiokafka/record/util.py -> build/lib.linux-x86_64-cpython-311/aiokafka/record
+  copying aiokafka/record/default_records.py -> build/lib.linux-x86_64-cpython-311/aiokafka/record
+  copying aiokafka/record/_crc32c.py -> build/lib.linux-x86_64-cpython-311/aiokafka/record
+  creating build/lib.linux-x86_64-cpython-311/aiokafka/coordinator
+  copying aiokafka/coordinator/__init__.py -> build/lib.linux-x86_64-cpython-311/aiokafka/coordinator
+  copying aiokafka/coordinator/protocol.py -> build/lib.linux-x86_64-cpython-311/aiokafka/coordinator
+  creating build/lib.linux-x86_64-cpython-311/aiokafka/admin
+  copying aiokafka/admin/__init__.py -> build/lib.linux-x86_64-cpython-311/aiokafka/admin
+  copying aiokafka/admin/new_topic.py -> build/lib.linux-x86_64-cpython-311/aiokafka/admin
+  copying aiokafka/admin/client.py -> build/lib.linux-x86_64-cpython-311/aiokafka/admin
+  copying aiokafka/admin/new_partitions.py -> build/lib.linux-x86_64-cpython-311/aiokafka/admin
+  copying aiokafka/admin/config_resource.py -> build/lib.linux-x86_64-cpython-311/aiokafka/admin
+  creating build/lib.linux-x86_64-cpython-311/aiokafka/protocol
+  copying aiokafka/protocol/admin.py -> build/lib.linux-x86_64-cpython-311/aiokafka/protocol
+  copying aiokafka/protocol/__init__.py -> build/lib.linux-x86_64-cpython-311/aiokafka/protocol
+  copying aiokafka/protocol/types.py -> build/lib.linux-x86_64-cpython-311/aiokafka/protocol
+  copying aiokafka/protocol/offset.py -> build/lib.linux-x86_64-cpython-311/aiokafka/protocol
+  copying aiokafka/protocol/api.py -> build/lib.linux-x86_64-cpython-311/aiokafka/protocol
+  copying aiokafka/protocol/coordination.py -> build/lib.linux-x86_64-cpython-311/aiokafka/protocol
+  copying aiokafka/protocol/commit.py -> build/lib.linux-x86_64-cpython-311/aiokafka/protocol
+  copying aiokafka/protocol/abstract.py -> build/lib.linux-x86_64-cpython-311/aiokafka/protocol
+  copying aiokafka/protocol/metadata.py -> build/lib.linux-x86_64-cpython-311/aiokafka/protocol
+  copying aiokafka/protocol/transaction.py -> build/lib.linux-x86_64-cpython-311/aiokafka/protocol
+  copying aiokafka/protocol/group.py -> build/lib.linux-x86_64-cpython-311/aiokafka/protocol
+  copying aiokafka/protocol/fetch.py -> build/lib.linux-x86_64-cpython-311/aiokafka/protocol
+  copying aiokafka/protocol/produce.py -> build/lib.linux-x86_64-cpython-311/aiokafka/protocol
+  copying aiokafka/protocol/message.py -> build/lib.linux-x86_64-cpython-311/aiokafka/protocol
+  copying aiokafka/protocol/struct.py -> build/lib.linux-x86_64-cpython-311/aiokafka/protocol
+  creating build/lib.linux-x86_64-cpython-311/aiokafka/consumer
+  copying aiokafka/consumer/__init__.py -> build/lib.linux-x86_64-cpython-311/aiokafka/consumer
+  copying aiokafka/consumer/subscription_state.py -> build/lib.linux-x86_64-cpython-311/aiokafka/consumer
+  copying aiokafka/consumer/group_coordinator.py -> build/lib.linux-x86_64-cpython-311/aiokafka/consumer
+  copying aiokafka/consumer/consumer.py -> build/lib.linux-x86_64-cpython-311/aiokafka/consumer
+  copying aiokafka/consumer/fetcher.py -> build/lib.linux-x86_64-cpython-311/aiokafka/consumer
+  creating build/lib.linux-x86_64-cpython-311/aiokafka/producer
+  copying aiokafka/producer/sender.py -> build/lib.linux-x86_64-cpython-311/aiokafka/producer
+  copying aiokafka/producer/__init__.py -> build/lib.linux-x86_64-cpython-311/aiokafka/producer
+  copying aiokafka/producer/transaction_manager.py -> build/lib.linux-x86_64-cpython-311/aiokafka/producer
+  copying aiokafka/producer/producer.py -> build/lib.linux-x86_64-cpython-311/aiokafka/producer
+  copying aiokafka/producer/message_accumulator.py -> build/lib.linux-x86_64-cpython-311/aiokafka/producer
+  creating build/lib.linux-x86_64-cpython-311/aiokafka/metrics
+  copying aiokafka/metrics/__init__.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics
+  copying aiokafka/metrics/metrics.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics
+  copying aiokafka/metrics/kafka_metric.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics
+  copying aiokafka/metrics/metric_config.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics
+  copying aiokafka/metrics/stat.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics
+  copying aiokafka/metrics/dict_reporter.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics
+  copying aiokafka/metrics/quota.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics
+  copying aiokafka/metrics/measurable.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics
+  copying aiokafka/metrics/measurable_stat.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics
+  copying aiokafka/metrics/compound_stat.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics
+  copying aiokafka/metrics/metric_name.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics
+  copying aiokafka/metrics/metrics_reporter.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics
+  creating build/lib.linux-x86_64-cpython-311/aiokafka/record/_crecords
+  copying aiokafka/record/_crecords/__init__.py -> build/lib.linux-x86_64-cpython-311/aiokafka/record/_crecords
+  creating build/lib.linux-x86_64-cpython-311/aiokafka/coordinator/assignors
+  copying aiokafka/coordinator/assignors/roundrobin.py -> build/lib.linux-x86_64-cpython-311/aiokafka/coordinator/assignors
+  copying aiokafka/coordinator/assignors/__init__.py -> build/lib.linux-x86_64-cpython-311/aiokafka/coordinator/assignors
+  copying aiokafka/coordinator/assignors/abstract.py -> build/lib.linux-x86_64-cpython-311/aiokafka/coordinator/assignors
+  copying aiokafka/coordinator/assignors/range.py -> build/lib.linux-x86_64-cpython-311/aiokafka/coordinator/assignors
+  creating build/lib.linux-x86_64-cpython-311/aiokafka/coordinator/assignors/sticky
+  copying aiokafka/coordinator/assignors/sticky/__init__.py -> build/lib.linux-x86_64-cpython-311/aiokafka/coordinator/assignors/sticky
+  copying aiokafka/coordinator/assignors/sticky/sticky_assignor.py -> build/lib.linux-x86_64-cpython-311/aiokafka/coordinator/assignors/sticky
+  copying aiokafka/coordinator/assignors/sticky/partition_movements.py -> build/lib.linux-x86_64-cpython-311/aiokafka/coordinator/assignors/sticky
+  copying aiokafka/coordinator/assignors/sticky/sorted_set.py -> build/lib.linux-x86_64-cpython-311/aiokafka/coordinator/assignors/sticky
+  creating build/lib.linux-x86_64-cpython-311/aiokafka/metrics/stats
+  copying aiokafka/metrics/stats/__init__.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics/stats
+  copying aiokafka/metrics/stats/min_stat.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics/stats
+  copying aiokafka/metrics/stats/sampled_stat.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics/stats
+  copying aiokafka/metrics/stats/total.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics/stats
+  copying aiokafka/metrics/stats/count.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics/stats
+  copying aiokafka/metrics/stats/sensor.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics/stats
+  copying aiokafka/metrics/stats/max_stat.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics/stats
+  copying aiokafka/metrics/stats/rate.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics/stats
+  copying aiokafka/metrics/stats/percentiles.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics/stats
+  copying aiokafka/metrics/stats/avg.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics/stats
+  copying aiokafka/metrics/stats/histogram.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics/stats
+  copying aiokafka/metrics/stats/percentile.py -> build/lib.linux-x86_64-cpython-311/aiokafka/metrics/stats
+  running build_ext
+  building 'aiokafka.record._crecords.legacy_records' extension
+  creating build/temp.linux-x86_64-cpython-311
+  creating build/temp.linux-x86_64-cpython-311/aiokafka
+  creating build/temp.linux-x86_64-cpython-311/aiokafka/record
+  creating build/temp.linux-x86_64-cpython-311/aiokafka/record/_crecords
+  gcc -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -I/nix/store/jh2dj172jmmlw74kw4bsqa5ycf1blv4v-libxcrypt-4.4.36/include -fPIC -I/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/include/python3.11 -c aiokafka/record/_crecords/legacy_records.c -o build/temp.linux-x86_64-cpython-311/aiokafka/record/_crecords/legacy_records.o -O2 -Wall -Wsign-compare -Wconversion
+  aiokafka/record/_crecords/legacy_records.c:1236:10: fatal error: zlib.h: No such file or directory
+   1236 | #include "zlib.h"
+        |          ^~~~~~~~
+  compilation terminated.
+  Traceback (most recent call last):
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/unixccompiler.py", line 193, in _compile
+      self.spawn(compiler_so + cc_args + [src, '-o', obj] + extra_postargs)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/ccompiler.py", line 1041, in spawn
+      spawn(cmd, dry_run=self.dry_run, **kwargs)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/spawn.py", line 70, in spawn
+      raise DistutilsExecError(
+  distutils.errors.DistutilsExecError: command '/nix/store/sfgnb6rr428bssyrs54d6d0vv2avi95c-gcc-wrapper-12.3.0/bin/gcc' failed with exit code 1
+
+  During handling of the above exception, another exception occurred:
+
+  Traceback (most recent call last):
+    File "<string>", line 80, in build_extension
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/command/build_ext.py", line 249, in build_extension
+      _build_ext.build_extension(self, ext)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/command/build_ext.py", line 548, in build_extension
+      objects = self.compiler.compile(
+                ^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/ccompiler.py", line 600, in compile
+      self._compile(obj, src, ext, cc_args, extra_postargs, pp_opts)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/unixccompiler.py", line 195, in _compile
+      raise CompileError(msg)
+  distutils.errors.CompileError: command '/nix/store/sfgnb6rr428bssyrs54d6d0vv2avi95c-gcc-wrapper-12.3.0/bin/gcc' failed with exit code 1
+
+  During handling of the above exception, another exception occurred:
+
+  Traceback (most recent call last):
+    File "/nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 353, in <module>
+      main()
+    File "/nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 335, in main
+      json_out['return_val'] = hook(**hook_input['kwargs'])
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 251, in build_wheel
+      return _build_backend().build_wheel(wheel_directory, config_settings,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/build_meta.py", line 434, in build_wheel
+      return self._build_with_temp_dir(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/build_meta.py", line 419, in _build_with_temp_dir
+      self.run_setup()
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/build_meta.py", line 507, in run_setup
+      super(_BuildMetaLegacyBackend, self).run_setup(setup_script=setup_script)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/build_meta.py", line 341, in run_setup
+      exec(code, locals())
+    File "<string>", line 85, in <module>
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/__init__.py", line 103, in setup
+      return distutils.core.setup(**attrs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/core.py", line 185, in setup
+      return run_commands(dist)
+             ^^^^^^^^^^^^^^^^^^
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/core.py", line 201, in run_commands
+      dist.run_commands()
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/dist.py", line 969, in run_commands
+      self.run_command(cmd)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/dist.py", line 989, in run_command
+      super().run_command(command)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+      cmd_obj.run()
+    File "/nix/store/xyybi21di6ab74k3xzf1hiv7f2m80cah-python3.11-wheel-0.41.1/lib/python3.11/site-packages/wheel/bdist_wheel.py", line 349, in run
+      self.run_command("build")
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/cmd.py", line 318, in run_command
+      self.distribution.run_command(command)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/dist.py", line 989, in run_command
+      super().run_command(command)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+      cmd_obj.run()
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/command/build.py", line 131, in run
+      self.run_command(cmd_name)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/cmd.py", line 318, in run_command
+      self.distribution.run_command(command)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/dist.py", line 989, in run_command
+      super().run_command(command)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+      cmd_obj.run()
+    File "<string>", line 74, in run
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/command/build_ext.py", line 88, in run
+      _build_ext.run(self)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/command/build_ext.py", line 345, in run
+      self.build_extensions()
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/command/build_ext.py", line 467, in build_extensions
+      self._build_extensions_serial()
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/command/build_ext.py", line 493, in _build_extensions_serial
+      self.build_extension(ext)
+    File "<string>", line 82, in build_extension
+  BuildFailed
+  [1;31merror[0m: [1msubprocess-exited-with-error[0m
+  
+  [31m×[0m [32mBuilding wheel for aiokafka [0m[1;32m([0m[32mpyproject.toml[0m[1;32m)[0m did not run successfully.
+  [31m│[0m exit code: [1;36m1[0m
+  [31m╰─>[0m See above for output.
+  
+  [1;35mnote[0m: This error originates from a subprocess, and is likely not a problem with pip.
+  [1;35mfull command[0m: [34m/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/bin/python3.11 /nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py build_wheel /build/tmp6w2omk93[0m
+  [1;35mcwd[0m: /build/aiokafka-0.10.0
+  Building wheel for aiokafka (pyproject.toml) ... [?25l[?25herror
+[31m  ERROR: Failed building wheel for aiokafka[0m[31m
+[0mFailed to build aiokafka
+[31mERROR: Failed to build one or more wheels[0m[31m
+[0m

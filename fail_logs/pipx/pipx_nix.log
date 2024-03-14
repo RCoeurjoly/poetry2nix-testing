@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/x2vya7gfgcai13x8iqzf67xf79dikwaw-pipx-1.4.3.tar.gz.drv'...
+building '/nix/store/shjbqgk206m1cfhm9ira2mqclc233sgj-python3.11-pipx-1.4.3.drv'...
+error: builder for '/nix/store/shjbqgk206m1cfhm9ira2mqclc233sgj-python3.11-pipx-1.4.3.drv' failed with exit code 1;
+       last 10 log lines:
+       >   full command: /nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/bin/python3.11 /nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py prepare_metadata_for_build_wheel /build/tmpfhkwi0k0
+       >   cwd: /build/pipx-1.4.3
+       >   Preparing metadata (pyproject.toml) ... error
+       > error: metadata-generation-failed
+       >
+       > × Encountered error while generating package metadata.
+       > ╰─> See above for output.
+       >
+       > note: This is an issue with the package mentioned above, not pip.
+       > hint: See above for details.
+       For full logs, run 'nix log /nix/store/shjbqgk206m1cfhm9ira2mqclc233sgj-python3.11-pipx-1.4.3.drv'.
+error: 1 dependencies of derivation '/nix/store/0bwsz8r0qrjwarvs0dlhhg89301lyika-nix-shell-env.drv' failed to build

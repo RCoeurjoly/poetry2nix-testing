@@ -1,0 +1,20 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing pypa-install-hook
+Using pypaInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing pip-build-hook
+Using pipBuildPhase
+Using pipShellHook
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+Running phase: unpackPhase
+unpacking source archive /nix/store/c6y6w6vwbzkkm3k17yq91yy76p07n56l-pyee-11.0.1.tar.gz
+source root is pyee-11.0.1
+setting SOURCE_DATE_EPOCH to timestamp 1697305791 of file pyee-11.0.1/setup.cfg
+@nix { "action": "setPhase", "phase": "patchPhase" }
+Running phase: patchPhase
+sed: can't read setup.py: No such file or directory
+/nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 131: pop_var_context: head of shell_variables not a function context

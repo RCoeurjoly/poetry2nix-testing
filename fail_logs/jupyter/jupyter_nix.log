@@ -1,0 +1,21 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+trace: warning: Unknown rpds-py version: '0.18.0'. Please update getCargoHash.
+building '/nix/store/m417xq8j3xlc9si7083w6jfs984lhc78-python3.11-jupyter-console-6.6.3.drv'...
+building '/nix/store/ars7fa44h1ml6z3dp01vyyikaivyxbdb-python3.11-jupyterlab-widgets-3.0.10.drv'...
+warning: error: SQLite database '/nix/var/nix/db/db.sqlite' is busy
+building '/nix/store/jv5vcss63bbyy4d7fi6igmvv7zd9p4b0-python3.11-qtconsole-5.5.1.drv'...
+building '/nix/store/w793dl5mnh9fd4h48jkharhih235b0dp-python3.11-widgetsnbextension-4.0.10.drv'...
+building '/nix/store/3wvdgqhmgbmpqq4v8z0gh4a8bkw6hnkx-rpds-py-0.18.0-vendor.tar.gz.drv'...
+error: hash mismatch in fixed-output derivation '/nix/store/3wvdgqhmgbmpqq4v8z0gh4a8bkw6hnkx-rpds-py-0.18.0-vendor.tar.gz.drv':
+         specified: sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+            got:    sha256-wd1teRDhjQWlKjFIahURj0iwcfkpyUvqIWXXscW7eek=
+error: 1 dependencies of derivation '/nix/store/1jscmsmv2qhl346y6z4c9bkny7x74lyy-python3.11-rpds-py-0.18.0.drv' failed to build
+building '/nix/store/617gb4xz35piphx8y0kh5i9wgdvskcbb-python3.11-ipywidgets-8.1.2.drv'...
+error: 1 dependencies of derivation '/nix/store/2al6xasbadg211zzn75dilc8q1qf98z1-python3.11-jsonschema-4.21.1.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/d085pg6kc59mvh116nln6gjnm44axsj6-python3.11-referencing-0.33.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/f1cbl72x3lxdbqnxhkn0yxkwrp6h7haa-python3.11-jupyter-events-0.9.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/lrc9cy4cpqbxjbvydx9q2yx3wmra4alb-python3.11-jupyterlab-server-2.25.3.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/9gvh6vjg0m50xcgxfw5rdmhf57hdyshm-python3.11-nbformat-5.9.2.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/dj29zkqn1nf0b481lg476npj2apm7cfy-python3.11-nbconvert-7.16.1.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/7p3wx34ia8k9dfri9sbqb5xnh19srbhd-python3.11-jupyter-1.0.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/y5nnpz7ksphdmpc5j51ljknr84r9bkzi-nix-shell-env.drv' failed to build

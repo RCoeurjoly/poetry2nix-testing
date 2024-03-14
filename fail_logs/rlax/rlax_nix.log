@@ -1,0 +1,19 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/z1x9vmr63sncl2fay55szkbsc2wr7qpy-python3.11-dm-tree-0.1.8.drv'...
+error: builder for '/nix/store/z1x9vmr63sncl2fay55szkbsc2wr7qpy-python3.11-dm-tree-0.1.8.drv' failed with exit code 1;
+       last 10 log lines:
+       >   Running setup.py clean for dm-tree
+       >   Running command python setup.py clean
+       >   running clean
+       >   removing 'build/lib.linux-x86_64-cpython-311' (and everything under it)
+       >   'build/bdist.linux-x86_64' does not exist -- can't clean it
+       >   'build/scripts-3.11' does not exist -- can't clean it
+       >   removing 'build'
+       > Failed to build dm-tree
+       > ERROR: Failed to build one or more wheels
+       > 
+       For full logs, run 'nix log /nix/store/z1x9vmr63sncl2fay55szkbsc2wr7qpy-python3.11-dm-tree-0.1.8.drv'.
+error: 1 dependencies of derivation '/nix/store/jmrpcpbyknyhsym0h5f79hcyrz7qnhrl-python3.11-dm-env-1.6.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/w6wsm9951qmkim5klyi54s0bppzqv7h9-python3.11-tensorflow-probability-0.23.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/mmf7h3qbr8zikq96ipqkayjr9a85gzd5-python3.11-rlax-0.1.6.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/hq2x6sv75nnknvnr5q0b6hz112gzhs6h-nix-shell-env.drv' failed to build

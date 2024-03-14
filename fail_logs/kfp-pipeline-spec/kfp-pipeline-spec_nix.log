@@ -1,0 +1,4 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/q5zqc1nb8m1zq35lvpydnb7nhafkxgha-nix-shell-env.drv'...
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+Nix develop environment ready

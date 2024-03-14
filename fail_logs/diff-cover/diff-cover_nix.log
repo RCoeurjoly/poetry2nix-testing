@@ -1,0 +1,19 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+copying path '/nix/store/w1j205asg9i0y897191byw19qy5dqria-diff_cover-8.0.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/mgvzr54dl5rmil5gr9x55hvgrxgz551s-python3.11-pygments-2.17.2.drv'...
+warning: error: SQLite database '/nix/var/nix/db/db.sqlite' is busy
+building '/nix/store/9s86wv4h41l3afaxgld8j0l6l6p1z0xx-python3.11-diff-cover-8.0.3.drv'...
+error: builder for '/nix/store/9s86wv4h41l3afaxgld8j0l6l6p1z0xx-python3.11-diff-cover-8.0.3.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'poetry'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/9s86wv4h41l3afaxgld8j0l6l6p1z0xx-python3.11-diff-cover-8.0.3.drv'.
+error: 1 dependencies of derivation '/nix/store/rj8v2y76lqg256jk24xfpganwiz5nlgn-nix-shell-env.drv' failed to build

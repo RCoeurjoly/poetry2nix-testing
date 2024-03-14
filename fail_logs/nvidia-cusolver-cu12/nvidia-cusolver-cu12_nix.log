@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/g6kz3yygvid27isj9cm255zhpagzgsaw-python3.11-nvidia-cusparse-cu12-12.2.0.103.drv'...
+error: builder for '/nix/store/g6kz3yygvid27isj9cm255zhpagzgsaw-python3.11-nvidia-cusparse-cu12-12.2.0.103.drv' failed with exit code 1;
+       last 10 log lines:
+       >     libnvJitLink.so.12 -> not found!
+       >     libgcc_s.so.1 -> found: /nix/store/l3lhzwrfgzncjj1z4wyq6kkrp6czx5qp-gcc-12.3.0-libgcc/lib
+       > setting RPATH to: /nix/store/l3lhzwrfgzncjj1z4wyq6kkrp6czx5qp-gcc-12.3.0-libgcc/lib
+       > auto-patchelf: 1 dependencies could not be satisfied
+       > error: auto-patchelf could not satisfy dependency libnvJitLink.so.12 wanted by /nix/store/xpks6gzm0rc1bbri3mny5wzg2mapgyfr-python3.11-nvidia-cusparse-cu12-12.2.0.103/lib/python3.11/site-packages/nvidia/cusparse/lib/libcusparse.so.12
+       > auto-patchelf failed to find all the required dependencies.
+       > Add the missing dependencies to --libs or use `--ignore-missing="foo.so.1 bar.so etc.so"`.
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 74: pop_var_context: head of shell_variables not a function context
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 1450: pop_var_context: head of shell_variables not a function context
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 1553: pop_var_context: head of shell_variables not a function context
+       For full logs, run 'nix log /nix/store/g6kz3yygvid27isj9cm255zhpagzgsaw-python3.11-nvidia-cusparse-cu12-12.2.0.103.drv'.
+error: 1 dependencies of derivation '/nix/store/ymh5v11pzrq36sv50lr8ky9abd1ky9ck-python3.11-nvidia-cusolver-cu12-11.5.4.101.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/dvnaqpcqvzjgcddmwhxv98qklviivwl4-nix-shell-env.drv' failed to build

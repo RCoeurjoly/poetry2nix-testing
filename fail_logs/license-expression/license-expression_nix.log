@@ -1,0 +1,16 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/90zl2cvkfcx1dxniyzjkv801bn646il6-python3.11-license-expression-30.2.0.drv'...
+error: builder for '/nix/store/90zl2cvkfcx1dxniyzjkv801bn646il6-python3.11-license-expression-30.2.0.drv' failed with exit code 127;
+       last 10 log lines:
+       > Removing git dependencies
+       > Finished removing git dependencies
+       > Removing wheel-url dependencies
+       > Finished removing wheel-url dependencies
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > patching script interpreter paths in ./configure
+       > ./configure: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/q8qq40xg2grfh9ry1d9x4g7lq4ra7n81-bash-5.2-p21/bin/bash"
+       > configure flags: --prefix=/nix/store/v8k6nzf0hgc26mchvmbchf9jwg6g8pfk-python3.11-license-expression-30.2.0
+       > ./configure: line 110: curl: command not found
+       For full logs, run 'nix log /nix/store/90zl2cvkfcx1dxniyzjkv801bn646il6-python3.11-license-expression-30.2.0.drv'.
+error: 1 dependencies of derivation '/nix/store/wpvp78bc4gjmsby8lj712gqr4s1hvhq7-nix-shell-env.drv' failed to build

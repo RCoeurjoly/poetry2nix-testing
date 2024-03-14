@@ -1,0 +1,23 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/ds8ngl7di0ccb93x9k5nwpqi6ryvkrnv-python3.11-requests-oauthlib-1.3.1.drv'...
+building '/nix/store/5q490kmz210lh27a9z7fdplx05nr4sry-python3.11-requests-toolbelt-1.0.0.drv'...
+building '/nix/store/s8i4f8mkkik3z27glba00w6rlwsv4980-python3.11-sphinx-7.2.6.drv'...
+building '/nix/store/a84cmdbixl66fpwaabpv00824rf91srs-python3.11-sphinxcontrib-jquery-4.1.drv'...
+error: builder for '/nix/store/a84cmdbixl66fpwaabpv00824rf91srs-python3.11-sphinxcontrib-jquery-4.1.drv' failed with exit code 1;
+       last 10 log lines:
+       >            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+       >   File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "/nix/store/pbx86iidhb639fpw5v5dzqb11r30vr3a-python3.11-sphinxcontrib-jquery-4.1/lib/python3.11/site-packages/sphinxcontrib/jquery/__init__.py", line 4, in <module>
+       >     import sphinx
+       > ModuleNotFoundError: No module named 'sphinx'
+       For full logs, run 'nix log /nix/store/a84cmdbixl66fpwaabpv00824rf91srs-python3.11-sphinxcontrib-jquery-4.1.drv'.
+error: 1 dependencies of derivation '/nix/store/hqxk24y123k7c2s96yl2qlk1j05a6hhh-python3.11-sphinx-rtd-theme-1.3.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/4kkiylzwf95kkry2n2aybl83p1bc6g0k-python3.11-pyjwt-2.8.0.drv' failed to build
+building '/nix/store/vx21r4hkzwz5zg8lgxik6ys1a0irinvw-setuptools-rust-setup-hook.drv'...
+error: 1 dependencies of derivation '/nix/store/732z9d9brc9ymfg952k4fg4lb5xbl3cj-python3.11-jira-3.6.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/8q4z9iabwh150xfp8xhvq4jpkbmzgrlx-nix-shell-env.drv' failed to build

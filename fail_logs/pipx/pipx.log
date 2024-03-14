@@ -1,0 +1,92 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing pypa-install-hook
+Using pypaInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing pip-build-hook
+Using pipBuildPhase
+Using pipShellHook
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+Running phase: unpackPhase
+unpacking source archive /nix/store/99kf0m5nqijzybfbp20dxzirxhj1h7ga-pipx-1.4.3.tar.gz
+source root is pipx-1.4.3
+setting SOURCE_DATE_EPOCH to timestamp 1580601600 of file pipx-1.4.3/src/pipx/version.py
+@nix { "action": "setPhase", "phase": "patchPhase" }
+Running phase: patchPhase
+Removing path dependencies
+Finished removing path dependencies
+Removing git dependencies
+Finished removing git dependencies
+Removing wheel-url dependencies
+Finished removing wheel-url dependencies
+@nix { "action": "setPhase", "phase": "updateAutotoolsGnuConfigScriptsPhase" }
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+@nix { "action": "setPhase", "phase": "configurePhase" }
+Running phase: configurePhase
+no configure script, doing nothing
+@nix { "action": "setPhase", "phase": "buildPhase" }
+Running phase: buildPhase
+Executing pipBuildPhase
+Creating a wheel...
+[33mWARNING: The directory '/homeless-shelter/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.[0m[33m
+[0mProcessing /build/pipx-1.4.3
+  Running command Preparing metadata (pyproject.toml)
+  Traceback (most recent call last):
+    File "/nix/store/kinkjpl5yhp9aq1x7rvx4qz3l0lj4216-python3.11-hatchling-1.18.0/lib/python3.11/site-packages/hatchling/metadata/core.py", line 1412, in cached
+      self._cached = self.source.get_version_data()['version']
+                     ^^^^^^^^^^^
+    File "/nix/store/kinkjpl5yhp9aq1x7rvx4qz3l0lj4216-python3.11-hatchling-1.18.0/lib/python3.11/site-packages/hatchling/metadata/core.py", line 1460, in source
+      raise UnknownPluginError(message)
+  hatchling.plugin.exceptions.UnknownPluginError: Unknown version source: vcs
+
+  During handling of the above exception, another exception occurred:
+
+  Traceback (most recent call last):
+    File "/nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 353, in <module>
+      main()
+    File "/nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 335, in main
+      json_out['return_val'] = hook(**hook_input['kwargs'])
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 152, in prepare_metadata_for_build_wheel
+      whl_basename = backend.build_wheel(metadata_directory, config_settings)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/kinkjpl5yhp9aq1x7rvx4qz3l0lj4216-python3.11-hatchling-1.18.0/lib/python3.11/site-packages/hatchling/build.py", line 56, in build_wheel
+      return os.path.basename(next(builder.build(wheel_directory, ['standard'])))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/kinkjpl5yhp9aq1x7rvx4qz3l0lj4216-python3.11-hatchling-1.18.0/lib/python3.11/site-packages/hatchling/builders/plugin/interface.py", line 93, in build
+      self.metadata.validate_fields()
+    File "/nix/store/kinkjpl5yhp9aq1x7rvx4qz3l0lj4216-python3.11-hatchling-1.18.0/lib/python3.11/site-packages/hatchling/metadata/core.py", line 243, in validate_fields
+      _ = self.version
+          ^^^^^^^^^^^^
+    File "/nix/store/kinkjpl5yhp9aq1x7rvx4qz3l0lj4216-python3.11-hatchling-1.18.0/lib/python3.11/site-packages/hatchling/metadata/core.py", line 128, in version
+      self._version = self._get_version()
+                      ^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/kinkjpl5yhp9aq1x7rvx4qz3l0lj4216-python3.11-hatchling-1.18.0/lib/python3.11/site-packages/hatchling/metadata/core.py", line 226, in _get_version
+      version = self.hatch.version.cached
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/kinkjpl5yhp9aq1x7rvx4qz3l0lj4216-python3.11-hatchling-1.18.0/lib/python3.11/site-packages/hatchling/metadata/core.py", line 1414, in cached
+      message = f'Error getting the version from source `{self.source.PLUGIN_NAME}`: {e}'
+                                                          ^^^^^^^^^^^
+    File "/nix/store/kinkjpl5yhp9aq1x7rvx4qz3l0lj4216-python3.11-hatchling-1.18.0/lib/python3.11/site-packages/hatchling/metadata/core.py", line 1460, in source
+      raise UnknownPluginError(message)
+  hatchling.plugin.exceptions.UnknownPluginError: Unknown version source: vcs
+  [1;31merror[0m: [1msubprocess-exited-with-error[0m
+  
+  [31m×[0m [32mPreparing metadata [0m[1;32m([0m[32mpyproject.toml[0m[1;32m)[0m did not run successfully.
+  [31m│[0m exit code: [1;36m1[0m
+  [31m╰─>[0m See above for output.
+  
+  [1;35mnote[0m: This error originates from a subprocess, and is likely not a problem with pip.
+  [1;35mfull command[0m: [34m/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/bin/python3.11 /nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py prepare_metadata_for_build_wheel /build/tmpfhkwi0k0[0m
+  [1;35mcwd[0m: /build/pipx-1.4.3
+  Preparing metadata (pyproject.toml) ... [?25l[?25herror
+[1;31merror[0m: [1mmetadata-generation-failed[0m
+
+[31m×[0m Encountered error while generating package metadata.
+[31m╰─>[0m See above for output.
+
+[1;35mnote[0m: This is an issue with the package mentioned above, not pip.
+[1;36mhint[0m: See above for details.

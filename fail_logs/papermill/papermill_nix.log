@@ -1,0 +1,13 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+trace: warning: Unknown rpds-py version: '0.18.0'. Please update getCargoHash.
+building '/nix/store/398kjjxxw9jg85vwx302kdixz8mkmmfi-python3.11-entrypoints-0.4.drv'...
+building '/nix/store/a7k1g6yx2l0kj61bziyaxm3ldibyailg-python3.11-tqdm-4.66.2.drv'...
+building '/nix/store/3wvdgqhmgbmpqq4v8z0gh4a8bkw6hnkx-rpds-py-0.18.0-vendor.tar.gz.drv'...
+error: hash mismatch in fixed-output derivation '/nix/store/3wvdgqhmgbmpqq4v8z0gh4a8bkw6hnkx-rpds-py-0.18.0-vendor.tar.gz.drv':
+         specified: sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+            got:    sha256-wd1teRDhjQWlKjFIahURj0iwcfkpyUvqIWXXscW7eek=
+error: 1 dependencies of derivation '/nix/store/1jscmsmv2qhl346y6z4c9bkny7x74lyy-python3.11-rpds-py-0.18.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/8q2wyyxm291f7bsbww1jipf3zaj3d0p2-python3.11-jsonschema-4.21.1.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/qd00hqwxwdr918sn6afqqsp9frpv758i-python3.11-nbformat-5.9.2.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/pr89cmvnak6lds9hi5368g62kma3fh4q-python3.11-papermill-2.5.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/1a2044z5pw129q6cnvmnal36mk0x5ip9-nix-shell-env.drv' failed to build

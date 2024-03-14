@@ -1,0 +1,16 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/scmgqx9k2cah6m36aj6jn9m4inbgk65g-python3.11-tokenizers-0.15.2.drv'...
+error: builder for '/nix/store/scmgqx9k2cah6m36aj6jn9m4inbgk65g-python3.11-tokenizers-0.15.2.drv' failed with exit code 2;
+       last 10 log lines:
+       >           ^^^^^^^^^^^^^^^^^^^^^^^
+       >   File "/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/lib/python3.11/importlib/__init__.py", line 126, in import_module
+       >     return _bootstrap._gcd_import(name[level:], package, level)
+       >            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'maturin'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/scmgqx9k2cah6m36aj6jn9m4inbgk65g-python3.11-tokenizers-0.15.2.drv'.
+error: 1 dependencies of derivation '/nix/store/6xfahccfibh3krxc4rq6n208nrg6srgy-nix-shell-env.drv' failed to build

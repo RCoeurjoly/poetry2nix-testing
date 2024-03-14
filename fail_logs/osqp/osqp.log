@@ -1,0 +1,140 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing pypa-install-hook
+Using pypaInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing pip-build-hook
+Using pipBuildPhase
+Using pipShellHook
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+Running phase: unpackPhase
+unpacking source archive /nix/store/rp9ra151b91n6a42fwvm8sfspmyq7kqm-qdldl-0.1.7.post0.tar.gz
+source root is qdldl-0.1.7.post0
+setting SOURCE_DATE_EPOCH to timestamp 1688580646 of file qdldl-0.1.7.post0/setup.cfg
+@nix { "action": "setPhase", "phase": "patchPhase" }
+Running phase: patchPhase
+Removing path dependencies
+Finished removing path dependencies
+Removing git dependencies
+Finished removing git dependencies
+Removing wheel-url dependencies
+Finished removing wheel-url dependencies
+@nix { "action": "setPhase", "phase": "updateAutotoolsGnuConfigScriptsPhase" }
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+@nix { "action": "setPhase", "phase": "configurePhase" }
+Running phase: configurePhase
+no configure script, doing nothing
+@nix { "action": "setPhase", "phase": "buildPhase" }
+Running phase: buildPhase
+Executing pipBuildPhase
+Creating a wheel...
+[33mWARNING: The directory '/homeless-shelter/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.[0m[33m
+[0mProcessing /build/qdldl-0.1.7.post0
+  Running command Preparing metadata (pyproject.toml)
+  running dist_info
+  creating /build/pip-modern-metadata-3d60xqq3/qdldl.egg-info
+  writing /build/pip-modern-metadata-3d60xqq3/qdldl.egg-info/PKG-INFO
+  writing dependency_links to /build/pip-modern-metadata-3d60xqq3/qdldl.egg-info/dependency_links.txt
+  writing requirements to /build/pip-modern-metadata-3d60xqq3/qdldl.egg-info/requires.txt
+  writing top-level names to /build/pip-modern-metadata-3d60xqq3/qdldl.egg-info/top_level.txt
+  writing manifest file '/build/pip-modern-metadata-3d60xqq3/qdldl.egg-info/SOURCES.txt'
+  reading manifest file '/build/pip-modern-metadata-3d60xqq3/qdldl.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  no previously-included directories found matching 'tests/__pycache__/'
+  no previously-included directories found matching 'c/build/'
+  no previously-included directories found matching 'c/qdldl/build'
+  adding license file 'LICENSE'
+  writing manifest file '/build/pip-modern-metadata-3d60xqq3/qdldl.egg-info/SOURCES.txt'
+  creating '/build/pip-modern-metadata-3d60xqq3/qdldl-0.1.7.post0.dist-info'
+  Preparing metadata (pyproject.toml) ... [?25l[?25hdone
+Building wheels for collected packages: qdldl
+  Running command Building wheel for qdldl (pyproject.toml)
+  running bdist_wheel
+  running build
+  running build_ext
+  Traceback (most recent call last):
+    File "<string>", line 81, in build_extensions
+    File "/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/lib/python3.11/subprocess.py", line 466, in check_output
+      return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/lib/python3.11/subprocess.py", line 548, in run
+      with Popen(*popenargs, **kwargs) as process:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/lib/python3.11/subprocess.py", line 1026, in __init__
+      self._execute_child(args, executable, preexec_fn, close_fds,
+    File "/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/lib/python3.11/subprocess.py", line 1950, in _execute_child
+      raise child_exception_type(errno_num, err_msg, err_filename)
+  FileNotFoundError: [Errno 2] No such file or directory: 'cmake'
+
+  During handling of the above exception, another exception occurred:
+
+  Traceback (most recent call last):
+    File "/nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 353, in <module>
+      main()
+    File "/nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 335, in main
+      json_out['return_val'] = hook(**hook_input['kwargs'])
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 251, in build_wheel
+      return _build_backend().build_wheel(wheel_directory, config_settings,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/build_meta.py", line 434, in build_wheel
+      return self._build_with_temp_dir(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/build_meta.py", line 419, in _build_with_temp_dir
+      self.run_setup()
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/build_meta.py", line 341, in run_setup
+      exec(code, locals())
+    File "<string>", line 113, in <module>
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/__init__.py", line 103, in setup
+      return distutils.core.setup(**attrs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/core.py", line 185, in setup
+      return run_commands(dist)
+             ^^^^^^^^^^^^^^^^^^
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/core.py", line 201, in run_commands
+      dist.run_commands()
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/dist.py", line 969, in run_commands
+      self.run_command(cmd)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/dist.py", line 989, in run_command
+      super().run_command(command)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+      cmd_obj.run()
+    File "/nix/store/xyybi21di6ab74k3xzf1hiv7f2m80cah-python3.11-wheel-0.41.1/lib/python3.11/site-packages/wheel/bdist_wheel.py", line 349, in run
+      self.run_command("build")
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/cmd.py", line 318, in run_command
+      self.distribution.run_command(command)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/dist.py", line 989, in run_command
+      super().run_command(command)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+      cmd_obj.run()
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/command/build.py", line 131, in run
+      self.run_command(cmd_name)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/cmd.py", line 318, in run_command
+      self.distribution.run_command(command)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/dist.py", line 989, in run_command
+      super().run_command(command)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+      cmd_obj.run()
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/command/build_ext.py", line 88, in run
+      _build_ext.run(self)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/command/build_ext.py", line 345, in run
+      self.build_extensions()
+    File "<string>", line 83, in build_extensions
+  RuntimeError: CMake must be installed to build qdldl
+  [1;31merror[0m: [1msubprocess-exited-with-error[0m
+  
+  [31m×[0m [32mBuilding wheel for qdldl [0m[1;32m([0m[32mpyproject.toml[0m[1;32m)[0m did not run successfully.
+  [31m│[0m exit code: [1;36m1[0m
+  [31m╰─>[0m See above for output.
+  
+  [1;35mnote[0m: This error originates from a subprocess, and is likely not a problem with pip.
+  [1;35mfull command[0m: [34m/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/bin/python3.11 /nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py build_wheel /build/tmpgsx2v8l4[0m
+  [1;35mcwd[0m: /build/qdldl-0.1.7.post0
+  Building wheel for qdldl (pyproject.toml) ... [?25l[?25herror
+[31m  ERROR: Failed building wheel for qdldl[0m[31m
+[0mFailed to build qdldl
+[31mERROR: Failed to build one or more wheels[0m[31m
+[0m

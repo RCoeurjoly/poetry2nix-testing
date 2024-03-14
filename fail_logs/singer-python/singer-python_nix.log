@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/qikmvj8yzrd2ilg1rq5ic6hs2k7n0xxz-python3.11-jsonschema-2.6.0.drv'...
+error: builder for '/nix/store/qikmvj8yzrd2ilg1rq5ic6hs2k7n0xxz-python3.11-jsonschema-2.6.0.drv' failed with exit code 1;
+       last 10 log lines:
+       >   '"'"''"'"''"'"' % ('"'"'/build/jsonschema-2.6.0/setup.py'"'"',), "<pip-setuptools-caller>", "exec"))' egg_info --egg-base /build/pip-pip-egg-info-ibxb44s8
+       >   cwd: /build/jsonschema-2.6.0/
+       >   Preparing metadata (setup.py) ... error
+       > error: metadata-generation-failed
+       >
+       > × Encountered error while generating package metadata.
+       > ╰─> See above for output.
+       >
+       > note: This is an issue with the package mentioned above, not pip.
+       > hint: See above for details.
+       For full logs, run 'nix log /nix/store/qikmvj8yzrd2ilg1rq5ic6hs2k7n0xxz-python3.11-jsonschema-2.6.0.drv'.
+error: 1 dependencies of derivation '/nix/store/8klz1wcqgsd3ip53k0v57jkq48rglk9n-python3.11-singer-python-6.0.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/pg7as97j5142f3c4qn0c2jj591kdk9v3-nix-shell-env.drv' failed to build

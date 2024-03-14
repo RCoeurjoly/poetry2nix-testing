@@ -1,0 +1,11 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+trace: warning: Unknown cryptography version: '42.0.4'. Please update getCargoHash.
+warning: error: SQLite database '/nix/var/nix/db/db.sqlite' is busy
+warning: error: SQLite database '/nix/var/nix/db/db.sqlite' is busy
+building '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv'...
+error: hash mismatch in fixed-output derivation '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv':
+         specified: sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+            got:    sha256-qaXQiF1xZvv4sNIiR2cb5TfD7oNiYdvUwcm37nh2P2M=
+error: 1 dependencies of derivation '/nix/store/nym4c6msfb18s6av5ycpakk8mbcw257f-python3.11-cryptography-42.0.4.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/d18anvmr0pq9yb1iqf8shk0443xkpvh3-python3.11-pdfminer-six-20231228.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/ra7749szqk3byvw30p9lcfqa0f8z8rw8-nix-shell-env.drv' failed to build

@@ -1,0 +1,13 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+trace: warning: Unknown cryptography version: '42.0.4'. Please update getCargoHash.
+building '/nix/store/jgchi1c7zzp8flx92v8fh0myaiz0x7ag-python3.11-requests-toolbelt-1.0.0.drv'...
+building '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv'...
+error: hash mismatch in fixed-output derivation '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv':
+         specified: sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+            got:    sha256-qaXQiF1xZvv4sNIiR2cb5TfD7oNiYdvUwcm37nh2P2M=
+error: 1 dependencies of derivation '/nix/store/nym4c6msfb18s6av5ycpakk8mbcw257f-python3.11-cryptography-42.0.4.drv' failed to build
+building '/nix/store/ph1i0v3ykb56im7pl8fdjbm7lj3caqzs-jaraco.classes-3.3.1.tar.gz.drv'...
+error: 1 dependencies of derivation '/nix/store/m82lvhwaq7m64bw97wwa0kn9ghyc6bxj-python3.11-secretstorage-3.3.3.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/4rka6i3y40b879rx45crvy3mwplaz9zy-python3.11-keyring-24.3.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/sns1mhn50c2nppnrvq3gg0la93rpf62k-python3.11-twine-5.0.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/0wkpwjh386jh68xm12nkxrzgirqp2qvh-nix-shell-env.drv' failed to build

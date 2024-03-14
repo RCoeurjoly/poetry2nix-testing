@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/2sk7jxp2b4y24wz24s9z57qv6mdj6khc-google-cloud-recommendations-ai-0.10.8.tar.gz.drv'...
+building '/nix/store/1jqb22m6ia83zq5hs7m90fmaq4hy104c-python3.11-google-cloud-recommendations-ai-0.10.8.drv'...
+error: builder for '/nix/store/1jqb22m6ia83zq5hs7m90fmaq4hy104c-python3.11-google-cloud-recommendations-ai-0.10.8.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/1jqb22m6ia83zq5hs7m90fmaq4hy104c-python3.11-google-cloud-recommendations-ai-0.10.8.drv'.
+error: 1 dependencies of derivation '/nix/store/3qr69xbsbxf8aakvprxnsb9xg3hw5csw-nix-shell-env.drv' failed to build

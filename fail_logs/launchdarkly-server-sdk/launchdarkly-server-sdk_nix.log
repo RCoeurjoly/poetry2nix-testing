@@ -1,0 +1,18 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/9f17cjj22w53491hmclr7k8dc8sl7hkd-launchdarkly_server_sdk-9.2.0.tar.gz.drv'...
+building '/nix/store/gvlzw6lpq194xca8l71abqdjlf5486z2-python3.11-launchdarkly-eventsource-1.1.0.drv'...
+error: builder for '/nix/store/gvlzw6lpq194xca8l71abqdjlf5486z2-python3.11-launchdarkly-eventsource-1.1.0.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'poetry'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/gvlzw6lpq194xca8l71abqdjlf5486z2-python3.11-launchdarkly-eventsource-1.1.0.drv'.
+error: 1 dependencies of derivation '/nix/store/a7p12mj54142ks49mycinkh8rnka279i-python3.11-launchdarkly-server-sdk-9.2.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/r39xvcpyh3ra6jdmyaclmx5xr2ynbmh6-nix-shell-env.drv' failed to build

@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+copying path '/nix/store/qb292n1g1hgxpiky548i2y0iralhhy7f-pygit2-1.14.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/xh02myxkxd6r91y8r5ggwxylsz4a0v4y-python3.11-pygit2-1.14.1.drv'...
+error: builder for '/nix/store/xh02myxkxd6r91y8r5ggwxylsz4a0v4y-python3.11-pygit2-1.14.1.drv' failed with exit code 1;
+       last 10 log lines:
+       >   ╰─> See above for output.
+       >
+       >   note: This error originates from a subprocess, and is likely not a problem with pip.
+       >   full command: /nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/bin/python3.11 /nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py build_wheel /build/tmpq8m6f0rh
+       >   cwd: /build/pygit2-1.14.1
+       >   Building wheel for pygit2 (pyproject.toml) ... error
+       >   ERROR: Failed building wheel for pygit2
+       > Failed to build pygit2
+       > ERROR: Failed to build one or more wheels
+       > 
+       For full logs, run 'nix log /nix/store/xh02myxkxd6r91y8r5ggwxylsz4a0v4y-python3.11-pygit2-1.14.1.drv'.
+error: 1 dependencies of derivation '/nix/store/v474r32bb941qkjrcjw06cn42i986gqa-nix-shell-env.drv' failed to build

@@ -1,0 +1,18 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/bna645lf4qyfxb7x42crwhrkl902avql-python3.11-tensorstore-0.1.53.drv'...
+error: builder for '/nix/store/bna645lf4qyfxb7x42crwhrkl902avql-python3.11-tensorstore-0.1.53.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/bna645lf4qyfxb7x42crwhrkl902avql-python3.11-tensorstore-0.1.53.drv'.
+error: 1 dependencies of derivation '/nix/store/xxi3g9rcxa4zvh9diws46nkvi26z4q4h-python3.11-orbax-checkpoint-0.5.3.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/0jsjhisndn7r0k2zxrkqgr5m11y0ali5-python3.11-orbax-0.1.9.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/6djrn0isnczn51m5r81yczms1fm570qn-nix-shell-env.drv' failed to build

@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/cnwpyjr6b428k12c2m3ms7vlffx9xahd-s3path-0.5.2.tar.gz.drv'...
+building '/nix/store/q2zncw1rj6j56j1g9j886vlg69zv3pia-python3.11-s3path-0.5.2.drv'...
+error: builder for '/nix/store/q2zncw1rj6j56j1g9j886vlg69zv3pia-python3.11-s3path-0.5.2.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/q2zncw1rj6j56j1g9j886vlg69zv3pia-python3.11-s3path-0.5.2.drv'.
+error: 1 dependencies of derivation '/nix/store/6wls7cj3vvxk28xilkcakg4wqbynvqsa-nix-shell-env.drv' failed to build

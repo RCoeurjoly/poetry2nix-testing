@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/mg5k4vi3jasa0kxblzhmk0yhv571gfjn-python3.11-stone-3.3.1.drv'...
+error: builder for '/nix/store/mg5k4vi3jasa0kxblzhmk0yhv571gfjn-python3.11-stone-3.3.1.drv' failed with exit code 1;
+       last 10 log lines:
+       >   '"'"''"'"''"'"' % ('"'"'/build/stone-3.3.1/setup.py'"'"',), "<pip-setuptools-caller>", "exec"))' egg_info --egg-base /build/pip-pip-egg-info-wno847zu
+       >   cwd: /build/stone-3.3.1/
+       >   Preparing metadata (setup.py) ... error
+       > error: metadata-generation-failed
+       >
+       > × Encountered error while generating package metadata.
+       > ╰─> See above for output.
+       >
+       > note: This is an issue with the package mentioned above, not pip.
+       > hint: See above for details.
+       For full logs, run 'nix log /nix/store/mg5k4vi3jasa0kxblzhmk0yhv571gfjn-python3.11-stone-3.3.1.drv'.
+error: 1 dependencies of derivation '/nix/store/2nj80l6wrc9kbfb0jq9j03d09vb9m485-python3.11-dropbox-11.36.2.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/rlcxji4pakgp0r18iyjnmz884kcdk5x7-nix-shell-env.drv' failed to build

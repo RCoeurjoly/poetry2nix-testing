@@ -1,0 +1,19 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/wfl1k4mgbh23rlrbnr17adgy79q8ylln-python-Levenshtein-0.25.0.tar.gz.drv'...
+building '/nix/store/mn47c03fvrj7q4y0g77k9av72l1qas8y-Levenshtein-0.25.0.tar.gz.drv'...
+building '/nix/store/h46gls6pimb88mxihb2y17lg5sz1cl2q-python3.11-levenshtein-0.25.0.drv'...
+error: builder for '/nix/store/h46gls6pimb88mxihb2y17lg5sz1cl2q-python3.11-levenshtein-0.25.0.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+       >   File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "/build/Levenshtein-0.25.0/_custom_build/backend.py", line 6, in <module>
+       >     from packaging import version as _version
+       > ModuleNotFoundError: No module named 'packaging'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/h46gls6pimb88mxihb2y17lg5sz1cl2q-python3.11-levenshtein-0.25.0.drv'.
+error: 1 dependencies of derivation '/nix/store/4fz28hb5xv67wpfrkq3m0fxs0hm6a08z-python3.11-python-levenshtein-0.25.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/f12n0dkadabfdws0yxmyci9mz753j7ck-nix-shell-env.drv' failed to build

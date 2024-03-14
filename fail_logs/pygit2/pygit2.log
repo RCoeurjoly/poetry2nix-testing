@@ -1,0 +1,138 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing pypa-install-hook
+Using pypaInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing pip-build-hook
+Using pipBuildPhase
+Using pipShellHook
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+Running phase: unpackPhase
+unpacking source archive /nix/store/qb292n1g1hgxpiky548i2y0iralhhy7f-pygit2-1.14.1.tar.gz
+source root is pygit2-1.14.1
+setting SOURCE_DATE_EPOCH to timestamp 1707590943 of file pygit2-1.14.1/PKG-INFO
+@nix { "action": "setPhase", "phase": "patchPhase" }
+Running phase: patchPhase
+Removing path dependencies
+Finished removing path dependencies
+Removing git dependencies
+Finished removing git dependencies
+Removing wheel-url dependencies
+Finished removing wheel-url dependencies
+@nix { "action": "setPhase", "phase": "updateAutotoolsGnuConfigScriptsPhase" }
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+@nix { "action": "setPhase", "phase": "configurePhase" }
+Running phase: configurePhase
+no configure script, doing nothing
+@nix { "action": "setPhase", "phase": "buildPhase" }
+Running phase: buildPhase
+Executing pipBuildPhase
+Creating a wheel...
+[33mWARNING: The directory '/homeless-shelter/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.[0m[33m
+[0mProcessing /build/pygit2-1.14.1
+  Running command Preparing metadata (pyproject.toml)
+  running dist_info
+  creating /build/pip-modern-metadata-7u3l41eo/pygit2.egg-info
+  writing /build/pip-modern-metadata-7u3l41eo/pygit2.egg-info/PKG-INFO
+  writing dependency_links to /build/pip-modern-metadata-7u3l41eo/pygit2.egg-info/dependency_links.txt
+  writing requirements to /build/pip-modern-metadata-7u3l41eo/pygit2.egg-info/requires.txt
+  writing top-level names to /build/pip-modern-metadata-7u3l41eo/pygit2.egg-info/top_level.txt
+  writing manifest file '/build/pip-modern-metadata-7u3l41eo/pygit2.egg-info/SOURCES.txt'
+  reading manifest file '/build/pip-modern-metadata-7u3l41eo/pygit2.egg-info/SOURCES.txt'
+  adding license file 'COPYING'
+  adding license file 'AUTHORS.md'
+  writing manifest file '/build/pip-modern-metadata-7u3l41eo/pygit2.egg-info/SOURCES.txt'
+  creating '/build/pip-modern-metadata-7u3l41eo/pygit2-1.14.1.dist-info'
+  Preparing metadata (pyproject.toml) ... [?25l[?25hdone
+Building wheels for collected packages: pygit2
+  Running command Building wheel for pygit2 (pyproject.toml)
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux-x86_64-cpython-311
+  creating build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/refspec.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/utils.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/__init__.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/remotes.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/submodules.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/packbuilder.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/legacyenums.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/blame.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/_run.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/enums.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/repository.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/branches.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/ffi.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/config.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/_build.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/settings.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/references.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/credentials.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/callbacks.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/blob.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/filter.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/errors.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  copying pygit2/index.py -> build/lib.linux-x86_64-cpython-311/pygit2
+  creating build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/callbacks.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/oid.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/remote.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/pack.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/refspec.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/describe.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/blame.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/submodule.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/clone.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/strarray.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/commit.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/net.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/types.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/errors.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/config.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/merge.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/graph.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/repository.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/checkout.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/indexer.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/revert.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/attr.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/transport.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/diff.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/buffer.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/stash.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/index.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/proxy.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/decl/common.h -> build/lib.linux-x86_64-cpython-311/pygit2/decl
+  copying pygit2/_pygit2.pyi -> build/lib.linux-x86_64-cpython-311/pygit2
+  running build_ext
+  generating cffi module 'build/temp.linux-x86_64-cpython-311/pygit2._libgit2.c'
+  creating build/temp.linux-x86_64-cpython-311
+  building 'pygit2._pygit2' extension
+  creating build/temp.linux-x86_64-cpython-311/build
+  creating build/temp.linux-x86_64-cpython-311/build/pygit2-1.14.1
+  creating build/temp.linux-x86_64-cpython-311/build/pygit2-1.14.1/src
+  gcc -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -I/nix/store/jh2dj172jmmlw74kw4bsqa5ycf1blv4v-libxcrypt-4.4.36/include -fPIC -I/usr/local/include -I/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/include/python3.11 -c /build/pygit2-1.14.1/src/blob.c -o build/temp.linux-x86_64-cpython-311/build/pygit2-1.14.1/src/blob.o
+  /build/pygit2-1.14.1/src/blob.c:30:10: fatal error: git2.h: No such file or directory
+     30 | #include <git2.h>
+        |          ^~~~~~~~
+  compilation terminated.
+  error: command '/nix/store/sfgnb6rr428bssyrs54d6d0vv2avi95c-gcc-wrapper-12.3.0/bin/gcc' failed with exit code 1
+  [1;31merror[0m: [1msubprocess-exited-with-error[0m
+  
+  [31m×[0m [32mBuilding wheel for pygit2 [0m[1;32m([0m[32mpyproject.toml[0m[1;32m)[0m did not run successfully.
+  [31m│[0m exit code: [1;36m1[0m
+  [31m╰─>[0m See above for output.
+  
+  [1;35mnote[0m: This error originates from a subprocess, and is likely not a problem with pip.
+  [1;35mfull command[0m: [34m/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/bin/python3.11 /nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py build_wheel /build/tmpq8m6f0rh[0m
+  [1;35mcwd[0m: /build/pygit2-1.14.1
+  Building wheel for pygit2 (pyproject.toml) ... [?25l[?25herror
+[31m  ERROR: Failed building wheel for pygit2[0m[31m
+[0mFailed to build pygit2
+[31mERROR: Failed to build one or more wheels[0m[31m
+[0m

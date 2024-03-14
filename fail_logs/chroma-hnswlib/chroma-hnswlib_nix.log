@@ -1,0 +1,16 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/xcdfi93a2pvashdw56z73gr2snmhfpnc-python3.11-chroma-hnswlib-0.7.3.drv'...
+error: builder for '/nix/store/xcdfi93a2pvashdw56z73gr2snmhfpnc-python3.11-chroma-hnswlib-0.7.3.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/xcdfi93a2pvashdw56z73gr2snmhfpnc-python3.11-chroma-hnswlib-0.7.3.drv'.
+error: 1 dependencies of derivation '/nix/store/h0ai8ag4dhv3hza4yn014x07kja8najp-nix-shell-env.drv' failed to build

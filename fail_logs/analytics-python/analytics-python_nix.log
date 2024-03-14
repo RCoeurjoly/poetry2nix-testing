@@ -1,0 +1,18 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+warning: error: SQLite database '/nix/var/nix/db/db.sqlite' is busy
+building '/nix/store/0ykv1ivxdgqcvagd7gb4v91ls9n7zf7z-python3.11-backoff-1.10.0.drv'...
+error: builder for '/nix/store/0ykv1ivxdgqcvagd7gb4v91ls9n7zf7z-python3.11-backoff-1.10.0.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'poetry.masonry'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/0ykv1ivxdgqcvagd7gb4v91ls9n7zf7z-python3.11-backoff-1.10.0.drv'.
+error: 1 dependencies of derivation '/nix/store/mp78yjw9z1rm4hffm4h530i797jvv2di-python3.11-analytics-python-1.4.post1.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/50gf7c5gipnw7z5z6vaaksqw4xsknd32-nix-shell-env.drv' failed to build

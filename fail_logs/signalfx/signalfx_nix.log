@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/sk5kl7kxrykvnaz16lrxwk1rnah4bfg2-python3.11-pyformance-0.4.drv'...
+error: builder for '/nix/store/sk5kl7kxrykvnaz16lrxwk1rnah4bfg2-python3.11-pyformance-0.4.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/sk5kl7kxrykvnaz16lrxwk1rnah4bfg2-python3.11-pyformance-0.4.drv'.
+error: 1 dependencies of derivation '/nix/store/a8531kq4rcbn79spdqnfcbv6x6ha1zbz-python3.11-signalfx-1.1.16.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/yn3d8g8j211cah8a5ssf6fm185a01kv2-nix-shell-env.drv' failed to build

@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/fklxjqjla8ina04pday3xlsjlgq45qb6-python3.11-atpublic-4.0.drv'...
+error: builder for '/nix/store/fklxjqjla8ina04pday3xlsjlgq45qb6-python3.11-atpublic-4.0.drv' failed with exit code 2;
+       last 10 log lines:
+       >           ^^^^^^^^^^^^^^^^^^^^^^^
+       >   File "/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/lib/python3.11/importlib/__init__.py", line 126, in import_module
+       >     return _bootstrap._gcd_import(name[level:], package, level)
+       >            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'pdm.backend'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/fklxjqjla8ina04pday3xlsjlgq45qb6-python3.11-atpublic-4.0.drv'.
+error: 1 dependencies of derivation '/nix/store/rjxnb4146gyqd3y67a229s67lsfkgdn8-python3.11-flufl-lock-8.0.2.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/a45dsnjlqgkww9hs9azngzfz5k5z4x1v-nix-shell-env.drv' failed to build

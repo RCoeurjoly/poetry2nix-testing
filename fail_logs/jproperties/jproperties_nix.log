@@ -1,0 +1,16 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/qq64jgjwbn3m2rmw1av0b7qllqgdzjxh-python3.11-jproperties-2.1.1.drv'...
+error: builder for '/nix/store/qq64jgjwbn3m2rmw1av0b7qllqgdzjxh-python3.11-jproperties-2.1.1.drv' failed with exit code 1;
+       last 10 log lines:
+       >   '"'"''"'"''"'"' % ('"'"'/build/jproperties-2.1.1/setup.py'"'"',), "<pip-setuptools-caller>", "exec"))' egg_info --egg-base /build/pip-pip-egg-info-ept6d468
+       >   cwd: /build/jproperties-2.1.1/
+       >   Preparing metadata (setup.py) ... error
+       > error: metadata-generation-failed
+       >
+       > × Encountered error while generating package metadata.
+       > ╰─> See above for output.
+       >
+       > note: This is an issue with the package mentioned above, not pip.
+       > hint: See above for details.
+       For full logs, run 'nix log /nix/store/qq64jgjwbn3m2rmw1av0b7qllqgdzjxh-python3.11-jproperties-2.1.1.drv'.
+error: 1 dependencies of derivation '/nix/store/rhbdngc74mfrkh8yh72h2rmw8kd6pqzl-nix-shell-env.drv' failed to build

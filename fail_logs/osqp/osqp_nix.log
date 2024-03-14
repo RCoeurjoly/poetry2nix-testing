@@ -1,0 +1,18 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/wv7r7ybcqwvx9x1grwncgc96yxhvrl13-osqp-0.6.5.tar.gz.drv'...
+building '/nix/store/3dp0j6bad2xyn9ddqh0zyl9n59ln4903-python3.11-qdldl-0.1.7.post0.drv'...
+error: builder for '/nix/store/3dp0j6bad2xyn9ddqh0zyl9n59ln4903-python3.11-qdldl-0.1.7.post0.drv' failed with exit code 1;
+       last 10 log lines:
+       >   ╰─> See above for output.
+       >
+       >   note: This error originates from a subprocess, and is likely not a problem with pip.
+       >   full command: /nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/bin/python3.11 /nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py build_wheel /build/tmpgsx2v8l4
+       >   cwd: /build/qdldl-0.1.7.post0
+       >   Building wheel for qdldl (pyproject.toml) ... error
+       >   ERROR: Failed building wheel for qdldl
+       > Failed to build qdldl
+       > ERROR: Failed to build one or more wheels
+       > 
+       For full logs, run 'nix log /nix/store/3dp0j6bad2xyn9ddqh0zyl9n59ln4903-python3.11-qdldl-0.1.7.post0.drv'.
+error: 1 dependencies of derivation '/nix/store/kxxhzbi1zrkm78rdsh6l2zygjvwzas6s-python3.11-osqp-0.6.5.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/cs25har51pn4ki3392da8m26hd9fqgl8-nix-shell-env.drv' failed to build

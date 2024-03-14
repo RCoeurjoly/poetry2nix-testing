@@ -1,0 +1,12 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+trace: warning: Unknown cryptography version: '42.0.4'. Please update getCargoHash.
+building '/nix/store/nr2cqqkl5362dwsqw19vja4jgwymlacl-python3.11-argcomplete-3.2.2.drv'...
+building '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv'...
+error: hash mismatch in fixed-output derivation '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv':
+         specified: sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+            got:    sha256-qaXQiF1xZvv4sNIiR2cb5TfD7oNiYdvUwcm37nh2P2M=
+error: 1 dependencies of derivation '/nix/store/nym4c6msfb18s6av5ycpakk8mbcw257f-python3.11-cryptography-42.0.4.drv' failed to build
+building '/nix/store/yhh0xqr1k84cnfw8l687rqchicjl3cja-python3.11-google-apitools-0.5.32.drv'...
+error: 1 dependencies of derivation '/nix/store/p5p9d89k44wfw2ribypqnz9w5jsrgyj4-python3.11-pyopenssl-24.0.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/vahkmfy8v03wpkddjg2dm52rrp8scig0-python3.11-gsutil-5.27.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/8aqbz20ggyhrh8qazyj3ny6vgs5wdcfv-nix-shell-env.drv' failed to build

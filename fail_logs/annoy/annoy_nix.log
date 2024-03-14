@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+warning: error: SQLite database '/nix/var/nix/db/db.sqlite' is busy
+building '/nix/store/nz50xzwcwm8wbk0fc7wxlvagvn1wl55n-python3.11-annoy-1.17.3.drv'...
+error: builder for '/nix/store/nz50xzwcwm8wbk0fc7wxlvagvn1wl55n-python3.11-annoy-1.17.3.drv' failed with exit code 1;
+       last 10 log lines:
+       >   '"'"''"'"''"'"' % ('"'"'/build/annoy-1.17.3/setup.py'"'"',), "<pip-setuptools-caller>", "exec"))' egg_info --egg-base /build/pip-pip-egg-info-3v_anncz
+       >   cwd: /build/annoy-1.17.3/
+       >   Preparing metadata (setup.py) ... error
+       > error: metadata-generation-failed
+       >
+       > × Encountered error while generating package metadata.
+       > ╰─> See above for output.
+       >
+       > note: This is an issue with the package mentioned above, not pip.
+       > hint: See above for details.
+       For full logs, run 'nix log /nix/store/nz50xzwcwm8wbk0fc7wxlvagvn1wl55n-python3.11-annoy-1.17.3.drv'.
+error: 1 dependencies of derivation '/nix/store/0vmm9x278qf6mlw9jgcxxfkkv3hfma9a-nix-shell-env.drv' failed to build

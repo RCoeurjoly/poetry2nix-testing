@@ -1,0 +1,5 @@
+source ~/poetry2nix-testing/script.sh; create-error-file 2captcha-python
+source ~/poetry2nix-testing/script.sh; create-error-file 2to3
+source ~/poetry2nix-testing/script.sh; create-error-file a2wsgi
+source ~/poetry2nix-testing/script.sh; create-error-file about-time
+source ~/poetry2nix-testing/script.sh; create-error-file acachecontrol

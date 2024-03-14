@@ -1,0 +1,16 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/d3zm3pq847v9ig2dz1z2dhxdsrnrzyg6-python3.11-pyodbc-5.1.0.drv'...
+error: builder for '/nix/store/d3zm3pq847v9ig2dz1z2dhxdsrnrzyg6-python3.11-pyodbc-5.1.0.drv' failed with exit code 1;
+       last 10 log lines:
+       >   ╰─> See above for output.
+       >
+       >   note: This error originates from a subprocess, and is likely not a problem with pip.
+       >   full command: /nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/bin/python3.11 /nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py build_wheel /build/tmp1dd0gtfm
+       >   cwd: /build/pyodbc-5.1.0
+       >   Building wheel for pyodbc (pyproject.toml) ... error
+       >   ERROR: Failed building wheel for pyodbc
+       > Failed to build pyodbc
+       > ERROR: Failed to build one or more wheels
+       > 
+       For full logs, run 'nix log /nix/store/d3zm3pq847v9ig2dz1z2dhxdsrnrzyg6-python3.11-pyodbc-5.1.0.drv'.
+error: 1 dependencies of derivation '/nix/store/n93xngd0xgc7zxalykxwz7zcm4z3rrry-nix-shell-env.drv' failed to build

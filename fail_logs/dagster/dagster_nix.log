@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/wg17bscn2czhlxcs4jn0p35hagwk5ahk-python3.11-dagster-pipes-1.6.5.drv'...
+error: builder for '/nix/store/wg17bscn2czhlxcs4jn0p35hagwk5ahk-python3.11-dagster-pipes-1.6.5.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/wg17bscn2czhlxcs4jn0p35hagwk5ahk-python3.11-dagster-pipes-1.6.5.drv'.
+error: 1 dependencies of derivation '/nix/store/i156iha8b4c9mw88w1cdmhinlmrbjmqa-python3.11-dagster-1.6.5.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/93s9ybj2f1niyhwk9kqpkhz4f9nn4xb0-nix-shell-env.drv' failed to build

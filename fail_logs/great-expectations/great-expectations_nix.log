@@ -1,0 +1,11 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+trace: warning: Unknown rpds-py version: '0.18.0'. Please update getCargoHash.
+trace: warning: Unknown cryptography version: '42.0.4'. Please update getCargoHash.
+building '/nix/store/65y21ry1fcapx43ibk35lq1d3g5v1xj6-python3.11-ipython-8.22.1.drv'...
+building '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv'...
+error: hash mismatch in fixed-output derivation '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv':
+         specified: sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+            got:    sha256-qaXQiF1xZvv4sNIiR2cb5TfD7oNiYdvUwcm37nh2P2M=
+error: 1 dependencies of derivation '/nix/store/zajm4fzaz3y8ivx0bwywsw6n32x7m33x-python3.11-cryptography-42.0.4.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/gb0d4w79jpnlpy8p2jqvbih210k5m5dr-python3.11-great-expectations-0.18.9.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/783pgnhyvj0ijcn0r7f525bdvr026amw-nix-shell-env.drv' failed to build

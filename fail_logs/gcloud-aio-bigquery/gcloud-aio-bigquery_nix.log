@@ -1,0 +1,11 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+trace: warning: Unknown cryptography version: '42.0.4'. Please update getCargoHash.
+building '/nix/store/axgdb6qb06dhfibv3236czj2kym95ind-gcloud_aio_bigquery-7.1.0.tar.gz.drv'...
+building '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv'...
+error: hash mismatch in fixed-output derivation '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv':
+         specified: sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+            got:    sha256-qaXQiF1xZvv4sNIiR2cb5TfD7oNiYdvUwcm37nh2P2M=
+error: 1 dependencies of derivation '/nix/store/nym4c6msfb18s6av5ycpakk8mbcw257f-python3.11-cryptography-42.0.4.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/rzs165akl1mys5a9khcddrszqg9w1jgk-python3.11-gcloud-aio-auth-5.2.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/frhdhz1mbjpa2awrbmvl46sabdpgry31-python3.11-gcloud-aio-bigquery-7.1.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/gg2gdaw585snrglkwfsffnsrjplsbb6q-nix-shell-env.drv' failed to build

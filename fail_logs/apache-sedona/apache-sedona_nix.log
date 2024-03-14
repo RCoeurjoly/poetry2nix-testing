@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/h480464kw30mdsmxr1rsl3k6hzmh26pa-apache-sedona-1.5.1.tar.gz.drv'...
+building '/nix/store/mhj07n933jxfhw3rxmsdzy6layrc0a53-python3.11-apache-sedona-1.5.1.drv'...
+error: builder for '/nix/store/mhj07n933jxfhw3rxmsdzy6layrc0a53-python3.11-apache-sedona-1.5.1.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/mhj07n933jxfhw3rxmsdzy6layrc0a53-python3.11-apache-sedona-1.5.1.drv'.
+error: 1 dependencies of derivation '/nix/store/xgj448nfgw1pxfycc514hirl5vfrj0g2-nix-shell-env.drv' failed to build

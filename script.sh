@@ -226,6 +226,39 @@ test_packages_simple () {
     done
 }
 
+create-error-file() {
+    quoted_package=$1
+    unquoted_package=${quoted_package//\"}
+    mkdir -p fail_logs/$unquoted_package
+    cd fail_logs/$unquoted_package
+    cp ../../flake.nix .
+    cp ../../flake.lock .
+    cp ../../poetry.lock .
+    cp ../../pyproject.toml .
+    git aa
+    poetry add $unquoted_package
+    rc=$?
+    if [[ $rc != 0 ]]; then
+        echo Package $unquoted_package failed to install with poetry
+        echo $unquoted_package >> ../../poetry_add_fail_2
+    else
+        set -o pipefail
+        nix develop --command echo "Nix develop environment ready" |& tee ${unquoted_package}_nix.log
+        rc=$?
+        if [[ $rc != 0 ]]; then
+            grep "For full logs" ${unquoted_package}_nix.log | grep -o nix.*drv >> generate_${unquoted_package}_log.sh
+            bash generate_${unquoted_package}_log.sh >> ${unquoted_package}.log
+            git aa
+            echo Package $unquoted_package failed to install with nix develop
+            echo $unquoted_package >> ../../nix_develop_fail_2
+        else
+            echo $unquoted_package >> ../../works
+        fi
+        git cm $unquoted_package
+    fi
+    cd ../..
+}
+
 add_package_to_uninstallable_list() {
     uninstallable_package=$1
     echo $uninstallable_package >> uninstallable_packages

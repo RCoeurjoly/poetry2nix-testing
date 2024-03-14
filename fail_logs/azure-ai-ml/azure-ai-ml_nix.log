@@ -1,0 +1,15 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+trace: warning: Unknown cryptography version: '42.0.4'. Please update getCargoHash.
+trace: warning: Unknown rpds-py version: '0.18.0'. Please update getCargoHash.
+building '/nix/store/80n9vyqwjn6c9niw9c46yg49db6q8q38-azure-ai-ml-1.13.0.tar.gz.drv'...
+building '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv'...
+error: hash mismatch in fixed-output derivation '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv':
+         specified: sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+            got:    sha256-qaXQiF1xZvv4sNIiR2cb5TfD7oNiYdvUwcm37nh2P2M=
+error: 1 dependencies of derivation '/nix/store/zajm4fzaz3y8ivx0bwywsw6n32x7m33x-python3.11-cryptography-42.0.4.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/ksqp4gwmp6i345lj5sl7ajyh5l9imjgl-python3.11-azure-identity-1.15.0.drv' failed to build
+building '/nix/store/v6s7kfjvv70lx1hcqc9hqicxw637l23b-python3.11-azure-mgmt-core-1.4.0.drv'...
+error: 1 dependencies of derivation '/nix/store/f9phs07n9sjn3m6impf4yc3hgzfzyn3b-python3.11-azure-storage-blob-12.19.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/rzb47x3xpc3dx7pzbhvi74qhmzcj370b-python3.11-pyjwt-2.8.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/d8wpjy34fbqrwxl24qhyf5aap4h6k090-python3.11-azure-ai-ml-1.13.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/7a3qdkrpl7c69fbhmdniq74a6j4k3r5z-nix-shell-env.drv' failed to build

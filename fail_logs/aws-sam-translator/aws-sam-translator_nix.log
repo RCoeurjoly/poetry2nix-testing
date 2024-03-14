@@ -1,0 +1,10 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+trace: warning: Unknown rpds-py version: '0.18.0'. Please update getCargoHash.
+building '/nix/store/3wvdgqhmgbmpqq4v8z0gh4a8bkw6hnkx-rpds-py-0.18.0-vendor.tar.gz.drv'...
+error: hash mismatch in fixed-output derivation '/nix/store/3wvdgqhmgbmpqq4v8z0gh4a8bkw6hnkx-rpds-py-0.18.0-vendor.tar.gz.drv':
+         specified: sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+            got:    sha256-wd1teRDhjQWlKjFIahURj0iwcfkpyUvqIWXXscW7eek=
+error: 1 dependencies of derivation '/nix/store/1jscmsmv2qhl346y6z4c9bkny7x74lyy-python3.11-rpds-py-0.18.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/7ayf2chvvmcqsz9gh16l86msnqmzfq1m-python3.11-jsonschema-4.21.1.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/lxf46x6m24lp0x2cyvbr74jagmfkj459-python3.11-aws-sam-translator-1.85.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/q61g8bfqn10a322cfk3cdxs4sr99v4i6-nix-shell-env.drv' failed to build

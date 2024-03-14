@@ -1,0 +1,18 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/5kzpnqqnhyc46yfkbr8clg6zjcvan23v-aws_lambda_powertools-2.34.1.tar.gz.drv'...
+warning: error: SQLite database '/nix/var/nix/db/db.sqlite' is busy
+building '/nix/store/n1p2gwmmcbs281qv8bp75hzkf4qwdd7m-python3.11-aws-lambda-powertools-2.34.1.drv'...
+error: builder for '/nix/store/n1p2gwmmcbs281qv8bp75hzkf4qwdd7m-python3.11-aws-lambda-powertools-2.34.1.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'poetry'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/n1p2gwmmcbs281qv8bp75hzkf4qwdd7m-python3.11-aws-lambda-powertools-2.34.1.drv'.
+error: 1 dependencies of derivation '/nix/store/ql7qbc8y79p1mnwzjnn242h1mhq2sn92-nix-shell-env.drv' failed to build

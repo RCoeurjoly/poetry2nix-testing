@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/hhb4jv4xg28zn244zykrvaqys6k0z3xi-onnxruntime_gpu-1.17.0-cp311-cp311-manylinux_2_28_x86_64.whl.drv'...
+building '/nix/store/maq1nkhb0kxdnmxmi10m9kcxaykiyv2k-python3.11-onnxruntime-gpu-1.17.0.drv'...
+error: builder for '/nix/store/maq1nkhb0kxdnmxmi10m9kcxaykiyv2k-python3.11-onnxruntime-gpu-1.17.0.drv' failed with exit code 1;
+       last 10 log lines:
+       > error: auto-patchelf could not satisfy dependency libcublas.so.11 wanted by /nix/store/rbdzn54dhsq78d9lxpar2f1x5d2dvdb6-python3.11-onnxruntime-gpu-1.17.0/lib/python3.11/site-packages/onnxruntime/capi/libonnxruntime_providers_tensorrt.so
+       > error: auto-patchelf could not satisfy dependency libnvinfer.so.8 wanted by /nix/store/rbdzn54dhsq78d9lxpar2f1x5d2dvdb6-python3.11-onnxruntime-gpu-1.17.0/lib/python3.11/site-packages/onnxruntime/capi/libonnxruntime_providers_tensorrt.so
+       > error: auto-patchelf could not satisfy dependency libnvinfer_plugin.so.8 wanted by /nix/store/rbdzn54dhsq78d9lxpar2f1x5d2dvdb6-python3.11-onnxruntime-gpu-1.17.0/lib/python3.11/site-packages/onnxruntime/capi/libonnxruntime_providers_tensorrt.so
+       > error: auto-patchelf could not satisfy dependency libnvonnxparser.so.8 wanted by /nix/store/rbdzn54dhsq78d9lxpar2f1x5d2dvdb6-python3.11-onnxruntime-gpu-1.17.0/lib/python3.11/site-packages/onnxruntime/capi/libonnxruntime_providers_tensorrt.so
+       > error: auto-patchelf could not satisfy dependency libcudart.so.11.0 wanted by /nix/store/rbdzn54dhsq78d9lxpar2f1x5d2dvdb6-python3.11-onnxruntime-gpu-1.17.0/lib/python3.11/site-packages/onnxruntime/capi/libonnxruntime_providers_tensorrt.so
+       > auto-patchelf failed to find all the required dependencies.
+       > Add the missing dependencies to --libs or use `--ignore-missing="foo.so.1 bar.so etc.so"`.
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 74: pop_var_context: head of shell_variables not a function context
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 1450: pop_var_context: head of shell_variables not a function context
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 1553: pop_var_context: head of shell_variables not a function context
+       For full logs, run 'nix log /nix/store/maq1nkhb0kxdnmxmi10m9kcxaykiyv2k-python3.11-onnxruntime-gpu-1.17.0.drv'.
+error: 1 dependencies of derivation '/nix/store/2kx0qc2bwffgin7iyc05bp92ard3dyzg-nix-shell-env.drv' failed to build

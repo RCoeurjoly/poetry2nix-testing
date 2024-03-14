@@ -1,0 +1,24 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+trace: warning: Unknown rpds-py version: '0.18.0'. Please update getCargoHash.
+copying path '/nix/store/hg3dwcg79rvd7barfs1dbwd9gay25hfl-marshmallow-sqlalchemy-0.28.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/dcy7zf0f7zk22pp8b5q3xmhb8wbcavhj-Flask-AppBuilder-4.4.0.tar.gz.drv'...
+building '/nix/store/m1zdfq7z7nspmfpvsqhgz8akab2jivyb-Flask-Limiter-3.5.1.tar.gz.drv'...
+building '/nix/store/z6r3rdwwsryqcgshivpljb8n720qix1l-dnspython-2.6.1.tar.gz.drv'...
+building '/nix/store/qys73iypqlnjbi4vbkr2856qg6zhadpv-limits-3.9.0.tar.gz.drv'...
+building '/nix/store/50mpn7v7akgmkri2hmc3sgicbnbdgpm1-python3.11-dnspython-2.6.1.drv'...
+error: builder for '/nix/store/50mpn7v7akgmkri2hmc3sgicbnbdgpm1-python3.11-dnspython-2.6.1.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'hatchling'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/50mpn7v7akgmkri2hmc3sgicbnbdgpm1-python3.11-dnspython-2.6.1.drv'.
+error: 1 dependencies of derivation '/nix/store/x4vdnrmlqmaygbfialcbbh8p6i02ffrm-python3.11-email-validator-2.1.0.post1.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/5whpyg37igdb4b1ldc8z4a8261rxpwis-python3.11-flask-appbuilder-4.4.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/8slzxwzk5622f870zwar4ggg8dn29pvv-nix-shell-env.drv' failed to build

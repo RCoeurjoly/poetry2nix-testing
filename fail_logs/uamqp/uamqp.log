@@ -1,0 +1,168 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing pypa-install-hook
+Using pypaInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing pip-build-hook
+Using pipBuildPhase
+Using pipShellHook
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+Running phase: unpackPhase
+unpacking source archive /nix/store/jv55nzbd3phbp8yh5sa3zhvyv09w03v8-uamqp-1.6.8.tar.gz
+source root is uamqp-1.6.8
+setting SOURCE_DATE_EPOCH to timestamp 1706541121 of file uamqp-1.6.8/setup.cfg
+@nix { "action": "setPhase", "phase": "patchPhase" }
+Running phase: patchPhase
+Removing path dependencies
+Finished removing path dependencies
+Removing git dependencies
+Finished removing git dependencies
+Removing wheel-url dependencies
+Finished removing wheel-url dependencies
+@nix { "action": "setPhase", "phase": "updateAutotoolsGnuConfigScriptsPhase" }
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+@nix { "action": "setPhase", "phase": "configurePhase" }
+Running phase: configurePhase
+no configure script, doing nothing
+@nix { "action": "setPhase", "phase": "buildPhase" }
+Running phase: buildPhase
+Executing pipBuildPhase
+Creating a wheel...
+[33mWARNING: The directory '/homeless-shelter/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.[0m[33m
+[0mProcessing /build/uamqp-1.6.8
+  Running command Preparing metadata (pyproject.toml)
+  running dist_info
+  creating /build/pip-modern-metadata-fvwl468v/uamqp.egg-info
+  writing /build/pip-modern-metadata-fvwl468v/uamqp.egg-info/PKG-INFO
+  writing dependency_links to /build/pip-modern-metadata-fvwl468v/uamqp.egg-info/dependency_links.txt
+  writing requirements to /build/pip-modern-metadata-fvwl468v/uamqp.egg-info/requires.txt
+  writing top-level names to /build/pip-modern-metadata-fvwl468v/uamqp.egg-info/top_level.txt
+  writing manifest file '/build/pip-modern-metadata-fvwl468v/uamqp.egg-info/SOURCES.txt'
+  reading manifest file '/build/pip-modern-metadata-fvwl468v/uamqp.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  adding license file 'LICENSE'
+  writing manifest file '/build/pip-modern-metadata-fvwl468v/uamqp.egg-info/SOURCES.txt'
+  creating '/build/pip-modern-metadata-fvwl468v/uamqp-1.6.8.dist-info'
+  Preparing metadata (pyproject.toml) ... [?25l[?25hdone
+Building wheels for collected packages: uamqp
+  Running command Building wheel for uamqp (pyproject.toml)
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux-x86_64-cpython-311
+  creating build/lib.linux-x86_64-cpython-311/uamqp
+  copying uamqp/connection.py -> build/lib.linux-x86_64-cpython-311/uamqp
+  copying uamqp/sender.py -> build/lib.linux-x86_64-cpython-311/uamqp
+  copying uamqp/utils.py -> build/lib.linux-x86_64-cpython-311/uamqp
+  copying uamqp/__init__.py -> build/lib.linux-x86_64-cpython-311/uamqp
+  copying uamqp/types.py -> build/lib.linux-x86_64-cpython-311/uamqp
+  copying uamqp/constants.py -> build/lib.linux-x86_64-cpython-311/uamqp
+  copying uamqp/address.py -> build/lib.linux-x86_64-cpython-311/uamqp
+  copying uamqp/receiver.py -> build/lib.linux-x86_64-cpython-311/uamqp
+  copying uamqp/session.py -> build/lib.linux-x86_64-cpython-311/uamqp
+  copying uamqp/compat.py -> build/lib.linux-x86_64-cpython-311/uamqp
+  copying uamqp/mgmt_operation.py -> build/lib.linux-x86_64-cpython-311/uamqp
+  copying uamqp/client.py -> build/lib.linux-x86_64-cpython-311/uamqp
+  copying uamqp/errors.py -> build/lib.linux-x86_64-cpython-311/uamqp
+  copying uamqp/message.py -> build/lib.linux-x86_64-cpython-311/uamqp
+  creating build/lib.linux-x86_64-cpython-311/uamqp/async_ops
+  copying uamqp/async_ops/receiver_async.py -> build/lib.linux-x86_64-cpython-311/uamqp/async_ops
+  copying uamqp/async_ops/utils.py -> build/lib.linux-x86_64-cpython-311/uamqp/async_ops
+  copying uamqp/async_ops/__init__.py -> build/lib.linux-x86_64-cpython-311/uamqp/async_ops
+  copying uamqp/async_ops/session_async.py -> build/lib.linux-x86_64-cpython-311/uamqp/async_ops
+  copying uamqp/async_ops/sender_async.py -> build/lib.linux-x86_64-cpython-311/uamqp/async_ops
+  copying uamqp/async_ops/connection_async.py -> build/lib.linux-x86_64-cpython-311/uamqp/async_ops
+  copying uamqp/async_ops/client_async.py -> build/lib.linux-x86_64-cpython-311/uamqp/async_ops
+  copying uamqp/async_ops/mgmt_operation_async.py -> build/lib.linux-x86_64-cpython-311/uamqp/async_ops
+  creating build/lib.linux-x86_64-cpython-311/uamqp/authentication
+  copying uamqp/authentication/__init__.py -> build/lib.linux-x86_64-cpython-311/uamqp/authentication
+  copying uamqp/authentication/cbs_auth_async.py -> build/lib.linux-x86_64-cpython-311/uamqp/authentication
+  copying uamqp/authentication/common.py -> build/lib.linux-x86_64-cpython-311/uamqp/authentication
+  copying uamqp/authentication/cbs_auth.py -> build/lib.linux-x86_64-cpython-311/uamqp/authentication
+  running egg_info
+  writing uamqp.egg-info/PKG-INFO
+  writing dependency_links to uamqp.egg-info/dependency_links.txt
+  writing requirements to uamqp.egg-info/requires.txt
+  writing top-level names to uamqp.egg-info/top_level.txt
+  reading manifest file 'uamqp.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  adding license file 'LICENSE'
+  writing manifest file 'uamqp.egg-info/SOURCES.txt'
+  copying uamqp/c_uamqp.c -> build/lib.linux-x86_64-cpython-311/uamqp
+  running build_ext
+  will build uamqp in build/temp.linux-x86_64-cpython-311/cmake
+  Building with generator flags: -G "Unix Makefiles"
+  calling cmake /build/uamqp-1.6.8/src/vendor/azure-uamqp-c/ -G "Unix Makefiles" -Duse_openssl:bool=ON -Duse_default_uuid:bool=ON  -Duse_builtin_httpapi:bool=ON  -Dskip_samples:bool=ON -DCMAKE_POSITION_INDEPENDENT_CODE=TRUE -DCMAKE_BUILD_TYPE=Release
+  /nix/store/q8qq40xg2grfh9ry1d9x4g7lq4ra7n81-bash-5.2-p21/bin/sh: line 1: cmake: command not found
+  Traceback (most recent call last):
+    File "/nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 353, in <module>
+      main()
+    File "/nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 335, in main
+      json_out['return_val'] = hook(**hook_input['kwargs'])
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 251, in build_wheel
+      return _build_backend().build_wheel(wheel_directory, config_settings,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/build_meta.py", line 434, in build_wheel
+      return self._build_with_temp_dir(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/build_meta.py", line 419, in _build_with_temp_dir
+      self.run_setup()
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/build_meta.py", line 507, in run_setup
+      super(_BuildMetaLegacyBackend, self).run_setup(setup_script=setup_script)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/build_meta.py", line 341, in run_setup
+      exec(code, locals())
+    File "<string>", line 260, in <module>
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/__init__.py", line 103, in setup
+      return distutils.core.setup(**attrs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/core.py", line 185, in setup
+      return run_commands(dist)
+             ^^^^^^^^^^^^^^^^^^
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/core.py", line 201, in run_commands
+      dist.run_commands()
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/dist.py", line 969, in run_commands
+      self.run_command(cmd)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/dist.py", line 989, in run_command
+      super().run_command(command)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+      cmd_obj.run()
+    File "/nix/store/xyybi21di6ab74k3xzf1hiv7f2m80cah-python3.11-wheel-0.41.1/lib/python3.11/site-packages/wheel/bdist_wheel.py", line 349, in run
+      self.run_command("build")
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/cmd.py", line 318, in run_command
+      self.distribution.run_command(command)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/dist.py", line 989, in run_command
+      super().run_command(command)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+      cmd_obj.run()
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/command/build.py", line 131, in run
+      self.run_command(cmd_name)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/cmd.py", line 318, in run_command
+      self.distribution.run_command(command)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/dist.py", line 989, in run_command
+      super().run_command(command)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+      cmd_obj.run()
+    File "<string>", line 134, in run
+    File "<string>", line 183, in build_cmake
+    File "/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/lib/python3.11/subprocess.py", line 413, in check_call
+      raise CalledProcessError(retcode, cmd)
+  subprocess.CalledProcessError: Command 'cmake /build/uamqp-1.6.8/src/vendor/azure-uamqp-c/ -G "Unix Makefiles" -Duse_openssl:bool=ON -Duse_default_uuid:bool=ON  -Duse_builtin_httpapi:bool=ON  -Dskip_samples:bool=ON -DCMAKE_POSITION_INDEPENDENT_CODE=TRUE -DCMAKE_BUILD_TYPE=Release' returned non-zero exit status 127.
+  [1;31merror[0m: [1msubprocess-exited-with-error[0m
+  
+  [31m×[0m [32mBuilding wheel for uamqp [0m[1;32m([0m[32mpyproject.toml[0m[1;32m)[0m did not run successfully.
+  [31m│[0m exit code: [1;36m1[0m
+  [31m╰─>[0m See above for output.
+  
+  [1;35mnote[0m: This error originates from a subprocess, and is likely not a problem with pip.
+  [1;35mfull command[0m: [34m/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/bin/python3.11 /nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py build_wheel /build/tmplfai16cc[0m
+  [1;35mcwd[0m: /build/uamqp-1.6.8
+  Building wheel for uamqp (pyproject.toml) ... [?25l[?25herror
+[31m  ERROR: Failed building wheel for uamqp[0m[31m
+[0mFailed to build uamqp
+[31mERROR: Failed to build one or more wheels[0m[31m
+[0m

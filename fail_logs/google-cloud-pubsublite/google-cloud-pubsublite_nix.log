@@ -1,0 +1,18 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+copying path '/nix/store/xdr7z7pjj1s6pfgfrzvclh5wyrd6x5rd-google-cloud-pubsub-2.19.4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/l1667pc0x08cbk2yq5ckyr7nlzqpacnr-python3.11-google-cloud-pubsub-2.19.4.drv'...
+building '/nix/store/41fv4d1rsfphhby0jkgxyb8qnyfg30vv-python3.11-google-cloud-pubsublite-1.9.0.drv'...
+error: builder for '/nix/store/41fv4d1rsfphhby0jkgxyb8qnyfg30vv-python3.11-google-cloud-pubsublite-1.9.0.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/41fv4d1rsfphhby0jkgxyb8qnyfg30vv-python3.11-google-cloud-pubsublite-1.9.0.drv'.
+error: 1 dependencies of derivation '/nix/store/nl46lggxvi2550s87b9c5p295n01qd8g-nix-shell-env.drv' failed to build

@@ -1,0 +1,84 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing pypa-install-hook
+Using pypaInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing pip-build-hook
+Using pipBuildPhase
+Using pipShellHook
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+Running phase: unpackPhase
+unpacking source archive /nix/store/zk5l4iq6rv6bjp934529dl5vqdam1h16-pyodbc-5.1.0.tar.gz
+source root is pyodbc-5.1.0
+setting SOURCE_DATE_EPOCH to timestamp 1707151235 of file pyodbc-5.1.0/setup.cfg
+@nix { "action": "setPhase", "phase": "patchPhase" }
+Running phase: patchPhase
+Removing path dependencies
+Finished removing path dependencies
+Removing git dependencies
+Finished removing git dependencies
+Removing wheel-url dependencies
+Finished removing wheel-url dependencies
+@nix { "action": "setPhase", "phase": "updateAutotoolsGnuConfigScriptsPhase" }
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+@nix { "action": "setPhase", "phase": "configurePhase" }
+Running phase: configurePhase
+no configure script, doing nothing
+@nix { "action": "setPhase", "phase": "buildPhase" }
+Running phase: buildPhase
+Executing pipBuildPhase
+Creating a wheel...
+[33mWARNING: The directory '/homeless-shelter/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.[0m[33m
+[0mProcessing /build/pyodbc-5.1.0
+  Running command Preparing metadata (pyproject.toml)
+  WARNING: '' not a valid package name; please use only .-separated package names in setup.py
+  running dist_info
+  creating /build/pip-modern-metadata-4mgjlk2j/pyodbc.egg-info
+  writing /build/pip-modern-metadata-4mgjlk2j/pyodbc.egg-info/PKG-INFO
+  writing dependency_links to /build/pip-modern-metadata-4mgjlk2j/pyodbc.egg-info/dependency_links.txt
+  writing top-level names to /build/pip-modern-metadata-4mgjlk2j/pyodbc.egg-info/top_level.txt
+  writing manifest file '/build/pip-modern-metadata-4mgjlk2j/pyodbc.egg-info/SOURCES.txt'
+  reading manifest file '/build/pip-modern-metadata-4mgjlk2j/pyodbc.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  warning: no previously-included files matching '*.py[cod]' found anywhere in distribution
+  adding license file 'LICENSE.txt'
+  writing manifest file '/build/pip-modern-metadata-4mgjlk2j/pyodbc.egg-info/SOURCES.txt'
+  creating '/build/pip-modern-metadata-4mgjlk2j/pyodbc-5.1.0.dist-info'
+  Preparing metadata (pyproject.toml) ... [?25l[?25hdone
+Building wheels for collected packages: pyodbc
+  Running command Building wheel for pyodbc (pyproject.toml)
+  WARNING: '' not a valid package name; please use only .-separated package names in setup.py
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux-x86_64-cpython-311
+  copying src/pyodbc.pyi -> build/lib.linux-x86_64-cpython-311
+  running build_ext
+  building 'pyodbc' extension
+  creating build/temp.linux-x86_64-cpython-311
+  creating build/temp.linux-x86_64-cpython-311/src
+  g++ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -I/nix/store/jh2dj172jmmlw74kw4bsqa5ycf1blv4v-libxcrypt-4.4.36/include -fPIC -DPYODBC_VERSION=5.1.0 -I/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/include/python3.11 -c src/cnxninfo.cpp -o build/temp.linux-x86_64-cpython-311/src/cnxninfo.o -Wno-write-strings
+  In file included from src/cnxninfo.cpp:7:
+  src/pyodbc.h:52:10: fatal error: sql.h: No such file or directory
+     52 | #include <sql.h>
+        |          ^~~~~~~
+  compilation terminated.
+  error: command '/nix/store/sfgnb6rr428bssyrs54d6d0vv2avi95c-gcc-wrapper-12.3.0/bin/g++' failed with exit code 1
+  [1;31merror[0m: [1msubprocess-exited-with-error[0m
+  
+  [31m×[0m [32mBuilding wheel for pyodbc [0m[1;32m([0m[32mpyproject.toml[0m[1;32m)[0m did not run successfully.
+  [31m│[0m exit code: [1;36m1[0m
+  [31m╰─>[0m See above for output.
+  
+  [1;35mnote[0m: This error originates from a subprocess, and is likely not a problem with pip.
+  [1;35mfull command[0m: [34m/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/bin/python3.11 /nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py build_wheel /build/tmp1dd0gtfm[0m
+  [1;35mcwd[0m: /build/pyodbc-5.1.0
+  Building wheel for pyodbc (pyproject.toml) ... [?25l[?25herror
+[31m  ERROR: Failed building wheel for pyodbc[0m[31m
+[0mFailed to build pyodbc
+[31mERROR: Failed to build one or more wheels[0m[31m
+[0m

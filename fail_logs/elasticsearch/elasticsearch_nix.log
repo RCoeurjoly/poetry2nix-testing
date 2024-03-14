@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/ik2xv3l5qh499nizwzljn6m4p3pc2vs1-python3.11-elastic-transport-8.12.0.drv'...
+error: builder for '/nix/store/ik2xv3l5qh499nizwzljn6m4p3pc2vs1-python3.11-elastic-transport-8.12.0.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/ik2xv3l5qh499nizwzljn6m4p3pc2vs1-python3.11-elastic-transport-8.12.0.drv'.
+error: 1 dependencies of derivation '/nix/store/j8s8isnfrbmp3f1nhxfmy8p7zdhsa6rf-python3.11-elasticsearch-8.12.1.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/1c5186pxbsxzk2kg7m75y29bdwp3ki50-nix-shell-env.drv' failed to build

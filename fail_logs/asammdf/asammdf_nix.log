@@ -1,0 +1,21 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/kv8sbrvx6mllcyjkl0m9q9qdnll535n6-asammdf-7.4.1.tar.gz.drv'...
+building '/nix/store/qzvlci1kmzw6fxrvbh6bn79ni1kx089i-isal-1.6.0.tar.gz.drv'...
+building '/nix/store/6l77f92fvhr603hrrk7h5azs5v83h55p-numexpr-2.9.0.tar.gz.drv'...
+building '/nix/store/1dy50jwf5fqa0rv5iz6q3abd4qdcj0qc-python3.11-canmatrix-1.0.drv'...
+building '/nix/store/ym6q68w250k68k0laczr83zvz23pqqr9-python3.11-isal-1.6.0.drv'...
+error: builder for '/nix/store/ym6q68w250k68k0laczr83zvz23pqqr9-python3.11-isal-1.6.0.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/ym6q68w250k68k0laczr83zvz23pqqr9-python3.11-isal-1.6.0.drv'.
+error: 1 dependencies of derivation '/nix/store/9wwx9lnilvr29g2ycvqrfj3j77302ly8-python3.11-asammdf-7.4.1.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/3g6lihb54ggca73aspw5mcq764jhfzzj-nix-shell-env.drv' failed to build

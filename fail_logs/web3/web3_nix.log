@@ -1,0 +1,18 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+trace: warning: Unknown rpds-py version: '0.18.0'. Please update getCargoHash.
+building '/nix/store/7zdr46bpczm62sc5vdhn7hykyxvp0rzq-python3.11-pyunormalize-15.1.0.drv'...
+error: builder for '/nix/store/7zdr46bpczm62sc5vdhn7hykyxvp0rzq-python3.11-pyunormalize-15.1.0.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/7zdr46bpczm62sc5vdhn7hykyxvp0rzq-python3.11-pyunormalize-15.1.0.drv'.
+error: 1 dependencies of derivation '/nix/store/m1h960q51hacb854d7zaqmxg9zbp5v7b-python3.11-web3-6.15.1.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/jb0gmr5wiwi56hc9ynfdnrfyyi0l7gfr-nix-shell-env.drv' failed to build

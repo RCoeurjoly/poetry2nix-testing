@@ -1,0 +1,16 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/yviajjsz9s09413mrw3mvna4n0jrz3kr-python3.11-aws-psycopg2-1.3.8.drv'...
+error: builder for '/nix/store/yviajjsz9s09413mrw3mvna4n0jrz3kr-python3.11-aws-psycopg2-1.3.8.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/yviajjsz9s09413mrw3mvna4n0jrz3kr-python3.11-aws-psycopg2-1.3.8.drv'.
+error: 1 dependencies of derivation '/nix/store/7d8wh16az4na07x7g4ph1qdn8c8b0l4a-nix-shell-env.drv' failed to build

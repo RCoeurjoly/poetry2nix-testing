@@ -1,0 +1,30 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing pypa-install-hook
+Using pypaInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+Running phase: unpackPhase
+unpacking source archive /nix/store/44jcdaix3symi18216gif01rvc3q0x9z-pygame-2.5.2.tar.gz
+source root is pygame-2.5.2
+setting SOURCE_DATE_EPOCH to timestamp 1694987649 of file pygame-2.5.2/PKG-INFO
+@nix { "action": "setPhase", "phase": "patchPhase" }
+Running phase: patchPhase
+@nix { "action": "setPhase", "phase": "updateAutotoolsGnuConfigScriptsPhase" }
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+@nix { "action": "setPhase", "phase": "configurePhase" }
+Running phase: configurePhase
+Using UNIX configuration...
+
+Traceback (most recent call last):
+  File "/build/pygame-2.5.2/buildconfig/config.py", line 247, in <module>
+    main()
+  File "/build/pygame-2.5.2/buildconfig/config.py", line 207, in main
+    import config_unix as CFG
+  File "/build/pygame-2.5.2/buildconfig/config_unix.py", line 142
+    origincdirs += ['/nix/store/q5f6c3kcj49v67492q7ivm5nscnsr258-freetype-2.13.2-dev/include']
+IndentationError: unexpected indent
+/nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 131: pop_var_context: head of shell_variables not a function context

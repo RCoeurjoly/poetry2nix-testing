@@ -1,0 +1,114 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing pypa-install-hook
+Using pypaInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing pip-build-hook
+Using pipBuildPhase
+Using pipShellHook
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+Running phase: unpackPhase
+unpacking source archive /nix/store/i0zfv9hbinkmbv8ml44rfkxfnwfd4vpd-google-re2-1.1.tar.gz
+source root is google-re2-1.1
+setting SOURCE_DATE_EPOCH to timestamp 1690819283 of file google-re2-1.1/setup.cfg
+@nix { "action": "setPhase", "phase": "patchPhase" }
+Running phase: patchPhase
+@nix { "action": "setPhase", "phase": "updateAutotoolsGnuConfigScriptsPhase" }
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+@nix { "action": "setPhase", "phase": "configurePhase" }
+Running phase: configurePhase
+no configure script, doing nothing
+@nix { "action": "setPhase", "phase": "buildPhase" }
+Running phase: buildPhase
+Executing pipBuildPhase
+Creating a wheel...
+[33mWARNING: The directory '/homeless-shelter/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.[0m[33m
+[0mProcessing /build/google-re2-1.1
+  Running command python setup.py egg_info
+  running egg_info
+  creating /build/pip-pip-egg-info-esxmfkal/google_re2.egg-info
+  writing /build/pip-pip-egg-info-esxmfkal/google_re2.egg-info/PKG-INFO
+  writing dependency_links to /build/pip-pip-egg-info-esxmfkal/google_re2.egg-info/dependency_links.txt
+  writing top-level names to /build/pip-pip-egg-info-esxmfkal/google_re2.egg-info/top_level.txt
+  writing manifest file '/build/pip-pip-egg-info-esxmfkal/google_re2.egg-info/SOURCES.txt'
+  reading manifest file '/build/pip-pip-egg-info-esxmfkal/google_re2.egg-info/SOURCES.txt'
+  adding license file 'LICENSE'
+  writing manifest file '/build/pip-pip-egg-info-esxmfkal/google_re2.egg-info/SOURCES.txt'
+  Preparing metadata (setup.py) ... [?25l[?25hdone
+Building wheels for collected packages: google-re2
+  Running command python setup.py bdist_wheel
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux-x86_64-cpython-311
+  copying re2.py -> build/lib.linux-x86_64-cpython-311
+  running build_ext
+  building '_re2' extension
+  creating build/temp.linux-x86_64-cpython-311
+  g++ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -I/nix/store/jh2dj172jmmlw74kw4bsqa5ycf1blv4v-libxcrypt-4.4.36/include -fPIC -I/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/include/python3.11 -c _re2.cc -o build/temp.linux-x86_64-cpython-311/_re2.o -fvisibility=hidden
+  _re2.cc:11:10: fatal error: pybind11/pybind11.h: No such file or directory
+     11 | #include <pybind11/pybind11.h>
+        |          ^~~~~~~~~~~~~~~~~~~~~
+  compilation terminated.
+  error: command '/nix/store/sfgnb6rr428bssyrs54d6d0vv2avi95c-gcc-wrapper-12.3.0/bin/g++' failed with exit code 1
+  [1;31merror[0m: [1msubprocess-exited-with-error[0m
+  
+  [31m×[0m [32mpython setup.py bdist_wheel[0m did not run successfully.
+  [31m│[0m exit code: [1;36m1[0m
+  [31m╰─>[0m See above for output.
+  
+  [1;35mnote[0m: This error originates from a subprocess, and is likely not a problem with pip.
+  [1;35mfull command[0m: [34m/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/bin/python3.11 -u -c '[0m
+[34m  exec(compile('"'"''"'"''"'"'[0m
+[34m  # This is <pip-setuptools-caller> -- a caller that pip uses to run setup.py[0m
+[34m  #[0m
+[34m  # - It imports setuptools before invoking setup.py, to enable projects that directly[0m
+[34m  #   import from `distutils.core` to work with newer packaging standards.[0m
+[34m  # - It provides a clear error message when setuptools is not installed.[0m
+[34m  # - It sets `sys.argv[0]` to the underlying `setup.py`, when invoking `setup.py` so[0m
+[34m  #   setuptools doesn'"'"'t think the script is `-c`. This avoids the following warning:[0m
+[34m  #     manifest_maker: standard file '"'"'-c'"'"' not found".[0m
+[34m  # - It generates a shim setup.py, for handling setup.cfg-only projects.[0m
+[34m  import os, sys, tokenize[0m
+[34m  [0m
+[34m  try:[0m
+[34m      import setuptools[0m
+[34m  except ImportError as error:[0m
+[34m      print([0m
+[34m          "ERROR: Can not execute `setup.py` since setuptools is not available in "[0m
+[34m          "the build environment.",[0m
+[34m          file=sys.stderr,[0m
+[34m      )[0m
+[34m      sys.exit(1)[0m
+[34m  [0m
+[34m  __file__ = %r[0m
+[34m  sys.argv[0] = __file__[0m
+[34m  [0m
+[34m  if os.path.exists(__file__):[0m
+[34m      filename = __file__[0m
+[34m      with tokenize.open(__file__) as f:[0m
+[34m          setup_py_code = f.read()[0m
+[34m  else:[0m
+[34m      filename = "<auto-generated setuptools caller>"[0m
+[34m      setup_py_code = "from setuptools import setup; setup()"[0m
+[34m  [0m
+[34m  exec(compile(setup_py_code, filename, "exec"))[0m
+[34m  '"'"''"'"''"'"' % ('"'"'/build/google-re2-1.1/setup.py'"'"',), "<pip-setuptools-caller>", "exec"))' bdist_wheel -d /build/pip-wheel-6a3nszka[0m
+  [1;35mcwd[0m: /build/google-re2-1.1/
+  Building wheel for google-re2 (setup.py) ... [?25lerror
+[31m  ERROR: Failed building wheel for google-re2[0m[31m
+[0m[?25h  Running setup.py clean for google-re2
+  Running command python setup.py clean
+  running clean
+  removing 'build/temp.linux-x86_64-cpython-311' (and everything under it)
+  removing 'build/lib.linux-x86_64-cpython-311' (and everything under it)
+  'build/bdist.linux-x86_64' does not exist -- can't clean it
+  'build/scripts-3.11' does not exist -- can't clean it
+  removing 'build'
+Failed to build google-re2
+[31mERROR: Failed to build one or more wheels[0m[31m
+[0m

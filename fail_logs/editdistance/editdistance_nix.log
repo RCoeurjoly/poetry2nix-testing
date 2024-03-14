@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/zxar2v1hn0626qjlbqpgy3rm88g490an-editdistance-0.8.1.tar.gz.drv'...
+building '/nix/store/0zdg5fflhhr6sshpzn8pdxylrnpgh464-python3.11-editdistance-0.8.1.drv'...
+error: builder for '/nix/store/0zdg5fflhhr6sshpzn8pdxylrnpgh464-python3.11-editdistance-0.8.1.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'pdm'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/0zdg5fflhhr6sshpzn8pdxylrnpgh464-python3.11-editdistance-0.8.1.drv'.
+error: 1 dependencies of derivation '/nix/store/ag2r6xr3450q2ic92gcrq3i8j37zrwra-nix-shell-env.drv' failed to build

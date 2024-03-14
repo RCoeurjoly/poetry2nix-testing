@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/f4i34qz42kqd3jv74js7x42jg8xbzfxq-cmake-3.28.3.tar.gz.drv'...
+building '/nix/store/ihl2vi66l8jnxzb9xy98rs96srlgzzq4-python3.11-cmake-3.28.3.drv'...
+error: builder for '/nix/store/ihl2vi66l8jnxzb9xy98rs96srlgzzq4-python3.11-cmake-3.28.3.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/ihl2vi66l8jnxzb9xy98rs96srlgzzq4-python3.11-cmake-3.28.3.drv'.
+error: 1 dependencies of derivation '/nix/store/pv52mjjpcr2ira9yp9cf849q0pyc0g81-nix-shell-env.drv' failed to build

@@ -1,0 +1,16 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/z0ma0dlpvlpyzk6fxgqsyam3v39m8v7c-python3.11-audioread-3.0.1.drv'...
+error: builder for '/nix/store/z0ma0dlpvlpyzk6fxgqsyam3v39m8v7c-python3.11-audioread-3.0.1.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'flit_core'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/z0ma0dlpvlpyzk6fxgqsyam3v39m8v7c-python3.11-audioread-3.0.1.drv'.
+error: 1 dependencies of derivation '/nix/store/slkqzry8wbzm2n6mj5qlqw7r6sw461q4-nix-shell-env.drv' failed to build

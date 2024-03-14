@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/ra86hhsks9p08pl7vsv1vkhmarqi1izq-python3.11-lmdb-1.4.1.drv'...
+error: builder for '/nix/store/ra86hhsks9p08pl7vsv1vkhmarqi1izq-python3.11-lmdb-1.4.1.drv' failed with exit code 1;
+       last 10 log lines:
+       >   '"'"''"'"''"'"' % ('"'"'/build/lmdb-1.4.1/setup.py'"'"',), "<pip-setuptools-caller>", "exec"))' egg_info --egg-base /build/pip-pip-egg-info-h3r4aca3
+       >   cwd: /build/lmdb-1.4.1/
+       >   Preparing metadata (setup.py) ... error
+       > error: metadata-generation-failed
+       >
+       > × Encountered error while generating package metadata.
+       > ╰─> See above for output.
+       >
+       > note: This is an issue with the package mentioned above, not pip.
+       > hint: See above for details.
+       For full logs, run 'nix log /nix/store/ra86hhsks9p08pl7vsv1vkhmarqi1izq-python3.11-lmdb-1.4.1.drv'.
+error: 1 dependencies of derivation '/nix/store/kbnhwadxbznf1vx6y4hyppqmg1ivnn52-python3.11-gfpgan-1.3.8.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/p5w1d9xrsw3r9wg0mjmw7ikkv3cfrajc-nix-shell-env.drv' failed to build

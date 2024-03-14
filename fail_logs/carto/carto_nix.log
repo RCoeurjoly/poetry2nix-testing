@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/hja01w0wfhgqad2wzmbbr24lrfc2w91p-python3.11-pyrestcli-0.6.11.drv'...
+error: builder for '/nix/store/hja01w0wfhgqad2wzmbbr24lrfc2w91p-python3.11-pyrestcli-0.6.11.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/hja01w0wfhgqad2wzmbbr24lrfc2w91p-python3.11-pyrestcli-0.6.11.drv'.
+error: 1 dependencies of derivation '/nix/store/ifhx7rxki8nlqpg00pxg5z8zaci8n1yh-python3.11-carto-1.11.3.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/5rnr8bnd0wkwlyvyb9p5607sa34phkc8-nix-shell-env.drv' failed to build

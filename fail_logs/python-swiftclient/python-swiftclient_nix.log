@@ -1,0 +1,16 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/f3h4dhw7l784q022pz8hipxp38crcidw-python3.11-python-swiftclient-4.4.0.drv'...
+error: builder for '/nix/store/f3h4dhw7l784q022pz8hipxp38crcidw-python3.11-python-swiftclient-4.4.0.drv' failed with exit code 1;
+       last 10 log lines:
+       >     installer.install(source, destination, {})
+       >   File "/nix/store/nsj26zvsn035psf7jqks9bcgnpk4x1q8-python3.11-installer-0.7.0/lib/python3.11/site-packages/installer/_core.py", line 109, in install
+       >     record = destination.write_file(
+       >              ^^^^^^^^^^^^^^^^^^^^^^^
+       >   File "/nix/store/nsj26zvsn035psf7jqks9bcgnpk4x1q8-python3.11-installer-0.7.0/lib/python3.11/site-packages/installer/destinations.py", line 203, in write_file
+       >     return self.write_to_fs(
+       >            ^^^^^^^^^^^^^^^^^
+       >   File "/nix/store/nsj26zvsn035psf7jqks9bcgnpk4x1q8-python3.11-installer-0.7.0/lib/python3.11/site-packages/installer/destinations.py", line 167, in write_to_fs
+       >     raise FileExistsError(message)
+       > FileExistsError: File already exists: /nix/store/vi4cayv1355kcrly2gqhhdxqvcr3g7q0-python3.11-python-swiftclient-4.4.0/bin/swift
+       For full logs, run 'nix log /nix/store/f3h4dhw7l784q022pz8hipxp38crcidw-python3.11-python-swiftclient-4.4.0.drv'.
+error: 1 dependencies of derivation '/nix/store/08wzzf8wa5s2mrs8xnjzrmklk8bqrvj3-nix-shell-env.drv' failed to build

@@ -1,0 +1,18 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/7b1xv784whsirj8f3hq9d9bqzvs3hj1k-flask-3.0.2.tar.gz.drv'...
+building '/nix/store/w3km9y3jkfn476mryakcr43529rarxii-python3.11-flask-3.0.2.drv'...
+building '/nix/store/l9md1la49bfq64r5z20szyx8zw6dzpzq-python3.11-flask-sqlalchemy-3.1.1.drv'...
+error: builder for '/nix/store/l9md1la49bfq64r5z20szyx8zw6dzpzq-python3.11-flask-sqlalchemy-3.1.1.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'flit_core'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/l9md1la49bfq64r5z20szyx8zw6dzpzq-python3.11-flask-sqlalchemy-3.1.1.drv'.
+error: 1 dependencies of derivation '/nix/store/lx8p1bni98yrcwh3qrgrjk42b4sf3kni-nix-shell-env.drv' failed to build

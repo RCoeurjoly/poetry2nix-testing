@@ -1,0 +1,21 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/wbq88jj4gmhnq6pl48cv0xfahlkl1pyn-kfp-2.7.0.tar.gz.drv'...
+building '/nix/store/p4yi38cj9gxx942cynrw6n8dqkljcb6i-kfp_pipeline_spec-0.3.0-py3-none-any.whl.drv'...
+building '/nix/store/xqqky8la4hgqdssnips513sac5hi7mvf-python3.11-googleapis-common-protos-1.62.0.drv'...
+building '/nix/store/cv6w6c9xx51ych2l25343j2v7sjh7zpc-python3.11-kfp-pipeline-spec-0.3.0.drv'...
+building '/nix/store/2bqnv31fvn8vbzbs94s1vizmdwg2a3rk-python3.11-kfp-server-api-2.0.5.drv'...
+error: builder for '/nix/store/2bqnv31fvn8vbzbs94s1vizmdwg2a3rk-python3.11-kfp-server-api-2.0.5.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/2bqnv31fvn8vbzbs94s1vizmdwg2a3rk-python3.11-kfp-server-api-2.0.5.drv'.
+error: 1 dependencies of derivation '/nix/store/578fzy8krgyfd876r6qbryhzv4w89sx4-python3.11-kfp-2.7.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/73lc5yyrx36lr5whfc27qml8wvfirkmp-nix-shell-env.drv' failed to build

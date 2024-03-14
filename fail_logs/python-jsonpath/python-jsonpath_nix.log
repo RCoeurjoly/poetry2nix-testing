@@ -1,0 +1,16 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/v10dh22h22x7j68qmmmbfz16ayy1gjxc-python3.11-python-jsonpath-0.10.3.drv'...
+error: builder for '/nix/store/v10dh22h22x7j68qmmmbfz16ayy1gjxc-python3.11-python-jsonpath-0.10.3.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'hatchling'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/v10dh22h22x7j68qmmmbfz16ayy1gjxc-python3.11-python-jsonpath-0.10.3.drv'.
+error: 1 dependencies of derivation '/nix/store/5lmi1hy4rh7bdqh1rliananlwr0r7was-nix-shell-env.drv' failed to build

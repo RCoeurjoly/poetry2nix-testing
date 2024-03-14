@@ -1,0 +1,141 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing pypa-install-hook
+Using pypaInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing pip-build-hook
+Using pipBuildPhase
+Using pipShellHook
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+Running phase: unpackPhase
+unpacking source archive /nix/store/c167nqhlr1grdn622jnrp548g23k9vig-jsonschema-2.6.0.tar.gz
+source root is jsonschema-2.6.0
+setting SOURCE_DATE_EPOCH to timestamp 1486297399 of file jsonschema-2.6.0/setup.cfg
+@nix { "action": "setPhase", "phase": "patchPhase" }
+Running phase: patchPhase
+@nix { "action": "setPhase", "phase": "updateAutotoolsGnuConfigScriptsPhase" }
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+@nix { "action": "setPhase", "phase": "configurePhase" }
+Running phase: configurePhase
+no configure script, doing nothing
+@nix { "action": "setPhase", "phase": "buildPhase" }
+Running phase: buildPhase
+Executing pipBuildPhase
+Creating a wheel...
+[33mWARNING: The directory '/homeless-shelter/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.[0m[33m
+[0mProcessing /build/jsonschema-2.6.0
+  Running command python setup.py egg_info
+  /nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/__init__.py:80: _DeprecatedInstaller: setuptools.installer and fetch_build_eggs are deprecated.
+  !!
+
+          ********************************************************************************
+          Requirements should be satisfied by a PEP 517 installer.
+          If you are using pip, you can try `pip install --use-pep517`.
+          ********************************************************************************
+
+  !!
+    dist.fetch_build_eggs(dist.setup_requires)
+  WARNING: The directory '/homeless-shelter/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+  WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7ffff6e78110>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')': /simple/vcversioner/
+  WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7ffff5506490>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')': /simple/vcversioner/
+  WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7ffff5506fd0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')': /simple/vcversioner/
+  WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7ffff5507bd0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')': /simple/vcversioner/
+  WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7ffff551c750>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')': /simple/vcversioner/
+  ERROR: Could not find a version that satisfies the requirement vcversioner>=2.16.0.0 (from versions: none)
+  ERROR: No matching distribution found for vcversioner>=2.16.0.0
+  Traceback (most recent call last):
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/installer.py", line 101, in _fetch_build_egg_no_warn
+      subprocess.check_call(cmd)
+    File "/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/lib/python3.11/subprocess.py", line 413, in check_call
+      raise CalledProcessError(retcode, cmd)
+  subprocess.CalledProcessError: Command '['/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/bin/python3.11', '-m', 'pip', '--disable-pip-version-check', 'wheel', '--no-deps', '-w', '/build/tmpkqwtsuuw', '--quiet', 'vcversioner>=2.16.0.0']' returned non-zero exit status 1.
+
+  The above exception was the direct cause of the following exception:
+
+  Traceback (most recent call last):
+    File "<string>", line 2, in <module>
+    File "<pip-setuptools-caller>", line 34, in <module>
+    File "/build/jsonschema-2.6.0/setup.py", line 28, in <module>
+      setup(
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/__init__.py", line 102, in setup
+      _install_setup_requires(attrs)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/__init__.py", line 75, in _install_setup_requires
+      _fetch_build_eggs(dist)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/__init__.py", line 80, in _fetch_build_eggs
+      dist.fetch_build_eggs(dist.setup_requires)
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/dist.py", line 662, in fetch_build_eggs
+      return _fetch_build_eggs(self, requires)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/installer.py", line 38, in _fetch_build_eggs
+      resolved_dists = pkg_resources.working_set.resolve(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/pkg_resources/__init__.py", line 829, in resolve
+      dist = self._resolve_dist(
+             ^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/pkg_resources/__init__.py", line 865, in _resolve_dist
+      dist = best[req.key] = env.best_match(
+                             ^^^^^^^^^^^^^^^
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/pkg_resources/__init__.py", line 1135, in best_match
+      return self.obtain(req, installer)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/pkg_resources/__init__.py", line 1147, in obtain
+      return installer(requirement)
+             ^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/6dsx7y855a79l3ynz9vpk0y2fddyl5pj-python3.11-setuptools-68.2.2/lib/python3.11/site-packages/setuptools/installer.py", line 103, in _fetch_build_egg_no_warn
+      raise DistutilsError(str(e)) from e
+  distutils.errors.DistutilsError: Command '['/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/bin/python3.11', '-m', 'pip', '--disable-pip-version-check', 'wheel', '--no-deps', '-w', '/build/tmpkqwtsuuw', '--quiet', 'vcversioner>=2.16.0.0']' returned non-zero exit status 1.
+  [1;31merror[0m: [1msubprocess-exited-with-error[0m
+  
+  [31m×[0m [32mpython setup.py egg_info[0m did not run successfully.
+  [31m│[0m exit code: [1;36m1[0m
+  [31m╰─>[0m See above for output.
+  
+  [1;35mnote[0m: This error originates from a subprocess, and is likely not a problem with pip.
+  [1;35mfull command[0m: [34m/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/bin/python3.11 -c '[0m
+[34m  exec(compile('"'"''"'"''"'"'[0m
+[34m  # This is <pip-setuptools-caller> -- a caller that pip uses to run setup.py[0m
+[34m  #[0m
+[34m  # - It imports setuptools before invoking setup.py, to enable projects that directly[0m
+[34m  #   import from `distutils.core` to work with newer packaging standards.[0m
+[34m  # - It provides a clear error message when setuptools is not installed.[0m
+[34m  # - It sets `sys.argv[0]` to the underlying `setup.py`, when invoking `setup.py` so[0m
+[34m  #   setuptools doesn'"'"'t think the script is `-c`. This avoids the following warning:[0m
+[34m  #     manifest_maker: standard file '"'"'-c'"'"' not found".[0m
+[34m  # - It generates a shim setup.py, for handling setup.cfg-only projects.[0m
+[34m  import os, sys, tokenize[0m
+[34m  [0m
+[34m  try:[0m
+[34m      import setuptools[0m
+[34m  except ImportError as error:[0m
+[34m      print([0m
+[34m          "ERROR: Can not execute `setup.py` since setuptools is not available in "[0m
+[34m          "the build environment.",[0m
+[34m          file=sys.stderr,[0m
+[34m      )[0m
+[34m      sys.exit(1)[0m
+[34m  [0m
+[34m  __file__ = %r[0m
+[34m  sys.argv[0] = __file__[0m
+[34m  [0m
+[34m  if os.path.exists(__file__):[0m
+[34m      filename = __file__[0m
+[34m      with tokenize.open(__file__) as f:[0m
+[34m          setup_py_code = f.read()[0m
+[34m  else:[0m
+[34m      filename = "<auto-generated setuptools caller>"[0m
+[34m      setup_py_code = "from setuptools import setup; setup()"[0m
+[34m  [0m
+[34m  exec(compile(setup_py_code, filename, "exec"))[0m
+[34m  '"'"''"'"''"'"' % ('"'"'/build/jsonschema-2.6.0/setup.py'"'"',), "<pip-setuptools-caller>", "exec"))' egg_info --egg-base /build/pip-pip-egg-info-ibxb44s8[0m
+  [1;35mcwd[0m: /build/jsonschema-2.6.0/
+  Preparing metadata (setup.py) ... [?25l[?25herror
+[1;31merror[0m: [1mmetadata-generation-failed[0m
+
+[31m×[0m Encountered error while generating package metadata.
+[31m╰─>[0m See above for output.
+
+[1;35mnote[0m: This is an issue with the package mentioned above, not pip.
+[1;36mhint[0m: See above for details.

@@ -1,0 +1,24 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+trace: warning: Unknown rpds-py version: '0.18.0'. Please update getCargoHash.
+building '/nix/store/0jr1wkmcvssbsfl1cz4ka7vqwdi9h917-cfn-lint-0.85.2.tar.gz.drv'...
+building '/nix/store/caknhbdr2xalggccwgccnhjnqkpc1sf9-jsonpickle-3.0.3.tar.gz.drv'...
+building '/nix/store/4g7554087lwj0b5d0yf32kcgsznkkaqf-python3.11-jsonpickle-3.0.3.drv'...
+building '/nix/store/x80ziq4xqsipldz2xw8k4kqpl1s87jpy-python3.11-jschema-to-python-1.2.3.drv'...
+building '/nix/store/3wvdgqhmgbmpqq4v8z0gh4a8bkw6hnkx-rpds-py-0.18.0-vendor.tar.gz.drv'...
+error: builder for '/nix/store/3wvdgqhmgbmpqq4v8z0gh4a8bkw6hnkx-rpds-py-0.18.0-vendor.tar.gz.drv' failed with exit code 1;
+       last 10 log lines:
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 111: /dev/null: No such file or directory
+       > unpacking source archive /nix/store/08zidvn6bjk7fk9yvl2j135xw35a7lns-rpds_py-0.18.0.tar.gz
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 128: /dev/null: No such file or directory
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 109: /dev/null: No such file or directory
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 111: /dev/null: No such file or directory
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 128: /dev/null: No such file or directory
+       > do not know how to unpack source archive /nix/store/08zidvn6bjk7fk9yvl2j135xw35a7lns-rpds_py-0.18.0.tar.gz
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 128: /dev/null: No such file or directory
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 109: /dev/null: No such file or directory
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 111: /dev/null: No such file or directory
+       For full logs, run 'nix log /nix/store/3wvdgqhmgbmpqq4v8z0gh4a8bkw6hnkx-rpds-py-0.18.0-vendor.tar.gz.drv'.
+error: 1 dependencies of derivation '/nix/store/1jscmsmv2qhl346y6z4c9bkny7x74lyy-python3.11-rpds-py-0.18.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/7ayf2chvvmcqsz9gh16l86msnqmzfq1m-python3.11-jsonschema-4.21.1.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/kbs8ybcfyi2i5vylc1rw4hmlh7yh8phi-python3.11-cfn-lint-0.85.2.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/lqwq80lywg6cjpv7cm7a4n22i3nzg489-nix-shell-env.drv' failed to build

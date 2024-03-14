@@ -1,0 +1,3 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+Nix develop environment ready

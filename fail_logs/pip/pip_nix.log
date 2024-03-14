@@ -1,0 +1,16 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/ffvx2kmb23iic1xgcnvahlcqx7m9s407-python3.11-pip-24.0.drv'...
+error: builder for '/nix/store/ffvx2kmb23iic1xgcnvahlcqx7m9s407-python3.11-pip-24.0.drv' failed with exit code 1;
+       last 10 log lines:
+       > Rewriting #!/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/bin/python3.11 to #!/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6
+       > wrapping `/nix/store/sbv2sxyjn2p4dl69jfx3b87350pic2ar-python3.11-pip-24.0/bin/pip'...
+       > Executing pythonRemoveTestsDir
+       > Finished executing pythonRemoveTestsDir
+       > Running phase: pythonCatchConflictsPhase
+       > Found duplicated packages in closure for dependency 'pip':
+       >       pip 24.0 (/nix/store/sbv2sxyjn2p4dl69jfx3b87350pic2ar-python3.11-pip-24.0/lib/python3.11/site-packages/pip-24.0.dist-info)
+       >     pip 23.2.1 (/nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip-23.2.1.dist-info)
+       >
+       > Package duplicates found in closure, see above. Usually this happens if two packages depend on different version of the same dependency.
+       For full logs, run 'nix log /nix/store/ffvx2kmb23iic1xgcnvahlcqx7m9s407-python3.11-pip-24.0.drv'.
+error: 1 dependencies of derivation '/nix/store/lq35x7gmgjhxsr9r1cxw9fg16r3n2m80-nix-shell-env.drv' failed to build

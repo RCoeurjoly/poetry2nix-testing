@@ -1,0 +1,19 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/c8q0zgpzzf17gyg7pzwp4x54pp3yd1kf-python3.11-jax-0.4.24.drv'...
+building '/nix/store/4lv9h4mi9igmkys91hrdxghp90h3wxr2-python3.11-jaxlib-0.4.24.drv'...
+building '/nix/store/nisrsj226xhzj500d67fb7q43sfj30vq-python3.11-chex-0.1.85.drv'...
+building '/nix/store/dc3q0sxk6r7kaqnc0vs65xml8xllv6y6-python3.11-optax-0.1.9.drv'...
+error: builder for '/nix/store/dc3q0sxk6r7kaqnc0vs65xml8xllv6y6-python3.11-optax-0.1.9.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'flit_core'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/dc3q0sxk6r7kaqnc0vs65xml8xllv6y6-python3.11-optax-0.1.9.drv'.
+error: 1 dependencies of derivation '/nix/store/wh0g6qpnqx0id85hrzgkkyd9hmp4gfld-nix-shell-env.drv' failed to build

@@ -1,0 +1,91 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing pypa-install-hook
+Using pypaInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing pip-build-hook
+Using pipBuildPhase
+Using pipShellHook
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+Running phase: unpackPhase
+unpacking source archive /nix/store/5cmi220w60dxlp547alilviv7wa5lf68-xgboost-2.0.3.tar.gz
+source root is xgboost-2.0.3
+setting SOURCE_DATE_EPOCH to timestamp 1580601600 of file xgboost-2.0.3/xgboost/training.py
+@nix { "action": "setPhase", "phase": "patchPhase" }
+Running phase: patchPhase
+Removing path dependencies
+Finished removing path dependencies
+Removing git dependencies
+Finished removing git dependencies
+Removing wheel-url dependencies
+Finished removing wheel-url dependencies
+@nix { "action": "setPhase", "phase": "updateAutotoolsGnuConfigScriptsPhase" }
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+@nix { "action": "setPhase", "phase": "configurePhase" }
+Running phase: configurePhase
+no configure script, doing nothing
+@nix { "action": "setPhase", "phase": "buildPhase" }
+Running phase: buildPhase
+Executing pipBuildPhase
+Creating a wheel...
+[33mWARNING: The directory '/homeless-shelter/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.[0m[33m
+[0mProcessing /build/xgboost-2.0.3
+  Running command Preparing metadata (pyproject.toml)
+  INFO:xgboost.packager.build_wheel:Parsed build configuration: {'hide_cxx_symbols': True, 'use_openmp': True, 'use_cuda': False, 'use_nccl': False, 'use_hdfs': False, 'use_azure': False, 'use_s3': False, 'plugin_dense_parser': False, 'use_system_libxgboost': False}
+  INFO:xgboost.packager.build_wheel:Copying project files to temporary directory /build/tmpbm5qzzbo/whl_workspace
+  INFO:xgboost.packager.build_wheel:Copying /build/xgboost-2.0.3/pyproject.toml -> /build/tmpbm5qzzbo/whl_workspace/pyproject.toml
+  INFO:xgboost.packager.build_wheel:Copying /build/xgboost-2.0.3/hatch_build.py -> /build/tmpbm5qzzbo/whl_workspace/hatch_build.py
+  INFO:xgboost.packager.build_wheel:Copying /build/xgboost-2.0.3/README.rst -> /build/tmpbm5qzzbo/whl_workspace/README.rst
+  INFO:xgboost.packager.build_wheel:Copying /build/xgboost-2.0.3/xgboost -> /build/tmpbm5qzzbo/whl_workspace/xgboost
+  INFO:xgboost.packager.build_libxgboost:Building libxgboost.so from the C++ source files in /build/xgboost-2.0.3/cpp_src...
+  INFO:xgboost.packager.build_libxgboost:CMake args: ['cmake', '/build/xgboost-2.0.3/cpp_src', '-GUnix Makefiles', '-DKEEP_BUILD_ARTIFACTS_IN_BINARY_DIR=ON', '-DHIDE_CXX_SYMBOLS=ON', '-DUSE_OPENMP=ON', '-DUSE_CUDA=OFF', '-DUSE_NCCL=OFF', '-DUSE_HDFS=OFF', '-DUSE_AZURE=OFF', '-DUSE_S3=OFF', '-DPLUGIN_DENSE_PARSER=OFF']
+  Traceback (most recent call last):
+    File "/nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 353, in <module>
+      main()
+    File "/nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 335, in main
+      json_out['return_val'] = hook(**hook_input['kwargs'])
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 152, in prepare_metadata_for_build_wheel
+      whl_basename = backend.build_wheel(metadata_directory, config_settings)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/build/xgboost-2.0.3/packager/pep517.py", line 79, in build_wheel
+      libxgboost = locate_or_build_libxgboost(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/build/xgboost-2.0.3/packager/nativelib.py", line 170, in locate_or_build_libxgboost
+      return build_libxgboost(cpp_src_dir, build_dir=build_dir, build_config=build_config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/build/xgboost-2.0.3/packager/nativelib.py", line 102, in build_libxgboost
+      _build(generator=generator)
+    File "/build/xgboost-2.0.3/packager/nativelib.py", line 59, in _build
+      subprocess.check_call(cmake_cmd, cwd=build_dir)
+    File "/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/lib/python3.11/subprocess.py", line 408, in check_call
+      retcode = call(*popenargs, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/lib/python3.11/subprocess.py", line 389, in call
+      with Popen(*popenargs, **kwargs) as p:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/lib/python3.11/subprocess.py", line 1026, in __init__
+      self._execute_child(args, executable, preexec_fn, close_fds,
+    File "/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/lib/python3.11/subprocess.py", line 1950, in _execute_child
+      raise child_exception_type(errno_num, err_msg, err_filename)
+  FileNotFoundError: [Errno 2] No such file or directory: 'cmake'
+  [1;31merror[0m: [1msubprocess-exited-with-error[0m
+  
+  [31m×[0m [32mPreparing metadata [0m[1;32m([0m[32mpyproject.toml[0m[1;32m)[0m did not run successfully.
+  [31m│[0m exit code: [1;36m1[0m
+  [31m╰─>[0m See above for output.
+  
+  [1;35mnote[0m: This error originates from a subprocess, and is likely not a problem with pip.
+  [1;35mfull command[0m: [34m/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/bin/python3.11 /nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py prepare_metadata_for_build_wheel /build/tmppxlmfh4n[0m
+  [1;35mcwd[0m: /build/xgboost-2.0.3
+  Preparing metadata (pyproject.toml) ... [?25l[?25herror
+[1;31merror[0m: [1mmetadata-generation-failed[0m
+
+[31m×[0m Encountered error while generating package metadata.
+[31m╰─>[0m See above for output.
+
+[1;35mnote[0m: This is an issue with the package mentioned above, not pip.
+[1;36mhint[0m: See above for details.

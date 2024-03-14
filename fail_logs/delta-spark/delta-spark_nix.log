@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/38bm91hwpny73zlri98w4r3g2j29i780-delta-spark-3.1.0.tar.gz.drv'...
+building '/nix/store/lsb0giac2q9yyxl3y37pj35dddglr0sh-python3.11-delta-spark-3.1.0.drv'...
+error: builder for '/nix/store/lsb0giac2q9yyxl3y37pj35dddglr0sh-python3.11-delta-spark-3.1.0.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/lsb0giac2q9yyxl3y37pj35dddglr0sh-python3.11-delta-spark-3.1.0.drv'.
+error: 1 dependencies of derivation '/nix/store/sfmc1x79b54s807r6fnj1lfmn65h22q9-nix-shell-env.drv' failed to build

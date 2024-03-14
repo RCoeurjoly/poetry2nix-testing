@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/x4ks6cbakv83qxp9m5j75sl2b9881rqw-datadog-api-client-2.22.0.tar.gz.drv'...
+building '/nix/store/9cyjg21as72jf8hy7h89z2gld7v1a5lx-python3.11-datadog-api-client-2.22.0.drv'...
+error: builder for '/nix/store/9cyjg21as72jf8hy7h89z2gld7v1a5lx-python3.11-datadog-api-client-2.22.0.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/9cyjg21as72jf8hy7h89z2gld7v1a5lx-python3.11-datadog-api-client-2.22.0.drv'.
+error: 1 dependencies of derivation '/nix/store/rmcyx3w7bwk4vz63vrds4h93jya2a8ga-nix-shell-env.drv' failed to build

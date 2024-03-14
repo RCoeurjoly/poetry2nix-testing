@@ -1,0 +1,20 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/19vai2riwb037gc3wznjh011lr7s4rrc-mlflow-skinny-2.10.2.tar.gz.drv'...
+building '/nix/store/n9zks70z36xsmlhnk1m2qj5zg01c2ydr-python3.11-flit-3.9.0.drv'...
+building '/nix/store/h46a6cp2d2drj5kgi4a9rdwxl5cxwq2a-python3.11-gitpython-3.1.42.drv'...
+building '/nix/store/041xkic7nikdj11r80jy048f41zvik97-python3.11-cloudpickle-3.0.0.drv'...
+error: builder for '/nix/store/041xkic7nikdj11r80jy048f41zvik97-python3.11-cloudpickle-3.0.0.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'flit_core'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/041xkic7nikdj11r80jy048f41zvik97-python3.11-cloudpickle-3.0.0.drv'.
+error: 1 dependencies of derivation '/nix/store/zyn7b6y9i5f1cw9mg3vacr4839153l6k-python3.11-mlflow-skinny-2.10.2.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/gihb8n5cj8najggh2gbm9rl80ca5iidm-nix-shell-env.drv' failed to build

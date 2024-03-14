@@ -1,0 +1,19 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/nkz6s10hdi1hry37q05fcgwd7nfjqpk0-facebook_business-19.0.0.tar.gz.drv'...
+building '/nix/store/jkiw7wxci8kdcl3jkkbj0ywlf43lx06f-python3.11-curlify-2.2.1.drv'...
+building '/nix/store/lssjjg0w6j4sc05m85d2bs47w0867vym-python3.11-pycountry-23.12.11.drv'...
+error: builder for '/nix/store/lssjjg0w6j4sc05m85d2bs47w0867vym-python3.11-pycountry-23.12.11.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'poetry'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/lssjjg0w6j4sc05m85d2bs47w0867vym-python3.11-pycountry-23.12.11.drv'.
+error: 1 dependencies of derivation '/nix/store/y2h1h7v3pr4vb0bqdcwr7rjnhaii1rpc-python3.11-facebook-business-19.0.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/i84jgcc1vi919rwsil56kbkvadi5kkff-nix-shell-env.drv' failed to build

@@ -1,0 +1,10 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+trace: warning: Unknown cryptography version: '42.0.4'. Please update getCargoHash.
+building '/nix/store/h5n154g1vkhkzzn2dljfhydq086ak9gd-azureml_mlflow-1.55.0-py3-none-any.whl.drv'...
+building '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv'...
+error: hash mismatch in fixed-output derivation '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv':
+         specified: sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+            got:    sha256-qaXQiF1xZvv4sNIiR2cb5TfD7oNiYdvUwcm37nh2P2M=
+error: 1 dependencies of derivation '/nix/store/zajm4fzaz3y8ivx0bwywsw6n32x7m33x-python3.11-cryptography-42.0.4.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/7cfk17vv67xakpnqvw4gk2h1r0wq477d-python3.11-azureml-mlflow-1.55.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/qz6zi5lll9lfiryp6w40z3k5ghqdx9y2-nix-shell-env.drv' failed to build

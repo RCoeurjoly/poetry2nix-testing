@@ -1,0 +1,32 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing pypa-install-hook
+Using pypaInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing pip-build-hook
+Using pipBuildPhase
+Using pipShellHook
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+Running phase: unpackPhase
+unpacking source archive /nix/store/spjwp1n4xfg3rdd66nvss4vhkikn2rcq-license-expression-30.2.0.tar.gz
+source root is license-expression-30.2.0
+setting SOURCE_DATE_EPOCH to timestamp 1701457237 of file license-expression-30.2.0/setup.cfg
+@nix { "action": "setPhase", "phase": "patchPhase" }
+Running phase: patchPhase
+Removing path dependencies
+Finished removing path dependencies
+Removing git dependencies
+Finished removing git dependencies
+Removing wheel-url dependencies
+Finished removing wheel-url dependencies
+@nix { "action": "setPhase", "phase": "updateAutotoolsGnuConfigScriptsPhase" }
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+@nix { "action": "setPhase", "phase": "configurePhase" }
+Running phase: configurePhase
+patching script interpreter paths in ./configure
+./configure: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/q8qq40xg2grfh9ry1d9x4g7lq4ra7n81-bash-5.2-p21/bin/bash"
+configure flags: --prefix=/nix/store/5w25n3cjw3hwd0czz43pkzfwvjigpj41-python3.11-license-expression-30.2.0
+./configure: line 110: curl: command not found

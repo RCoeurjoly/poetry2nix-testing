@@ -1,0 +1,16 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/xk7rxpsrjnkjbzfwbhyf9apirzgnbvyd-python3.11-mysql-connector-python-8.3.0.drv'...
+error: builder for '/nix/store/xk7rxpsrjnkjbzfwbhyf9apirzgnbvyd-python3.11-mysql-connector-python-8.3.0.drv' failed with exit code 1;
+       last 10 log lines:
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > no configure script, doing nothing
+       > Running phase: buildPhase
+       > Executing pipBuildPhase
+       > Creating a wheel...
+       > WARNING: The directory '/homeless-shelter/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+       > ERROR: Directory '.' is not installable. Neither 'setup.py' nor 'pyproject.toml' found.
+       > 
+       For full logs, run 'nix log /nix/store/xk7rxpsrjnkjbzfwbhyf9apirzgnbvyd-python3.11-mysql-connector-python-8.3.0.drv'.
+error: 1 dependencies of derivation '/nix/store/pbmdlg4dnrx6yfwfmrvrdf7ip2q4ky1a-nix-shell-env.drv' failed to build

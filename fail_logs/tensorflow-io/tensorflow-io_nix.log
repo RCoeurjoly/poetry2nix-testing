@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/1l1rpq6vsafan06ih757sy5ypsli5sss-python3.11-tensorflow-io-gcs-filesystem-0.36.0.drv'...
+error: builder for '/nix/store/1l1rpq6vsafan06ih757sy5ypsli5sss-python3.11-tensorflow-io-gcs-filesystem-0.36.0.drv' failed with exit code 1;
+       last 10 log lines:
+       >     libstdc++.so.6 -> found: /nix/store/dghjv6hfz0s0z4kffa5ahyw2mhp79215-gcc-12.3.0-lib/lib
+       >     libgcc_s.so.1 -> found: /nix/store/l3lhzwrfgzncjj1z4wyq6kkrp6czx5qp-gcc-12.3.0-libgcc/lib
+       > setting RPATH to: /nix/store/dghjv6hfz0s0z4kffa5ahyw2mhp79215-gcc-12.3.0-lib/lib:/nix/store/l3lhzwrfgzncjj1z4wyq6kkrp6czx5qp-gcc-12.3.0-libgcc/lib
+       > auto-patchelf: 1 dependencies could not be satisfied
+       > error: auto-patchelf could not satisfy dependency libtensorflow_framework.so.2 wanted by /nix/store/zrh526y2avm8zz0gffqk3m4czg1ffgcd-python3.11-tensorflow-io-gcs-filesystem-0.36.0/lib/python3.11/site-packages/tensorflow_io_gcs_filesystem/core/python/ops/libtensorflow_io_gcs_filesystem.so
+       > auto-patchelf failed to find all the required dependencies.
+       > Add the missing dependencies to --libs or use `--ignore-missing="foo.so.1 bar.so etc.so"`.
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 74: pop_var_context: head of shell_variables not a function context
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 1450: pop_var_context: head of shell_variables not a function context
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 1553: pop_var_context: head of shell_variables not a function context
+       For full logs, run 'nix log /nix/store/1l1rpq6vsafan06ih757sy5ypsli5sss-python3.11-tensorflow-io-gcs-filesystem-0.36.0.drv'.
+error: 1 dependencies of derivation '/nix/store/p2l00jflwxjvacasgrn1pw4n99l4s0sj-python3.11-tensorflow-io-0.36.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/cf3rqj26s77r445mxasyh8wxs84vym5v-nix-shell-env.drv' failed to build

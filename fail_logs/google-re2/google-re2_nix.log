@@ -1,0 +1,16 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/gh0achjmg4mxnadwfvyv4lzshjfqbjzn-python3.11-google-re2-1.1.drv'...
+error: builder for '/nix/store/gh0achjmg4mxnadwfvyv4lzshjfqbjzn-python3.11-google-re2-1.1.drv' failed with exit code 1;
+       last 10 log lines:
+       >   Running command python setup.py clean
+       >   running clean
+       >   removing 'build/temp.linux-x86_64-cpython-311' (and everything under it)
+       >   removing 'build/lib.linux-x86_64-cpython-311' (and everything under it)
+       >   'build/bdist.linux-x86_64' does not exist -- can't clean it
+       >   'build/scripts-3.11' does not exist -- can't clean it
+       >   removing 'build'
+       > Failed to build google-re2
+       > ERROR: Failed to build one or more wheels
+       > 
+       For full logs, run 'nix log /nix/store/gh0achjmg4mxnadwfvyv4lzshjfqbjzn-python3.11-google-re2-1.1.drv'.
+error: 1 dependencies of derivation '/nix/store/i6rxlxcabd5wcbdfn0jy2pnnr756cgi4-nix-shell-env.drv' failed to build

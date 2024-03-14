@@ -1,0 +1,16 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/assaxymi521wjmk3jv250d2d025wssb0-python3.11-pyquaternion-0.9.9.drv'...
+error: builder for '/nix/store/assaxymi521wjmk3jv250d2d025wssb0-python3.11-pyquaternion-0.9.9.drv' failed with exit code 1;
+       last 10 log lines:
+       >   '"'"''"'"''"'"' % ('"'"'/build/pyquaternion-0.9.9/setup.py'"'"',), "<pip-setuptools-caller>", "exec"))' egg_info --egg-base /build/pip-pip-egg-info-68ro5h7g
+       >   cwd: /build/pyquaternion-0.9.9/
+       >   Preparing metadata (setup.py) ... error
+       > error: metadata-generation-failed
+       >
+       > × Encountered error while generating package metadata.
+       > ╰─> See above for output.
+       >
+       > note: This is an issue with the package mentioned above, not pip.
+       > hint: See above for details.
+       For full logs, run 'nix log /nix/store/assaxymi521wjmk3jv250d2d025wssb0-python3.11-pyquaternion-0.9.9.drv'.
+error: 1 dependencies of derivation '/nix/store/qmppc35a9l41fkgd4pl40nphz8pix282-nix-shell-env.drv' failed to build

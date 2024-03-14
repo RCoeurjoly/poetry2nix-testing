@@ -1,0 +1,20 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/mjlc31jmvnkxs73p1nlcdcjmdifq9vq2-flax-0.8.1.tar.gz.drv'...
+copying path '/nix/store/znrx7s80wk7ia5d2bzpji18i18dv1pwg-jaxlib-0.4.24-cp311-cp311-manylinux2014_x86_64.whl' from 'https://cache.nixos.org'...
+building '/nix/store/lxk3r2rpfrhh9gm3xgmwbr47my7sjnj1-optax-0.1.9.tar.gz.drv'...
+building '/nix/store/bna645lf4qyfxb7x42crwhrkl902avql-python3.11-tensorstore-0.1.53.drv'...
+error: builder for '/nix/store/bna645lf4qyfxb7x42crwhrkl902avql-python3.11-tensorstore-0.1.53.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/bna645lf4qyfxb7x42crwhrkl902avql-python3.11-tensorstore-0.1.53.drv'.
+error: 1 dependencies of derivation '/nix/store/6anadqbw0zv4i4qr0cv5fbhr8ipg4xmw-python3.11-flax-0.8.1.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/qy78y5irxi4dgqzs5lia4wcp01q2z08k-nix-shell-env.drv' failed to build

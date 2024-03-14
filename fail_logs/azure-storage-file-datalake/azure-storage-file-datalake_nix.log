@@ -1,0 +1,11 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+trace: warning: Unknown cryptography version: '42.0.4'. Please update getCargoHash.
+building '/nix/store/zamdr7n5mw8qxfvrjxw8zib0nacjwdrs-python3.11-azure-core-1.30.0.drv'...
+building '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv'...
+error: hash mismatch in fixed-output derivation '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv':
+         specified: sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+            got:    sha256-qaXQiF1xZvv4sNIiR2cb5TfD7oNiYdvUwcm37nh2P2M=
+error: 1 dependencies of derivation '/nix/store/zajm4fzaz3y8ivx0bwywsw6n32x7m33x-python3.11-cryptography-42.0.4.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/f9phs07n9sjn3m6impf4yc3hgzfzyn3b-python3.11-azure-storage-blob-12.19.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/ckjb0whcqga7h1vz349y6vskcv0vcw7g-python3.11-azure-storage-file-datalake-12.14.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/pc7wigdcly1wgzlhfbz6vcb8z39dwxz7-nix-shell-env.drv' failed to build

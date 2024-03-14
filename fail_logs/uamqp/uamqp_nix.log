@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/42w53zrr4i0x6c2bkba0l9mv6cfvw08h-uamqp-1.6.8.tar.gz.drv'...
+building '/nix/store/6d840ryvyf7n2nsp2y97qm2pl3bpzg04-python3.11-uamqp-1.6.8.drv'...
+error: builder for '/nix/store/6d840ryvyf7n2nsp2y97qm2pl3bpzg04-python3.11-uamqp-1.6.8.drv' failed with exit code 1;
+       last 10 log lines:
+       >   ╰─> See above for output.
+       >
+       >   note: This error originates from a subprocess, and is likely not a problem with pip.
+       >   full command: /nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/bin/python3.11 /nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py build_wheel /build/tmplfai16cc
+       >   cwd: /build/uamqp-1.6.8
+       >   Building wheel for uamqp (pyproject.toml) ... error
+       >   ERROR: Failed building wheel for uamqp
+       > Failed to build uamqp
+       > ERROR: Failed to build one or more wheels
+       > 
+       For full logs, run 'nix log /nix/store/6d840ryvyf7n2nsp2y97qm2pl3bpzg04-python3.11-uamqp-1.6.8.drv'.
+error: 1 dependencies of derivation '/nix/store/08y0widi6gcrj93n09lhxg9bdrfkw85k-nix-shell-env.drv' failed to build

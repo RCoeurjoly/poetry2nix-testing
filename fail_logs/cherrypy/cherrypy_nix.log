@@ -1,0 +1,21 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/b3hf2s0an2daggp72nyg0l88fylg2mgn-python3.11-cheroot-10.0.0.drv'...
+building '/nix/store/vqx8ahzir97vilcv13lf49lr3zlnw871-python3.11-autocommand-2.2.2.drv'...
+error: builder for '/nix/store/vqx8ahzir97vilcv13lf49lr3zlnw871-python3.11-autocommand-2.2.2.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/vqx8ahzir97vilcv13lf49lr3zlnw871-python3.11-autocommand-2.2.2.drv'.
+error: 1 dependencies of derivation '/nix/store/nd05ljyg6s4kbc0ysa5dsdvhvbxx33wj-python3.11-jaraco-text-3.12.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/ys497xrj90gc7xc7nyw0k7cglyawxdc6-python3.11-jaraco-collections-5.0.0.drv' failed to build
+building '/nix/store/31p5gbr7yga52g028v000za56n65kqwk-tempora-5.5.1.tar.gz.drv'...
+error: 1 dependencies of derivation '/nix/store/f4y5l2vvzna3khysvbssryyab64ncir5-python3.11-cherrypy-18.9.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/iyx0ds1z97y0iwcqgjncpa1349whrv09-nix-shell-env.drv' failed to build

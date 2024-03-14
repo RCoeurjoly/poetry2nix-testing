@@ -1,0 +1,22 @@
+* Purpose
+Find uninstallable pip packages and fix them
+* Method
+We get the file with 8k most downloaded pip packages.
+Since poertry uses pip, poetry should be able to install them all.
+We try to install them.
+For a package <package> to be completely installable and usable, we have to be able to:
+#+begin_src shell :shebang #!/bin/bash -i :results output
+poetry add <package>
+nix develop
+#+end_src
+If any of those commands fails, the package is no usable
+
+I need to know how it failed, so that I can fix it.
+The most common error y NoModuleFound
+
+What would be the most comfortable
+We have the list of installable and uninstallable packages in plot_data.dat
+Packages that fail to install, ordered by download count
+#+begin_src shell :shebang #!/bin/bash -i :results output
+grep " 1$" plot_data.dat | awk '{print $1}'
+#+end_src

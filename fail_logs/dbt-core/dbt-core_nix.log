@@ -1,0 +1,21 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+trace: warning: Unknown rpds-py version: '0.18.0'. Please update getCargoHash.
+building '/nix/store/1alq4rs960mn6gn7jnkm0xr5jiivf2v2-dbt-core-1.7.8.tar.gz.drv'...
+building '/nix/store/xqmmkqy47k3habvmg52xr2h94zfkcyyg-mashumaro-3.12.tar.gz.drv'...
+building '/nix/store/b923k83hg6wsdjpfvy3mbmc12cylkafv-python-slugify-8.0.4.tar.gz.drv'...
+building '/nix/store/ln7kply4ljaqxbvr1npdfns0mcdd4kzr-python3.11-dbt-extractor-0.5.1.drv'...
+error: builder for '/nix/store/ln7kply4ljaqxbvr1npdfns0mcdd4kzr-python3.11-dbt-extractor-0.5.1.drv' failed with exit code 2;
+       last 10 log lines:
+       >           ^^^^^^^^^^^^^^^^^^^^^^^
+       >   File "/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/lib/python3.11/importlib/__init__.py", line 126, in import_module
+       >     return _bootstrap._gcd_import(name[level:], package, level)
+       >            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'maturin'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/ln7kply4ljaqxbvr1npdfns0mcdd4kzr-python3.11-dbt-extractor-0.5.1.drv'.
+error: 1 dependencies of derivation '/nix/store/p9p6rrzp6dazps3zl08hjrjldp9f0v2f-python3.11-dbt-core-1.7.8.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/xr30p40pkyhb7l0g41iivgl09gj68h47-nix-shell-env.drv' failed to build

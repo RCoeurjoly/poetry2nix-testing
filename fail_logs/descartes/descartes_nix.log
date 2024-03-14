@@ -1,0 +1,20 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/x52qnv9pzl4cxrdv1261bing5hpl0bl6-matplotlib-3.8.3.tar.gz.drv'...
+building '/nix/store/6vb36ji0j4d8bmghwmvx0v199s2jygyh-fonttools-4.49.0.tar.gz.drv'...
+building '/nix/store/g9y28gg91km4518cfwwgwcavv4pr5phq-python3.11-fonttools-4.49.0.drv'...
+building '/nix/store/jfz3b994rh7jl5ran8i0fbpph9hcm4hs-python3.11-matplotlib-3.8.3.drv'...
+building '/nix/store/rza7vj2x2m2f42qs0f547pi50xidmzda-python3.11-descartes-1.1.0.drv'...
+error: builder for '/nix/store/rza7vj2x2m2f42qs0f547pi50xidmzda-python3.11-descartes-1.1.0.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/rza7vj2x2m2f42qs0f547pi50xidmzda-python3.11-descartes-1.1.0.drv'.
+error: 1 dependencies of derivation '/nix/store/vxpg7c66j6zajhlc2mj3ndrkgqmfhr60-nix-shell-env.drv' failed to build

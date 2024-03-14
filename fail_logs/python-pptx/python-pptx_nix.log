@@ -1,0 +1,18 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/wdfqrqdpwlqjsjrk6wsd6j3hiv5k14z6-XlsxWriter-3.2.0.tar.gz.drv'...
+building '/nix/store/zgmk1bdkfc5qjrz2bw67vnz86yjslyjp-python3.11-xlsxwriter-3.2.0.drv'...
+building '/nix/store/fn9ypf2fbgxa2s9b4q8iqhzlm2zqb7w9-python3.11-python-pptx-0.6.23.drv'...
+error: builder for '/nix/store/fn9ypf2fbgxa2s9b4q8iqhzlm2zqb7w9-python3.11-python-pptx-0.6.23.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/fn9ypf2fbgxa2s9b4q8iqhzlm2zqb7w9-python3.11-python-pptx-0.6.23.drv'.
+error: 1 dependencies of derivation '/nix/store/q18v35qh3v81li3rl3fbmz79dyiib7yp-nix-shell-env.drv' failed to build

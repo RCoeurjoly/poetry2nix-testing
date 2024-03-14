@@ -1,0 +1,19 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/ykv72315m6m7pkn0qv8nyw0kkvpjjba4-parse-1.20.1.tar.gz.drv'...
+building '/nix/store/gjnl1aw2q47nx79rsvnmsslrp789p3hw-python3.11-parse-1.20.1.drv'...
+building '/nix/store/p0dq6anp24m9azbznn5pkr61r9ibp8qz-python3.11-parse-type-0.6.2.drv'...
+building '/nix/store/a7pm3slmpl5prapdzpaf1mvc4sjy8f4b-python3.11-behave-1.2.6.drv'...
+error: builder for '/nix/store/a7pm3slmpl5prapdzpaf1mvc4sjy8f4b-python3.11-behave-1.2.6.drv' failed with exit code 1;
+       last 10 log lines:
+       >   '"'"''"'"''"'"' % ('"'"'/build/behave-1.2.6/setup.py'"'"',), "<pip-setuptools-caller>", "exec"))' egg_info --egg-base /build/pip-pip-egg-info-0yw32rv5
+       >   cwd: /build/behave-1.2.6/
+       >   Preparing metadata (setup.py) ... error
+       > error: metadata-generation-failed
+       >
+       > × Encountered error while generating package metadata.
+       > ╰─> See above for output.
+       >
+       > note: This is an issue with the package mentioned above, not pip.
+       > hint: See above for details.
+       For full logs, run 'nix log /nix/store/a7pm3slmpl5prapdzpaf1mvc4sjy8f4b-python3.11-behave-1.2.6.drv'.
+error: 1 dependencies of derivation '/nix/store/svlw1n2isjcllmvk93zg48ivdmq6wcbk-nix-shell-env.drv' failed to build

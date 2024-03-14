@@ -1,0 +1,19 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/7yxsfcmh08li0hh8d85wad94h69qmcmr-db_contrib_tool-0.6.13.tar.gz.drv'...
+building '/nix/store/0ykv1ivxdgqcvagd7gb4v91ls9n7zf7z-python3.11-backoff-1.10.0.drv'...
+error: builder for '/nix/store/0ykv1ivxdgqcvagd7gb4v91ls9n7zf7z-python3.11-backoff-1.10.0.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'poetry.masonry'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/0ykv1ivxdgqcvagd7gb4v91ls9n7zf7z-python3.11-backoff-1.10.0.drv'.
+error: 1 dependencies of derivation '/nix/store/fa51hwc4hwmbgkqa4m5bkjv01d0y3klj-python3.11-analytics-python-1.4.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/7jsipq0dg7r48xbpsyqaffq0lcawibnx-python3.11-db-contrib-tool-0.6.13.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/91bj8p5vniy3spxjfzqv9ga8c331hvkw-nix-shell-env.drv' failed to build

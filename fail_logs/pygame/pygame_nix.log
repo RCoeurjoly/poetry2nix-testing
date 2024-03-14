@@ -1,0 +1,16 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/8w8lyfy2g70pskibdrgh1zvb7jj1q0rx-python3.11-pygame-2.5.2.drv'...
+error: builder for '/nix/store/8w8lyfy2g70pskibdrgh1zvb7jj1q0rx-python3.11-pygame-2.5.2.drv' failed with exit code 1;
+       last 10 log lines:
+       >
+       > Traceback (most recent call last):
+       >   File "/build/pygame-2.5.2/buildconfig/config.py", line 247, in <module>
+       >     main()
+       >   File "/build/pygame-2.5.2/buildconfig/config.py", line 207, in main
+       >     import config_unix as CFG
+       >   File "/build/pygame-2.5.2/buildconfig/config_unix.py", line 142
+       >     origincdirs += ['/nix/store/q5f6c3kcj49v67492q7ivm5nscnsr258-freetype-2.13.2-dev/include']
+       > IndentationError: unexpected indent
+       > /nix/store/d4jf1cbbk494zwgbqz31pxgigpsbh6w2-stdenv-linux/setup: line 131: pop_var_context: head of shell_variables not a function context
+       For full logs, run 'nix log /nix/store/8w8lyfy2g70pskibdrgh1zvb7jj1q0rx-python3.11-pygame-2.5.2.drv'.
+error: 1 dependencies of derivation '/nix/store/28dinfzk11h1h8qnrnqx25jpzgycsimn-nix-shell-env.drv' failed to build

@@ -1,0 +1,20 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/6icx769bg6brxw0i5mans12dw8rnb7dr-ddtrace-2.6.5.tar.gz.drv'...
+building '/nix/store/g7hb71d4i22dfmw96r3inl36fsxvdlnf-envier-0.5.1.tar.gz.drv'...
+building '/nix/store/79xljadb7zjx1mcrmjbj9gyl0g0iqp51-python3.11-ddsketch-2.0.4.drv'...
+building '/nix/store/xixv49argj2i8sx4pzffxf4gkndlvgcb-python3.11-envier-0.5.1.drv'...
+error: builder for '/nix/store/xixv49argj2i8sx4pzffxf4gkndlvgcb-python3.11-envier-0.5.1.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'hatchling'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/xixv49argj2i8sx4pzffxf4gkndlvgcb-python3.11-envier-0.5.1.drv'.
+error: 1 dependencies of derivation '/nix/store/disxqk4298660xllgm0760nk8kqs3igm-python3.11-ddtrace-2.6.5.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/mqwyffp8iks1l3316hdniry76xvk5hip-nix-shell-env.drv' failed to build

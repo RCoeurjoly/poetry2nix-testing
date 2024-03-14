@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/xvm3x5vvhrarmhxzhnbwarjwkc08k62a-python3.11-pandas-2.2.0.drv'...
+error: builder for '/nix/store/xvm3x5vvhrarmhxzhnbwarjwkc08k62a-python3.11-pandas-2.2.0.drv' failed with exit code 1;
+       last 10 log lines:
+       >   full command: /nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/bin/python3.11 /nix/store/ra07g2hqazanx38blildx5byl3r2nlca-python3.11-pip-23.2.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py prepare_metadata_for_build_wheel /build/tmpt06jb8x2
+       >   cwd: /build/pandas-2.2.0
+       >   Preparing metadata (pyproject.toml) ... error
+       > error: metadata-generation-failed
+       >
+       > × Encountered error while generating package metadata.
+       > ╰─> See above for output.
+       >
+       > note: This is an issue with the package mentioned above, not pip.
+       > hint: See above for details.
+       For full logs, run 'nix log /nix/store/xvm3x5vvhrarmhxzhnbwarjwkc08k62a-python3.11-pandas-2.2.0.drv'.
+error: 1 dependencies of derivation '/nix/store/xrwz9bpj11avch0y1bzflpwfhszvv1bb-python3.11-prophet-1.1.5.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/86kcnp0n0fd9acxspw8fkzj34f67vpnf-nix-shell-env.drv' failed to build

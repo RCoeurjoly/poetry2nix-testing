@@ -1,0 +1,20 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/6lm5hklfb7xi2qvj90fh9lkd673hb84l-clu-0.0.11.tar.gz.drv'...
+building '/nix/store/4lwyy4zip10qdfwm9jhm14cdac0bqaka-python3.11-ml-collections-0.1.1.drv'...
+building '/nix/store/bna645lf4qyfxb7x42crwhrkl902avql-python3.11-tensorstore-0.1.53.drv'...
+error: builder for '/nix/store/bna645lf4qyfxb7x42crwhrkl902avql-python3.11-tensorstore-0.1.53.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/bna645lf4qyfxb7x42crwhrkl902avql-python3.11-tensorstore-0.1.53.drv'.
+error: 1 dependencies of derivation '/nix/store/6anadqbw0zv4i4qr0cv5fbhr8ipg4xmw-python3.11-flax-0.8.1.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/xnhxdhjzk9lrg3gp473w89i8vnr157i9-python3.11-clu-0.0.11.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/xl2w4r5x9ny9fnlpbkzadk4dbss0j63f-nix-shell-env.drv' failed to build

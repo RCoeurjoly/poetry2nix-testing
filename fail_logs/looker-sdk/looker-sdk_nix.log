@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/q0cs7h4k2j90z7yylfvwza2wjpyxkb92-looker_sdk-24.2.0.tar.gz.drv'...
+building '/nix/store/51iw9a4lfwirz4mggz4wcaf2cwfq3489-python3.11-looker-sdk-24.2.0.drv'...
+error: builder for '/nix/store/51iw9a4lfwirz4mggz4wcaf2cwfq3489-python3.11-looker-sdk-24.2.0.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/51iw9a4lfwirz4mggz4wcaf2cwfq3489-python3.11-looker-sdk-24.2.0.drv'.
+error: 1 dependencies of derivation '/nix/store/x37hzqdr0a0070jbp513zpbjg4glg94x-nix-shell-env.drv' failed to build

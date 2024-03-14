@@ -1,0 +1,18 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/k5s1x0vazlc3n8r5870n547l200wz6da-future-1.0.0.tar.gz.drv'...
+building '/nix/store/1g77pwqh7balsj9hg8a7xvaq1x1jjybi-python3.11-future-1.0.0.drv'...
+building '/nix/store/1532vyw92cw53qnxmsyd8km81q7bnjrk-python3.11-pyhive-0.7.0.drv'...
+error: builder for '/nix/store/1532vyw92cw53qnxmsyd8km81q7bnjrk-python3.11-pyhive-0.7.0.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/1532vyw92cw53qnxmsyd8km81q7bnjrk-python3.11-pyhive-0.7.0.drv'.
+error: 1 dependencies of derivation '/nix/store/hlvvkqk6ar5g8g4727gd1dd56yk3lv8w-nix-shell-env.drv' failed to build

@@ -1,0 +1,25 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+trace: warning: Unknown rpds-py version: '0.18.0'. Please update getCargoHash.
+building '/nix/store/v2y0ihs3gn3bh5gc13vgrl9y7d2frdil-source.drv'...
+error:
+       … while calling the 'derivationStrict' builtin
+
+         at /builtin/derivation.nix:9:12: (source not available)
+
+       … while evaluating derivation 'nix-shell'
+         whose name attribute is located at /nix/store/0g53xyh39z3y90p4d8r341wbqyjy1zhl-source/pkgs/stdenv/generic/make-derivation.nix:348:7
+
+       … while evaluating attribute 'buildInputs' of derivation 'nix-shell'
+
+         at /nix/store/0g53xyh39z3y90p4d8r341wbqyjy1zhl-source/pkgs/stdenv/generic/make-derivation.nix:395:7:
+
+          394|       depsHostHost                = elemAt (elemAt dependencies 1) 0;
+          395|       buildInputs                 = elemAt (elemAt dependencies 1) 1;
+             |       ^
+          396|       depsTargetTarget            = elemAt (elemAt dependencies 2) 0;
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: hash mismatch in fixed-output derivation '/nix/store/v2y0ihs3gn3bh5gc13vgrl9y7d2frdil-source.drv':
+         specified: sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+            got:    sha256-vWekED7svt9/lYxGGww7RfGCjSY4y/MAgnf3uTVAZoc=

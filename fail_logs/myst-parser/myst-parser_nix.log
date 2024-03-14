@@ -1,0 +1,18 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/j27iy8drkmj07j9shngh5s6x5kbzjkny-python3.11-alabaster-0.7.16.drv'...
+error: builder for '/nix/store/j27iy8drkmj07j9shngh5s6x5kbzjkny-python3.11-alabaster-0.7.16.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'flit_core'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/j27iy8drkmj07j9shngh5s6x5kbzjkny-python3.11-alabaster-0.7.16.drv'.
+error: 1 dependencies of derivation '/nix/store/ck6vj4ihiwm85iaizbgppi7bj5afn56n-python3.11-sphinx-7.2.6.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/2yajh714bcjdqg4m2n2fa99a3a0wklmg-python3.11-myst-parser-2.0.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/3cqcsqnac1v3wxllhdgfivg11id6qp6j-nix-shell-env.drv' failed to build

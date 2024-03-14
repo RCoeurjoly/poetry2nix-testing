@@ -1,0 +1,18 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+trace: warning: Unknown cryptography version: '42.0.4'. Please update getCargoHash.
+building '/nix/store/cb7790lfq87gxwashn4g0l0zzwr7ql2h-python3.11-pendulum-3.0.0.drv'...
+error: builder for '/nix/store/cb7790lfq87gxwashn4g0l0zzwr7ql2h-python3.11-pendulum-3.0.0.drv' failed with exit code 2;
+       last 10 log lines:
+       >           ^^^^^^^^^^^^^^^^^^^^^^^
+       >   File "/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6/lib/python3.11/importlib/__init__.py", line 126, in import_module
+       >     return _bootstrap._gcd_import(name[level:], package, level)
+       >            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'maturin'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/cb7790lfq87gxwashn4g0l0zzwr7ql2h-python3.11-pendulum-3.0.0.drv'.
+error: 1 dependencies of derivation '/nix/store/fb7mmjj2g2dw9a9h9j7ydmkaybc3qgcw-python3.11-simple-salesforce-1.12.5.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/9x1z4fd72jccbvdzsky449g650c1dxpa-nix-shell-env.drv' failed to build

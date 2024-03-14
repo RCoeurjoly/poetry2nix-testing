@@ -1,0 +1,29 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+error:
+       … while calling the 'derivationStrict' builtin
+
+         at /builtin/derivation.nix:9:12: (source not available)
+
+       … while evaluating derivation 'nix-shell'
+         whose name attribute is located at /nix/store/0g53xyh39z3y90p4d8r341wbqyjy1zhl-source/pkgs/stdenv/generic/make-derivation.nix:348:7
+
+       … while evaluating attribute 'buildInputs' of derivation 'nix-shell'
+
+         at /nix/store/0g53xyh39z3y90p4d8r341wbqyjy1zhl-source/pkgs/stdenv/generic/make-derivation.nix:395:7:
+
+          394|       depsHostHost                = elemAt (elemAt dependencies 1) 0;
+          395|       buildInputs                 = elemAt (elemAt dependencies 1) 1;
+             |       ^
+          396|       depsTargetTarget            = elemAt (elemAt dependencies 2) 0;
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: attribute 'pkg-config' missing
+
+       at /nix/store/0n3rjayp2l1nl1fs17ah11bjknif33i9-source/overrides/default.nix:949:32:
+
+          948|                 (old.buildInputs or [ ])
+          949|                 ++ [ pkgs.hdf5 self.pkg-config ]
+             |                                ^
+          950|                 ++ lib.optional mpiSupport mpi
+       Did you mean pkgconfig?

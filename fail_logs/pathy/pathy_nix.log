@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/zcbxqllvydqw6jh3bybf7qd0qapi5ggq-python3.11-pathlib-abc-0.1.1.drv'...
+error: builder for '/nix/store/zcbxqllvydqw6jh3bybf7qd0qapi5ggq-python3.11-pathlib-abc-0.1.1.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'hatchling'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/zcbxqllvydqw6jh3bybf7qd0qapi5ggq-python3.11-pathlib-abc-0.1.1.drv'.
+error: 1 dependencies of derivation '/nix/store/aba4sbgd1r9h3qi2g3gj9k2s96cscr61-python3.11-pathy-0.11.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/dxqc4lyhajy3yagld73d0ajnsih77fg8-nix-shell-env.drv' failed to build

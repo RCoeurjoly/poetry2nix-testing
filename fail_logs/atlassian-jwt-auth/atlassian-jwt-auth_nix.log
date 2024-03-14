@@ -1,0 +1,11 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+trace: warning: Unknown cryptography version: '42.0.4'. Please update getCargoHash.
+building '/nix/store/07w1cz4mm79fq214ba6khhnppfpm4k11-python3.11-cachecontrol-0.13.1.drv'...
+building '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv'...
+error: hash mismatch in fixed-output derivation '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv':
+         specified: sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+            got:    sha256-qaXQiF1xZvv4sNIiR2cb5TfD7oNiYdvUwcm37nh2P2M=
+error: 1 dependencies of derivation '/nix/store/nym4c6msfb18s6av5ycpakk8mbcw257f-python3.11-cryptography-42.0.4.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/2ilavw9hb7aqiaqxy9y59zlmaj035yra-python3.11-pyjwt-2.8.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/5p9z2mb2ifim5ky3wx8rvpjy29zy7pmh-python3.11-atlassian-jwt-auth-18.0.1.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/6gnl5zl5j8k7hpqvr4mzsrr0z3kwwc0x-nix-shell-env.drv' failed to build

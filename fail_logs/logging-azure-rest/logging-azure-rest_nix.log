@@ -1,0 +1,18 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/vrf47clcj0f9xs9f6ddsgklwkll898w5-dataclasses_json-0.6.4.tar.gz.drv'...
+building '/nix/store/9201pqkdl3avqlc4qshfsy9rk165hvza-python3.11-dataclasses-json-0.6.4.drv'...
+building '/nix/store/5wpphf9q4bb4y6dxsn7ha6i829pjqrg7-python3.11-logging-azure-rest-1.3.0.drv'...
+error: builder for '/nix/store/5wpphf9q4bb4y6dxsn7ha6i829pjqrg7-python3.11-logging-azure-rest-1.3.0.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/5wpphf9q4bb4y6dxsn7ha6i829pjqrg7-python3.11-logging-azure-rest-1.3.0.drv'.
+error: 1 dependencies of derivation '/nix/store/j9hv6xw9rfhazqvb6x12f576rxcpg1ff-nix-shell-env.drv' failed to build

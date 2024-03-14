@@ -1,0 +1,12 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+trace: warning: Unknown cryptography version: '42.0.4'. Please update getCargoHash.
+building '/nix/store/pdc5m3m8qvj6i17li426ndhcbn72mdbv-python3.11-jinja2-2.11.3.drv'...
+building '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv'...
+error: hash mismatch in fixed-output derivation '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv':
+         specified: sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+            got:    sha256-qaXQiF1xZvv4sNIiR2cb5TfD7oNiYdvUwcm37nh2P2M=
+error: 1 dependencies of derivation '/nix/store/zajm4fzaz3y8ivx0bwywsw6n32x7m33x-python3.11-cryptography-42.0.4.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/2cz0lyvcx18dbnfrd91mvljzjl9dk8f6-python3.11-apache-airflow-1.10.15.drv' failed to build
+building '/nix/store/x78032lcz6r8gjn5bkwg5j04v6ihym8x-s3transfer-0.3.7.tar.gz.drv'...
+error: 1 dependencies of derivation '/nix/store/13rvkphb71hazi9vsqbd25yywk19bab2-python3.11-apache-airflow-backport-providers-amazon-2021.3.3.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/ydlfini45hadppam6jwfjik4bbvl24ly-nix-shell-env.drv' failed to build

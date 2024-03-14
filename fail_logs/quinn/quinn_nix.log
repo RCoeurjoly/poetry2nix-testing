@@ -1,0 +1,17 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/1zjpk3k2gcyjaz2a2cr14pw2vv12p79a-quinn-0.10.3.tar.gz.drv'...
+building '/nix/store/h5fidjlj5hm9sa1hh58s54v2gl8xh1l1-python3.11-quinn-0.10.3.drv'...
+error: builder for '/nix/store/h5fidjlj5hm9sa1hh58s54v2gl8xh1l1-python3.11-quinn-0.10.3.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'poetry'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/h5fidjlj5hm9sa1hh58s54v2gl8xh1l1-python3.11-quinn-0.10.3.drv'.
+error: 1 dependencies of derivation '/nix/store/bn0a5lzdvmmfkj5lja0mz3w8kdc1hwbj-nix-shell-env.drv' failed to build

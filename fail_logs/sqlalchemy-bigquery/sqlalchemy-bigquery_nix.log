@@ -1,0 +1,19 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+building '/nix/store/9cg4mhmdyqlij6b1pylxvh6rca1pk1y5-sqlalchemy-bigquery-1.9.0.tar.gz.drv'...
+building '/nix/store/34mraw306b49b7ppyxqjycdagfdsi2v5-python3.11-google-cloud-core-2.4.1.drv'...
+building '/nix/store/1qzfvvjf3r8w34z6s1c4jl6y2wqhal03-python3.11-google-cloud-bigquery-3.17.2.drv'...
+building '/nix/store/p9xp4s4if1ywf6vy8vdzs0fj82spjcaf-python3.11-sqlalchemy-bigquery-1.9.0.drv'...
+error: builder for '/nix/store/p9xp4s4if1ywf6vy8vdzs0fj82spjcaf-python3.11-sqlalchemy-bigquery-1.9.0.drv' failed with exit code 2;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       > 
+       > 
+       For full logs, run 'nix log /nix/store/p9xp4s4if1ywf6vy8vdzs0fj82spjcaf-python3.11-sqlalchemy-bigquery-1.9.0.drv'.
+error: 1 dependencies of derivation '/nix/store/cwi8jfwb04rwxj9zcgm0agv5n1cxx7nw-nix-shell-env.drv' failed to build

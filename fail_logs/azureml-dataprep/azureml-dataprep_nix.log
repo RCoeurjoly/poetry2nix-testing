@@ -1,0 +1,14 @@
+warning: Git tree '/home/roland/poetry2nix-testing' is dirty
+trace: warning: Unknown cryptography version: '42.0.4'. Please update getCargoHash.
+trace: warning: Unknown rpds-py version: '0.18.0'. Please update getCargoHash.
+building '/nix/store/j90wakjd3w332xz2gfs2s851rzn0gw5v-azureml_dataprep-5.1.6-py3-none-any.whl.drv'...
+building '/nix/store/916q4zj6gf8x2w5q48xjc3kzaqym9xp8-azureml_dataprep_rslex-2.22.2-cp311-cp311-manylinux1_x86_64.whl.drv'...
+building '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv'...
+error: hash mismatch in fixed-output derivation '/nix/store/aaxm9ldxx0rd9v32qvb2n84hpj1zyq9d-cryptography-42.0.4-vendor.tar.gz.drv':
+         specified: sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+            got:    sha256-qaXQiF1xZvv4sNIiR2cb5TfD7oNiYdvUwcm37nh2P2M=
+error: 1 dependencies of derivation '/nix/store/zajm4fzaz3y8ivx0bwywsw6n32x7m33x-python3.11-cryptography-42.0.4.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/ksqp4gwmp6i345lj5sl7ajyh5l9imjgl-python3.11-azure-identity-1.15.0.drv' failed to build
+building '/nix/store/9jzjyv9955sfy3iq3d0b3pqi5gw2n113-python3.11-azureml-dataprep-rslex-2.22.2.drv'...
+error: 1 dependencies of derivation '/nix/store/f1wsj7xcqgj2kq0iqkfq8afai66xq8fr-python3.11-azureml-dataprep-5.1.6.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/yg076041zkaqjr1cy9dmwsgvbi2ir5db-nix-shell-env.drv' failed to build
