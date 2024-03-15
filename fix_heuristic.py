@@ -23,6 +23,7 @@ def parse_error_log(error_log_path):
         missing_module = missing_module_match.group(1)  # The missing module
         return package_name, missing_module
     else:
+        print("noooooooooooooo")
         return None, "Error: Failed to parse error message."
 
 def create_dependencies_json(package_name, missing_module):
