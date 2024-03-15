@@ -1,8 +1,6 @@
 warning: Git tree '/home/roland/poetry2nix-testing' is dirty
-building '/nix/store/zinl4r0k4dxgp7wm5ih9plkmad2h3g58-zope.interface-6.2.tar.gz.drv'...
-building '/nix/store/83dvrqa0ijx7x5bhnh2ak1nyf1zi3wfa-python3.11-zope-interface-6.2.drv'...
-building '/nix/store/fnvl24cy47agpn65qnqd03ss6ii7gh6g-python3.11-twisted-23.10.0.drv'...
-error: builder for '/nix/store/fnvl24cy47agpn65qnqd03ss6ii7gh6g-python3.11-twisted-23.10.0.drv' failed with exit code 2;
+building '/nix/store/yg7f59jiynqimw4pcprqz0hlajllfy5a-python3.11-twisted-24.3.0.drv'...
+error: builder for '/nix/store/yg7f59jiynqimw4pcprqz0hlajllfy5a-python3.11-twisted-24.3.0.drv' failed with exit code 2;
        last 10 log lines:
        >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
        >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
@@ -14,5 +12,5 @@ error: builder for '/nix/store/fnvl24cy47agpn65qnqd03ss6ii7gh6g-python3.11-twist
        > ModuleNotFoundError: No module named 'hatchling'
        > 
        > 
-       For full logs, run 'nix log /nix/store/fnvl24cy47agpn65qnqd03ss6ii7gh6g-python3.11-twisted-23.10.0.drv'.
-error: 1 dependencies of derivation '/nix/store/r1siinavs71c3y7syfmlq1n2kzd393fp-nix-shell-env.drv' failed to build
+       For full logs, run 'nix log /nix/store/yg7f59jiynqimw4pcprqz0hlajllfy5a-python3.11-twisted-24.3.0.drv'.
+error: 1 dependencies of derivation '/nix/store/a8qb335sxpqzz8nf5z2myc2xiv7ac4xj-nix-shell-env.drv' failed to build

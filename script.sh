@@ -226,7 +226,7 @@ test_packages_simple () {
     done
 }
 
-create-error-file() {
+install_poetry_package() {
     quoted_package=$1
     unquoted_package=${quoted_package//\"}
     mkdir -p fail_logs/$unquoted_package
@@ -246,13 +246,13 @@ create-error-file() {
         nix develop --command echo "Nix develop environment ready" |& tee ${unquoted_package}_nix.log
         rc=$?
         if [[ $rc != 0 ]]; then
-            grep "For full logs" ${unquoted_package}_nix.log | grep -o nix.*drv >> generate_${unquoted_package}_log.sh
-            bash generate_${unquoted_package}_log.sh >> ${unquoted_package}.log
+            grep "For full logs" ${unquoted_package}_nix.log | grep -o nix.*drv > generate_${unquoted_package}_log.sh
+            bash generate_${unquoted_package}_log.sh > ${unquoted_package}.log
             git aa
             echo Package $unquoted_package failed to install with nix develop
-            echo $unquoted_package >> ../../nix_develop_fail_2
+            echo $unquoted_package > ../../nix_develop_fail_2
         else
-            echo $unquoted_package >> ../../works
+            echo $unquoted_package > ../../works
         fi
         git cm $unquoted_package
     fi
@@ -262,43 +262,48 @@ create-error-file() {
 install_with_fixes() {
     package=$1
     max_attempts=5  # Set the maximum number of attempts here
-    attempt=1
+    attempt=0  # Start with attempt 0 since the first try is outside the loop
 
-    while [ $attempt -le $max_attempts ]; do
-        create-error-file "$package"
-        result_file="fail_logs/$package/${package}.log"
+    # Initial attempt to install the package before entering the loop
+    install_poetry_package "$package"
+    result_file="fail_logs/$package/${package}.log"
 
-        if [ ! -f "$result_file" ]; then
-            echo "Package $package installed successfully."
-            return 0
-        else
-            error_content=$(cat "$result_file")
-            if [ -z "$error_content" ]; then
-                echo "No error detected, package $package installed successfully."
-                return 0
-            else
-                # Apply heuristic fix using the Python script
-                python fix_heuristic.py "$result_file"
-                fix_status=$?
-                new_error_content=$(cat "$result_file")
-
-                if [ $fix_status -ne 0 ]; then
-                    echo "Could not apply fix heuristic to package $package, exiting."
-                    return 1
-                elif [ "$error_content" = "$new_error_content" ]; then
-                    echo "The same error persists after applying fix heuristic to package $package, cannot fix."
-                    return 1
-                else
-                    echo "A different error was encountered after applying fix heuristic, attempting again."
-                fi
-            fi
-        fi
-
+    # Enter the loop if the initial attempt fails (i.e., if an error log exists)
+    while [ -f "$result_file" ] && [ $attempt -lt $max_attempts ]; do
         attempt=$((attempt + 1))
+        echo "Attempt $attempt/$max_attempts for package $package."
+
+        # Apply heuristic fix using the Python script
+        python fix_heuristic.py "$result_file"
+        fix_status=$?
+
+        # After applying fixes, attempt to reinstall the package
+        install_poetry_package "$package"
+        new_error_content=$(cat "$result_file")
+
+        if [ $fix_status -ne 0 ]; then
+            echo "Could not apply fix heuristic to package $package, exiting."
+            return 1
+        elif [ -z "$new_error_content" ]; then
+            echo "Package $package installed successfully after applying fixes."
+            return 0
+        elif [ "$error_content" = "$new_error_content" ]; then
+            echo "The same error persists after applying fix heuristic to package $package, cannot fix."
+            return 1
+        else
+            echo "A different error was encountered after applying fix heuristic, attempting again."
+            # Update error_content for the next iteration comparison
+            error_content=$new_error_content
+        fi
     done
 
-    echo "Maximum attempts reached, package $package could not be installed."
-    return 1
+    if [ ! -f "$result_file" ]; then
+        echo "Package $package installed successfully."
+        return 0
+    else
+        echo "Maximum attempts reached or package $package could not be installed."
+        return 1
+    fi
 }
 
 add_package_to_uninstallable_list() {

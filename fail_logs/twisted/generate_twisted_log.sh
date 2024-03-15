@@ -1,1 +1,1 @@
-nix log /nix/store/fnvl24cy47agpn65qnqd03ss6ii7gh6g-python3.11-twisted-23.10.0.drv
+nix log /nix/store/yg7f59jiynqimw4pcprqz0hlajllfy5a-python3.11-twisted-24.3.0.drv
