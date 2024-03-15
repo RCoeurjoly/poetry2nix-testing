@@ -261,7 +261,7 @@ install_poetry_package() {
 
 install_with_fixes() {
     package=$1
-    max_attempts=1  # Set the maximum number of attempts here
+    max_attempts=3  # Set the maximum number of attempts here
     attempt=0  # Start with attempt 0 since the first try is outside the loop
 
     # Initial attempt to install the package before entering the loop
