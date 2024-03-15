@@ -36,31 +36,25 @@ def create_dependencies_json(package_name, missing_module):
 
 def merge_dependencies(package_name):
     new_json_filename = f"{package_name}_dependencies.json"
-    merged_json_filename = "poetry2nix/overrides/build-systems.json"
+    original_json_filename = "poetry2nix/overrides/build-systems.json"
+    temp_merged_json_filename = "temp_merged_build_systems.json"
     jq_command = [
         'jq', '-s',
         '.[0] as $orig | .[1] as $new | ($new | to_entries[]) as $deps | $orig * (reduce $deps.key as $pkg ({}; .[$pkg] = ($orig[$pkg] + $new[$pkg] | unique)))',
-        'poetry2nix/overrides/build-systems.json', new_json_filename
+        original_json_filename, new_json_filename
     ]
 
     try:
-        with open(merged_json_filename, 'w') as outfile:
-            subprocess.run(jq_command, stdout=outfile, check=True)
-        return f"Merged JSON file created: {merged_json_filename}"
+        result = subprocess.run(jq_command, capture_output=True, text=True, check=True)
+        if result.stdout:
+            # Write to a temporary file first
+            with open(temp_merged_json_filename, 'w') as temp_file:
+                temp_file.write(result.stdout)
+
+            # Replace the original file only if merge was successful and output is not empty
+            os.replace(temp_merged_json_filename, original_json_filename)
+            return f"Merged JSON file created: {original_json_filename}"
+        else:
+            return "Error: Merge resulted in an empty output."
     except subprocess.CalledProcessError as e:
         return f"Error during merging: {e}"
-
-if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Usage: python fix_heuristic.py <error_log_file>")
-    else:
-        error_log_path = sys.argv[1]
-        package_name, missing_module = parse_error_log(error_log_path)
-        if package_name and missing_module:
-            json_filename = create_dependencies_json(package_name, missing_module)
-            print(f"JSON file created: {json_filename}")
-
-            merge_result = merge_dependencies(package_name)
-            print(merge_result)
-        else:
-            print("No action required or error encountered.")
