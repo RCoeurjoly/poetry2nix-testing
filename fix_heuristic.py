@@ -28,6 +28,7 @@ def parse_error_log(error_log_path):
 def create_dependencies_json(package_name, missing_module):
     json_content = {package_name: [missing_module]}
     json_filename = f"{package_name}_dependencies.json"
+    print(json_content)
     with open(json_filename, 'w') as json_file:
         json.dump(json_content, json_file)
     return json_filename
@@ -57,6 +58,7 @@ if __name__ == "__main__":
         if package_name and missing_module:
             json_filename = create_dependencies_json(package_name, missing_module)
             print(f"JSON file created: {json_filename}")
+
             merge_result = merge_dependencies(package_name)
             print(merge_result)
         else:
