@@ -11,19 +11,19 @@ def parse_error_log(error_log_path):
         return None, "Error: File not found."
 
     # Regular expression patterns to find the failing package and missing module
-    failing_package_pattern = r"error: builder for '/nix/store/[^']+-(python3\.\d+)-([^'/]+)-\d"
+    package_version_pattern = r"Processing /build/(?P<package_name>[a-zA-Z0-9_-]+)-(?P<version>[0-9.]+)"
     missing_module_pattern = r"ModuleNotFoundError: No module named '([^']+)'"
 
     # Find failing package and missing module
-    failing_package_match = re.search(failing_package_pattern, error_message)
+    package_version_match = re.search(package_version_pattern, error_message)
     missing_module_match = re.search(missing_module_pattern, error_message)
 
-    if failing_package_match and missing_module_match:
-        package_name = failing_package_match.group(2)  # The package name
+    if package_version_match and missing_module_match:
+        package_name = package_version_match.group('package_name')  # The package name
+        version = package_version_match.group('version')  # The version
         missing_module = missing_module_match.group(1)  # The missing module
         return package_name, missing_module
     else:
-        print("noooooooooooooo")
         return None, "Error: Failed to parse error message."
 
 def create_dependencies_json(package_name, missing_module):
