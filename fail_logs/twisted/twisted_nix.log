@@ -1,16 +1,16 @@
 warning: Git tree '/home/roland/poetry2nix-testing' is dirty
-building '/nix/store/yg7f59jiynqimw4pcprqz0hlajllfy5a-python3.11-twisted-24.3.0.drv'...
-error: builder for '/nix/store/yg7f59jiynqimw4pcprqz0hlajllfy5a-python3.11-twisted-24.3.0.drv' failed with exit code 2;
+building '/nix/store/pjgyrpsa8r0ca7076akjijnmmhrcdppz-python3.11-twisted-24.3.0.drv'...
+error: builder for '/nix/store/pjgyrpsa8r0ca7076akjijnmmhrcdppz-python3.11-twisted-24.3.0.drv' failed with exit code 1;
        last 10 log lines:
-       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
-       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
-       >   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
-       >   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-       >   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
-       >   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
-       >   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
-       > ModuleNotFoundError: No module named 'hatchling'
-       > 
-       > 
-       For full logs, run 'nix log /nix/store/yg7f59jiynqimw4pcprqz0hlajllfy5a-python3.11-twisted-24.3.0.drv'.
-error: 1 dependencies of derivation '/nix/store/a8qb335sxpqzz8nf5z2myc2xiv7ac4xj-nix-shell-env.drv' failed to build
+       >   full command: /nix/store/3v2ch16fkl50i85n05h5ckss8pxx6836-python3-3.11.8/bin/python3.11 /nix/store/rn7z8xvfhglhl1k8grv7qjcfc8773x76-python3.11-pip-23.3.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py prepare_metadata_for_build_wheel /build/tmpiq45j3yv
+       >   cwd: /build/twisted-24.3.0
+       >   Preparing metadata (pyproject.toml) ... error
+       > error: metadata-generation-failed
+       >
+       > × Encountered error while generating package metadata.
+       > ╰─> See above for output.
+       >
+       > note: This is an issue with the package mentioned above, not pip.
+       > hint: See above for details.
+       For full logs, run 'nix log /nix/store/pjgyrpsa8r0ca7076akjijnmmhrcdppz-python3.11-twisted-24.3.0.drv'.
+error: 1 dependencies of derivation '/nix/store/4qdmw3qw78ks81sx3bsibckc06vzas95-nix-shell-env.drv' failed to build
