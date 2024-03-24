@@ -296,6 +296,8 @@ install_with_fixes() {
             echo "A different error was encountered after applying fix heuristic, attempting again."
             # Update error_content for the next iteration comparison
             error_content=$new_error_content
+            echo "Donde cojones estoyyyyyyyyyyyyyyy"
+            pwd
             git add poetry2nix
             git commit -m "Applied autofix"
         fi
