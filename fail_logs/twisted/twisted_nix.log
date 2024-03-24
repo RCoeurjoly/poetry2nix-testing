@@ -2,7 +2,7 @@ warning: Git tree '/home/roland/poetry2nix-testing' is dirty
 building '/nix/store/pjgyrpsa8r0ca7076akjijnmmhrcdppz-python3.11-twisted-24.3.0.drv'...
 error: builder for '/nix/store/pjgyrpsa8r0ca7076akjijnmmhrcdppz-python3.11-twisted-24.3.0.drv' failed with exit code 1;
        last 10 log lines:
-       >   full command: /nix/store/3v2ch16fkl50i85n05h5ckss8pxx6836-python3-3.11.8/bin/python3.11 /nix/store/rn7z8xvfhglhl1k8grv7qjcfc8773x76-python3.11-pip-23.3.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py prepare_metadata_for_build_wheel /build/tmpiq45j3yv
+       >   full command: /nix/store/3v2ch16fkl50i85n05h5ckss8pxx6836-python3-3.11.8/bin/python3.11 /nix/store/rn7z8xvfhglhl1k8grv7qjcfc8773x76-python3.11-pip-23.3.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py prepare_metadata_for_build_wheel /build/tmp1wqbto48
        >   cwd: /build/twisted-24.3.0
        >   Preparing metadata (pyproject.toml) ... error
        > error: metadata-generation-failed

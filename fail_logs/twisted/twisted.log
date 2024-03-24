@@ -70,7 +70,7 @@ Creating a wheel...
   [31m╰─>[0m See above for output.
   
   [1;35mnote[0m: This error originates from a subprocess, and is likely not a problem with pip.
-  [1;35mfull command[0m: [34m/nix/store/3v2ch16fkl50i85n05h5ckss8pxx6836-python3-3.11.8/bin/python3.11 /nix/store/rn7z8xvfhglhl1k8grv7qjcfc8773x76-python3.11-pip-23.3.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py prepare_metadata_for_build_wheel /build/tmpiq45j3yv[0m
+  [1;35mfull command[0m: [34m/nix/store/3v2ch16fkl50i85n05h5ckss8pxx6836-python3-3.11.8/bin/python3.11 /nix/store/rn7z8xvfhglhl1k8grv7qjcfc8773x76-python3.11-pip-23.3.1/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py prepare_metadata_for_build_wheel /build/tmp1wqbto48[0m
   [1;35mcwd[0m: /build/twisted-24.3.0
   Preparing metadata (pyproject.toml) ... [?25l[?25herror
 [1;31merror[0m: [1mmetadata-generation-failed[0m
