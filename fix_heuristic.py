@@ -2,6 +2,7 @@ import json
 import re
 import sys
 import subprocess
+import os
 
 def parse_error_log(error_log_path):
     try:
@@ -12,17 +13,24 @@ def parse_error_log(error_log_path):
 
     # Regular expression patterns to find the failing package and missing module
     package_version_pattern = r"Processing /build/(?P<package_name>[a-zA-Z0-9_-]+)-(?P<version>[0-9.]+)"
+    package_version_pattern2 = r'python3\.\d+-(?P<package_name>[a-zA-Z0-9]+)-(?P<version>\d+\.\d+\.\d+)\.drv'
+
     missing_module_pattern = r"ModuleNotFoundError: No module named '([^']+)'"
 
     # Find failing package and missing module
     package_version_match = re.search(package_version_pattern, error_message)
+    package_version_match2 = re.search(package_version_pattern2, error_message)
     missing_module_match = re.search(missing_module_pattern, error_message)
 
-    if package_version_match and missing_module_match:
-        package_name = package_version_match.group('package_name')  # The package name
-        version = package_version_match.group('version')  # The version
+    if (package_version_match or package_version_match2) and missing_module_match:
+        if package_version_match:
+            package_name = package_version_match.group('package_name')  # The package name
+            version = package_version_match.group('version')  # The version
+        elif package_version_match2:
+            package_name = package_version_match2.group('package_name')  # The package name
+            version = package_version_match2.group('version')  # The version
         missing_module = missing_module_match.group(1)  # The missing module
-        return package_name, missing_module
+        return package_name, version, missing_module
     else:
         return None, "Error: Failed to parse error message."
 
@@ -58,3 +66,18 @@ def merge_dependencies(package_name):
             return "Error: Merge resulted in an empty output."
     except subprocess.CalledProcessError as e:
         return f"Error during merging: {e}"
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print("Usage: python fix_heuristic.py <error_log_file>")
+    else:
+        error_log_path = sys.argv[1]
+        # Modify the script to write to a specific directory, change the './' to your desired path
+        # output_dir = "./"  # Change this to your desired output directory path
+        package_name, version, missing_module = parse_error_log(error_log_path)
+        if package_name and version and missing_module:
+            json_filename = create_dependencies_json(package_name, missing_module)
+            merge_result = merge_dependencies(package_name)
+            print(merge_result)
+        else:
+            print("No action required or error encountered.")
