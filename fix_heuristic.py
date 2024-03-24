@@ -67,6 +67,36 @@ def merge_dependencies(package_name):
     except subprocess.CalledProcessError as e:
         return f"Error during merging: {e}"
 
+def commit_file_in_submodule(file_path: str, commit_message: str, submodule_path: str):
+    """
+    Commits a specified file in a Git submodule.
+
+    :param file_path: Path to the file to commit, relative to the submodule's root.
+    :param commit_message: Commit message for Git.
+    :param submodule_path: Path to the submodule's root directory.
+    """
+    # Save current directory
+    current_dir = os.getcwd()
+
+    try:
+        # Change directory to the submodule's root
+        os.chdir(submodule_path)
+
+        # Add the file to staging
+        subprocess.run(['git', 'add', file_path], check=True)
+
+        # Commit the change
+        subprocess.run(['git', 'commit', '-m', commit_message, file_path], check=True)
+
+        print(f"Successfully committed {file_path} in submodule at {submodule_path}")
+
+    except subprocess.CalledProcessError as e:
+        print(f"An error occurred while trying to commit the file: {e}")
+
+    finally:
+        # Change back to the original directory
+        os.chdir(current_dir)
+
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Usage: python fix_heuristic.py <error_log_file>")
@@ -78,6 +108,11 @@ if __name__ == "__main__":
         if package_name and version and missing_module:
             json_filename = create_dependencies_json(package_name, missing_module)
             merge_result = merge_dependencies(package_name)
+            commit_file_in_submodule(
+                file_path='overrides/build-systems.json',
+                commit_message='Commit build-systems.json changes',
+                submodule_path='/home/roland/poetry2nix-testing/poetry2nix'
+            )
             print(merge_result)
         else:
             print("No action required or error encountered.")

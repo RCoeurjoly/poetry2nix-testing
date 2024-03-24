@@ -243,6 +243,7 @@ install_poetry_package() {
         echo $unquoted_package >> ../../poetry_add_fail_2
     else
         set -o pipefail
+        nix flake lock --update-input poetry2nix
         nix develop --command echo "Nix develop environment ready" |& tee ${unquoted_package}_nix.log
         rc=$?
         if [[ $rc != 0 ]]; then
@@ -286,8 +287,6 @@ install_with_fixes() {
             return 1
         elif [ -z "$new_error_content" ]; then
             echo "Package $package installed successfully after applying fixes."
-            git add poetry2nix
-            git commit -m "Applied autofix"
             return 0
         elif [ "$error_content" = "$new_error_content" ]; then
             echo "The same error persists after applying fix heuristic to package $package, cannot fix."
@@ -296,10 +295,6 @@ install_with_fixes() {
             echo "A different error was encountered after applying fix heuristic, attempting again."
             # Update error_content for the next iteration comparison
             error_content=$new_error_content
-            echo "Donde cojones estoyyyyyyyyyyyyyyy"
-            pwd
-            git add poetry2nix
-            git commit -m "Applied autofix"
         fi
     done
 
