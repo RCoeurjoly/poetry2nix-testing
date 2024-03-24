@@ -286,6 +286,8 @@ install_with_fixes() {
             return 1
         elif [ -z "$new_error_content" ]; then
             echo "Package $package installed successfully after applying fixes."
+            git add poetry2nix
+            git commit -m "Applied autofix"
             return 0
         elif [ "$error_content" = "$new_error_content" ]; then
             echo "The same error persists after applying fix heuristic to package $package, cannot fix."
@@ -294,6 +296,8 @@ install_with_fixes() {
             echo "A different error was encountered after applying fix heuristic, attempting again."
             # Update error_content for the next iteration comparison
             error_content=$new_error_content
+            git add poetry2nix
+            git commit -m "Applied autofix"
         fi
     done
 
