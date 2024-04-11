@@ -84,8 +84,8 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1712800183,
-        "narHash": "sha256-mPN0Zk1I8dnlzEpMHKl+KvnZeOyUORVjVAvfM4h0htw=",
+        "lastModified": 1712802674,
+        "narHash": "sha256-2QuqVBUSzy8jfkLcXAER9JIq5YyIILVrA8k+MqXG0R4=",
         "path": "/home/roland/poetry2nix-testing/poetry2nix",
         "type": "path"
       },
