@@ -7,4 +7,4 @@ set grid
 set style data linespoints
 
 # Plotting the data
-plot "/path/to/slot_error_probabilities.dat" using 1:2 title "Error Probability" with linespoints
+plot "slot_error_probabilities.dat" using 1:2 title "Error Probability" with linespoints
