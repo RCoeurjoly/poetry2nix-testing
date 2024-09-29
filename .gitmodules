@@ -1,3 +1,6 @@
 [submodule "poetry2nix"]
 	path = poetry2nix
 	url = ../poetry2nix
+[submodule "top-pypi-packages"]
+	path = top-pypi-packages
+	url = git@github.com:hugovk/top-pypi-packages.git
